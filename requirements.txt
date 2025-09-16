@@ -1,0 +1,7 @@
+recommonmark>=0.6.0
+Sphinx>=3.1.1
+sphinx-rtd-theme>=0.5.1
+docutils>=0.16
+sphinx-notfound-page>=0.5
+sphinxcontrib-youtube>=1.2.0
+sphinx-intl>=2.0.0

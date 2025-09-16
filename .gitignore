@@ -1,0 +1,11 @@
+/.project
+/.vscode
+/_build
+/_docs
+/docs/_build
+/website/
+/_images/
+/_ignored/
+__pycache__/
+/_locale/**/*.mo
+/_locale/gettext/**/*
