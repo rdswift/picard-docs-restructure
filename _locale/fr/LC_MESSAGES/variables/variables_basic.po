@@ -1,0 +1,720 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# Bob Swift <bswift@rsds.ca>, 2021, 2022, 2023, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-05 09:08-0600\n"
+"PO-Revision-Date: 2025-08-12 08:36+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/"
+"picard-docs/variablesvariables_basic/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../variables/variables_basic.rst:8
+msgid ":index:`Basic Variables <variables; basic>`"
+msgstr ":index:`Variables de base <variables; de base>`"
+
+#: ../../variables/variables_basic.rst:10
+msgid ""
+"These variables are populated from MusicBrainz data for most releases, "
+"without any special Picard settings."
+msgstr ""
+"Ces variables sont renseignées à partir des données MusicBrainz pour la "
+"plupart des versions, sans aucun paramètre Picard particulier."
+
+#: ../../variables/variables_basic.rst:12
+msgid ""
+"Some variables provide the :index:`MusicBrainz Identifier (MBID) "
+"<identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character "
+"identifier assigned to an entity (e.g.: artist, album, track or work) to "
+"uniquely identify the entity. For more information about MBIDs, please see "
+"the `MusicBrainz Identifier <https://musicbrainz.org/doc/"
+"MusicBrainz_Identifier>`_ page in the MusicBrainz documentation."
+msgstr ""
+"Certaines variables fournissent le :index:`Identifiant MusicBrainz (MBID) "
+"<identifiant; musicbrainz, mbid>` de l'entité. Le MBID est un identifiant de "
+"32 caractères attribué à une entité (par exemple, un artiste, un album, une "
+"piste ou une œuvre) afin de l'identifier de manière unique. Pour plus "
+"d'informations sur les MBID, veuillez consulter la page `Identifiant "
+"MusicBrainz <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ dans la "
+"documentation MusicBrainz."
+
+#: ../../variables/variables_basic.rst:16
+msgid ""
+"Variables will not be created if there was no value retrieved for the "
+"variable from the MusicBrainz database."
+msgstr ""
+"Les variables ne seront pas créées si aucune valeur n'a été récupérée pour "
+"la variable à partir de la base de données MusicBrainz."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:18
+msgid "**_absolutetracknumber**"
+msgstr "**_absolutetracknumber**"
+
+#: ../../variables/variables_basic.rst:20
+msgid ""
+"The absolute number of this track disregarding the disc number (i.e.: "
+"``%_absolutetracknumber%`` of ``%_totalalbumtracks%``). For example, this "
+"value would be 11 for the second track on disc 2 where disc 1 has 9 tracks. "
+"(*since Picard 1.3*)"
+msgstr ""
+"Le numéro absolu de cette piste sans tenir compte du numéro de disque (c'est-"
+"à-dire : ``%_absolutetracknumber%`` de ``%_totalbumtracks%``). Par exemple, "
+"cette valeur serait 11 pour la deuxième piste du disque 2 où le disque 1 a 9 "
+"pistes. (*depuis Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:22
+msgid "**_albumartists**"
+msgstr "**_albumartists**"
+
+#: ../../variables/variables_basic.rst:24
+msgid ""
+"A multi-value variable containing the names of the album's artists. These "
+"could be either \"standardized\" or \"as credited\" depending on whether the "
+"\"Use standardized artist names\" metadata option is enabled. (*since Picard "
+"1.3*)"
+msgstr ""
+"Variable à valeurs multiples contenant les noms des artistes de l'album. "
+"Ceux-ci peuvent être \"standardisés\" ou \"tels que crédités\" selon que "
+"l'option de métadonnées \"Utiliser les noms d'artistes standardisés\" est "
+"activée ou non. (*depuis Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:26
+msgid "**_albumartists_countries**"
+msgstr "**_albumartists_countries**"
+
+#: ../../variables/variables_basic.rst:28
+msgid ""
+"A multi-value variable containing the country codes for all of the credited "
+"album artists, in the same order as the artists. Duplicate country codes "
+"will be shown if there are more than one artist from the same country. If a "
+"country code is not provided by the webservice the code \"XX\" will be used "
+"to indicate an unknown country. For example, if the first credited artist is "
+"from Great Britain and there are two other credited artists from Canada, the "
+"value would be \"GB; CA; CA\"."
+msgstr ""
+"Variable à valeurs multiples contenant les codes pays de tous les artistes "
+"crédités de l'album, dans le même ordre que les artistes. Les codes de pays "
+"en double seront affichés s'il y a plus d'un artiste du même pays. Si un "
+"code pays n'est pas fourni par le webservice, le code \"XX\" sera utilisé "
+"pour indiquer un pays inconnu. Par exemple, si le premier artiste crédité "
+"vient de Grande-Bretagne et que deux autres artistes crédités viennent du "
+"Canada, la valeur sera \"GB; CA; CA\"."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:30
+msgid "**_albumartists_sort**"
+msgstr "**_albumartists_sort**"
+
+#: ../../variables/variables_basic.rst:32
+msgid ""
+"A multi-value variable containing the sort names of the album's artists. "
+"(*since Picard 1.3*)"
+msgstr ""
+"Une variable multi-valeurs contenant les noms de tri des artistes de "
+"l'album. (*depuis Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:34
+msgid "**_artists_countries**"
+msgstr "**_artists_countries**"
+
+#: ../../variables/variables_basic.rst:36
+msgid ""
+"A multi-value variable containing the country codes for all of the credited "
+"track artists, in the same order as the artists. Duplicate country codes "
+"will be shown if there are more than one artist from the same country. If a "
+"country code is not provided by the webservice the code \"XX\" will be used "
+"to indicate an unknown country. For example, if the first credited artist is "
+"from Great Britain and there are two other credited artists from Canada, the "
+"value would be \"GB; CA; CA\"."
+msgstr ""
+"Variable à valeurs multiples contenant les codes de pays de tous les "
+"artistes crédités de la piste, dans le même ordre que les artistes. Les "
+"codes de pays en double seront affichés s'il y a plus d'un artiste du même "
+"pays. Si un code pays n'est pas fourni par le webservice, le code \"XX\" "
+"sera utilisé pour indiquer un pays inconnu. Par exemple, si le premier "
+"artiste crédité vient de Grande-Bretagne et que deux autres artistes "
+"crédités viennent du Canada, la valeur sera \"GB; CA; CA\"."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:38
+msgid "**_artists_sort**"
+msgstr "**_artists_sort**"
+
+#: ../../variables/variables_basic.rst:40
+msgid ""
+"A multi-value variable containing the sort names of the track's artists. "
+"(*since Picard 1.3*)"
+msgstr ""
+"Une variable multi-valeurs contenant les noms de tri des artistes de la "
+"piste. (*depuis Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:42
+msgid "**_datatrack**"
+msgstr "**_datatrack**"
+
+#: ../../variables/variables_basic.rst:44
+msgid ""
+"Set to 1 if the track is a \"`data track <https://wiki.musicbrainz.org/Style/"
+"Unknown_and_untitled/Special_purpose_track_title#Data_tracks>`_\", otherwise "
+"empty. (*since Picard 1.3.1*)"
+msgstr ""
+"Prend la valeur 1 si la piste est une \"`piste de données <https://"
+"wiki.musicbrainz.org/Style/Unknown_and_untitled/"
+"Special_purpose_track_title#Data_tracks>`_\", sinon vide. (*depuis Picard "
+"1.3.1*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:46
+msgid "**_discpregap**"
+msgstr "**_discpregap**"
+
+#: ../../variables/variables_basic.rst:48
+msgid ""
+"Set to 1 if the disc the track is on has a \"`pregap track <https://"
+"musicbrainz.org/doc/Terminology#hidden_track>`_\", otherwise empty. (*since "
+"Picard 1.4*)"
+msgstr ""
+"Prend la valeur 1 si le disque sur lequel se trouve la piste possède un "
+"\"`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_\", "
+"sinon vide (*depuis Picard 1.4*)."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:50
+msgid "**_multiartist**"
+msgstr "**_multiartist**"
+
+#: ../../variables/variables_basic.rst:52
+msgid ""
+"Set to 1 if not all of the tracks on the album have the same primary artist, "
+"otherwise empty. (*since Picard 1.3*)"
+msgstr ""
+"Défini à 1 si toutes les pistes de l'album n'ont pas le même artiste "
+"principal, sinon vide. (*depuis Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:54
+msgid "**_musicbrainz_discids**"
+msgstr "**_musicbrainz_discids**"
+
+#: ../../variables/variables_basic.rst:56
+msgid ""
+"A multi-value variable containing a list of all of the disc ids attached to "
+"the selected release. The list provided for each medium only includes the "
+"disc ids attached to that medium. For example, the list provided for Disc 1 "
+"of a three CD set will not include the disc ids attached to discs 2 and 3 of "
+"the set."
+msgstr ""
+"Variable à valeurs multiples contenant une liste de tous les identifiants de "
+"disque associés à la version sélectionnée. La liste fournie pour chaque "
+"support ne comprend que les identifiants de disque associés à ce support. "
+"Par exemple, la liste fournie pour le disque 1 d'un ensemble de trois CD ne "
+"comprendra pas les identifiants des disques 2 et 3 de l'ensemble."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:58
+msgid "**_musicbrainz_tracknumber**"
+msgstr "**_musicbrainz_tracknumber**"
+
+#: ../../variables/variables_basic.rst:60
+msgid ""
+"The track number written as on the MusicBrainz release, such as vinyl "
+"numbering (A1, A2…)."
+msgstr ""
+"Le numéro de piste tel qu'il figure sur la version MusicBrainz, comme la "
+"numérotation des vinyles (A1, A2...)."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:62
+msgid "**_pregap**"
+msgstr "**_pregap**"
+
+#: ../../variables/variables_basic.rst:64
+msgid ""
+"Set to 1 if the track is a \"`pregap track <https://musicbrainz.org/doc/"
+"Terminology#hidden_track>`_\", otherwise empty. (*since Picard 1.3.1*)"
+msgstr ""
+"Prend la valeur 1 si la piste est une \"`piste d'prégap <https://musicbrainz."
+"org/doc/Terminology#hidden_track>`_\", sinon vide (*depuis Picard 1.3.1*)."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:68
+msgid "**_primaryreleasetype**"
+msgstr "**_primaryreleasetype**"
+
+#: ../../variables/variables_basic.rst:70
+msgid ""
+"The primary type of the release group (i.e.: *album*, *single*, *ep*, "
+"*broadcast*, or *other*)."
+msgstr ""
+"Le type principal du groupe de parution (par exemple : *album*, *single*, "
+"*ep*, *broadcast*, ou *autre*)."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:72
+msgid "**_rating**"
+msgstr "**_rating**"
+
+#: ../../variables/variables_basic.rst:74
+msgid "The rating of the track from 0-5 by MusicBrainz users."
+msgstr "L'évaluation de la piste de 0 à 5 par les utilisateurs de MusicBrainz."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:76
+msgid "**_recordingcomment**"
+msgstr "**_recordingcomment**"
+
+#: ../../variables/variables_basic.rst:78
+msgid ""
+"The disambiguation comment for the recording associated with a track. "
+"(*since Picard 0.15*)"
+msgstr ""
+"Le commentaire de désambiguïsation pour l'enregistrement associé à une "
+"piste. (*depuis Picard 0.15*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:80
+msgid "**_recording_firstreleasedate**"
+msgstr "**_recording_firstreleasedate**"
+
+#: ../../variables/variables_basic.rst:82
+msgid ""
+"The date of the earliest recording for a track in the format YYYY-MM-DD. "
+"(*Since Picard 2.6*)"
+msgstr ""
+"La date de l'enregistrement le plus ancien pour une piste dans le format "
+"AAAA-MM-JJ. (*Depuis Picard 2.6*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:84
+msgid "**_releaseannotation**"
+msgstr "**_releaseannotation**"
+
+#: ../../variables/variables_basic.rst:86
+msgid "The annotation comment for the release. (*since Picard 2.6*)"
+msgstr "Le commentaire d'annotation pour la version. (*depuis Picard 2,6*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:88
+msgid "**_releasecomment**"
+msgstr "**_releasecomment**"
+
+#: ../../variables/variables_basic.rst:90
+msgid "The disambiguation comment for the release. (*since Picard 0.15*)"
+msgstr ""
+"Le commentaire de désambiguïsation pour la parution. (*depuis Picard 0.15*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:92
+msgid "**_releasecountries**"
+msgstr "**_releasecountries**"
+
+#: ../../variables/variables_basic.rst:94
+msgid ""
+"A multi-value variable containing the complete list of release countries for "
+"the release. (*since Picard 2.3.1*)"
+msgstr ""
+"Une variable multi-valeurs contenant la liste complète des pays de la "
+"parution. (*depuis Picard 2.3.1*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:96
+msgid "**_releasegroup**"
+msgstr "**_releasegroup**"
+
+#: ../../variables/variables_basic.rst:98
+msgid ""
+"The title of the release group. This is typically the same as the album "
+"title, but can be different."
+msgstr ""
+"Le titre du groupe de parution. Il s'agit généralement du même titre que "
+"celui de l'album, mais il peut être différent."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:100
+msgid "**_releasegroup_firstreleasedate**"
+msgstr "**_releasegroup_firstreleasedate**"
+
+#: ../../variables/variables_basic.rst:102
+msgid ""
+"The date of the earliest release in the release group in the format YYYY-MM-"
+"DD. This is intended to provide, for example, the release date of the vinyl "
+"version of what you have on CD. (*Since Picard 2.6*)"
+msgstr ""
+"La date de la première parution dans le groupe de parution au format AAAA-MM-"
+"JJ. Cette date est destinée à fournir, par exemple, la date de parution de "
+"la version vinyle de ce que vous avez sur CD. (*Depuis Picard 2.6*)"
+
+#: ../../variables/variables_basic.rst:106
+msgid ""
+"This is the same information provided by default in the ``originaldate`` tag."
+msgstr ""
+"Ce sont les mêmes informations fournies par défaut dans la balise "
+"``originaldate``."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:108
+msgid "**_releasegroupcomment**"
+msgstr "**_releasegroupcomment**"
+
+#: ../../variables/variables_basic.rst:110
+msgid "The disambiguation comment for the release group."
+msgstr "Le commentaire de désambiguïsation pour le groupe de parution."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:112
+msgid "**_releaselanguage**"
+msgstr "**_releaselanguage**"
+
+#: ../../variables/variables_basic.rst:114
+msgid ""
+"The language of the release as per `ISO 639-3 <https://en.wikipedia.org/wiki/"
+"ISO_639-3>`_. (*since Picard 0.10*)"
+msgstr ""
+"La langue de la parution selon `ISO 639-3 <https://wikipedia.org/wiki/"
+"ISO_639-3>`_. (*depuis Picard 0.10*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:118
+msgid "**_secondaryreleasetype**"
+msgstr "**_secondaryreleasetype**"
+
+#: ../../variables/variables_basic.rst:120
+msgid ""
+"Zero or more secondary types (i.e.: *audiobook*, *compilation*, *dj-mix*, "
+"*interview*, *live*, *mixtape/street*, *remix*, *soundtrack*, or "
+"*spokenword*) for the release group."
+msgstr ""
+"Zéro ou plusieurs types secondaires (par exemple : *livre audio*, "
+"*compilation*, *dj-mix*, *interview*, *vivant*, *mixtape/rue*, *remix*, "
+"*bande-son*, ou *mot parlé*) pour le groupe de parution."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:122
+msgid "**_totalalbumtracks**"
+msgstr "**_totalalbumtracks**"
+
+#: ../../variables/variables_basic.rst:124
+msgid "The total number of tracks across all discs of this release."
+msgstr "Le nombre total de pistes sur tous les disques de cette version."
+
+#~ msgid "The Album's Artists' Name(s) (multi-value). (*since Picard 1.3*)"
+#~ msgstr ""
+#~ "Les noms des artistes de l'album (valeurs multiples). (*depuis Picard "
+#~ "1.3*)"
+
+#~ msgid "The Album Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)"
+#~ msgstr ""
+#~ "Les noms de tri des artistes de l'album (valeurs multiples). (*depuis "
+#~ "Picard 1.3*)"
+
+#~ msgid "The Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)"
+#~ msgstr ""
+#~ "Les noms de tri des artistes de la piste (valeurs multiples). (*depuis "
+#~ "Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_recording_series**"
+#~ msgstr "**_recording_series**"
+
+#~ msgid ""
+#~ "The series title(s) associated with the recording (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) titre(s) de la série associé(s) à l'enregistrement (valeur "
+#~ "multiple). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_recording_seriesid**"
+#~ msgstr "**_recording_seriesid**"
+
+#~ msgid ""
+#~ "The series MBID(s) associated with the recording (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) MBID(s) de la série associé(s) à l'enregistrement (valeurs "
+#~ "multiples). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_recording_seriescomment**"
+#~ msgstr "**_recording_seriescomment**"
+
+#~ msgid ""
+#~ "The series disambiguation comment(s) associated with the recording (multi-"
+#~ "value). (*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) commentaire(s) de désambiguïsation de la série associé(s) à "
+#~ "l'enregistrement (multi-valeurs). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_recording_seriesnumber**"
+#~ msgstr "**_recording_seriesnumber**"
+
+#~ msgid ""
+#~ "The series number(s) associated with the recording (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) numéro(s) de série associé(s) à l'enregistrement (valeurs "
+#~ "multiples). (*depuis Picard 2.9*)"
+
+#~ msgid "Release disambiguation comment. (*since Picard 0.15*)"
+#~ msgstr "Le commentaire d'homonymie pour la version. (*depuis Picard 0,15*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_release_series**"
+#~ msgstr "**_release_series**"
+
+#~ msgid ""
+#~ "The series title(s) associated with the release (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) titre(s) de la série associé(s) à la version (valeur multiple). "
+#~ "(*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_release_seriesid**"
+#~ msgstr "**_release_seriesid**"
+
+#~ msgid ""
+#~ "The series MBID(s) associated with the release (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) MBID(s) de la série associé(s) à la version (valeurs multiples). "
+#~ "(*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_release_seriescomment**"
+#~ msgstr "**_release_seriescomment**"
+
+#~ msgid ""
+#~ "The series disambiguation comment(s) associated with the release (multi-"
+#~ "value). (*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) commentaire(s) de désambiguïsation de la série associé(s) à la "
+#~ "version (multi-valeurs). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_release_seriesnumber**"
+#~ msgstr "**_release_seriesnumber**"
+
+#~ msgid ""
+#~ "The series number(s) associated with the release (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) numéro(s) de série associé(s) à la version (valeur multiple). "
+#~ "(*depuis Picard 2.9*)"
+
+#~ msgid "Release Group disambiguation comment."
+#~ msgstr "Le commentaire d'homonymie pour le groupe de version."
+
+# Variable name.  Do not translate.
+#~ msgid "**_releasegroup_series**"
+#~ msgstr "**_releasegroup_series**"
+
+#~ msgid ""
+#~ "The series title(s) associated with the release group (multi-value). "
+#~ "(*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) titre(s) de la série associé(s) au groupe de diffusion (valeur "
+#~ "multiple). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_releasegroup_seriesid**"
+#~ msgstr "**_releasegroup_seriesid**"
+
+#~ msgid ""
+#~ "The series MBID(s) associated with the release group (multi-value). "
+#~ "(*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) MBID(s) de la série associé(s) au groupe de diffusion (valeurs "
+#~ "multiples). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_releasegroup_seriescomment**"
+#~ msgstr "**_releasegroup_seriescomment**"
+
+#~ msgid ""
+#~ "The series disambiguation comment(s) associated with the release group "
+#~ "(multi-value). (*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) commentaire(s) de désambiguïsation de la série associé(s) au groupe "
+#~ "de diffusion (multi-valeurs). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_releasegroup_seriesnumber**"
+#~ msgstr "**_releasegroup_seriesnumber**"
+
+#~ msgid ""
+#~ "The series number(s) associated with the release group (multi-value). "
+#~ "(*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) numéro(s) de série associé(s) au groupe de diffusion (valeur "
+#~ "multiple). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_work_series**"
+#~ msgstr "**_work_series**"
+
+#~ msgid ""
+#~ "The series title(s) associated with the work (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) titre(s) de la série associé(s) à l'œuvre (valeur multiple). "
+#~ "(*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_work_seriesid**"
+#~ msgstr "**_work_seriesid**"
+
+#~ msgid ""
+#~ "The series MBID(s) associated with the work (multi-value). (*since Picard "
+#~ "2.9*)"
+#~ msgstr ""
+#~ "Le(s) MBID(s) de la série associé(s) à l'œuvre (multi-valeurs). (*depuis "
+#~ "Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_work_seriescomment**"
+#~ msgstr "**_work_seriescomment**"
+
+#~ msgid ""
+#~ "The series disambiguation comment(s) associated with the work (multi-"
+#~ "value). (*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) commentaire(s) de désambiguïsation de la série associé(s) à l'œuvre "
+#~ "(multi-valeurs). (*depuis Picard 2.9*)"
+
+# Variable name.  Do not translate.
+#~ msgid "**_work_seriesnumber**"
+#~ msgstr "**_work_seriesnumber**"
+
+#~ msgid ""
+#~ "The series number(s) associated with the work (multi-value). (*since "
+#~ "Picard 2.9*)"
+#~ msgstr ""
+#~ "Le(s) numéro(s) de série associé(s) à l'œuvre (multi-valeurs). (*depuis "
+#~ "Picard 2.9*)"
+
+#~ msgid ""
+#~ "Variables that rely on information from the files (e.g.: _bitrate) are "
+#~ "only available for use in the file naming script."
+#~ msgstr ""
+#~ "Les variables qui reposent sur les informations des fichiers (par "
+#~ "exemple: _bitrate) ne sont disponibles que pour une utilisation dans le "
+#~ "script de dénomination de fichier."
+
+#~ msgid "**_bitrate**"
+#~ msgstr "**_bitrate**"
+
+#~ msgid ""
+#~ "Approximate bitrate in kbps.  Only available to the file naming script."
+#~ msgstr ""
+#~ "Le débit binaire approximatif en kbps. Uniquement disponible pour le "
+#~ "script de dénomination de fichier."
+
+#~ msgid "**_bits_per_sample**"
+#~ msgstr "**_bits_per_sample**"
+
+#~ msgid "Bits of data per sample.  Only available to the file naming script."
+#~ msgstr ""
+#~ "Le nombre de bits de données par échantillon. Uniquement disponible pour "
+#~ "le script de dénomination de fichier."
+
+#~ msgid "**_channels**"
+#~ msgstr "**_channels**"
+
+#~ msgid ""
+#~ "Number of audio channels in the file.  Only available to the file naming "
+#~ "script."
+#~ msgstr ""
+#~ "Le nombre de canaux audio dans le fichier. Uniquement disponible pour le "
+#~ "script de dénomination de fichier."
+
+#~ msgid ""
+#~ "The name of the directory containing the file at the point of being "
+#~ "loaded into Picard.  Only available to the file naming script. (*since "
+#~ "Picard 1.1*)"
+#~ msgstr ""
+#~ "Le nom du répertoire contenant le fichier au moment de son chargement "
+#~ "dans Picard. Uniquement disponible pour le script de dénomination de "
+#~ "fichier. (*depuis Picard 1.1*)"
+
+#~ msgid "**_extension**"
+#~ msgstr "**_extension**"
+
+#~ msgid ""
+#~ "The file's extension.  Only available to the file naming script. (*since "
+#~ "Picard 0.9*)"
+#~ msgstr ""
+#~ "L'extension du fichier. Uniquement disponible pour le script de "
+#~ "dénomination de fichier. (*depuis Picard 0.9*)"
+
+#~ msgid "**_filename**"
+#~ msgstr "**_filename**"
+
+#~ msgid ""
+#~ "The name of the file without extension.  Only available to the file "
+#~ "naming script. (*since Picard 1.1*)"
+#~ msgstr ""
+#~ "Le nom du fichier sans extension. Uniquement disponible pour le script de "
+#~ "dénomination de fichier. (*depuis Picard 1.1*)"
+
+#~ msgid "**_format**"
+#~ msgstr "**_format**"
+
+#~ msgid ""
+#~ "Media format of the file (e.g.: MPEG-1 Audio).  Only available to the "
+#~ "file naming script."
+#~ msgstr ""
+#~ "Le format multimédia du fichier (par exemple: MPEG-1 Audio). Uniquement "
+#~ "disponible pour le script de dénomination de fichier."
+
+#~ msgid "**_length**"
+#~ msgstr "**_length**"
+
+#~ msgid "The length of the track in format mins:secs."
+#~ msgstr "La longueur de la piste au format mins:secs."
+
+#~ msgid "**_sample_rate**"
+#~ msgstr "**_sample_rate**"
+
+#~ msgid ""
+#~ "Number of digitizing samples per second (Hz).  Only available to the file "
+#~ "naming script."
+#~ msgstr ""
+#~ "Le nombre d'échantillons de numérisation par seconde (Hz). Uniquement "
+#~ "disponible pour le script de dénomination de fichier."
+
+#~ msgid "Basic Variables"
+#~ msgstr "Variables de base"
+
+#~ msgid "**_releaseoriginaldate**"
+#~ msgstr "**_releaseoriginaldate**"
+
+#~ msgid ""
+#~ "The date of the earliest release in the Release Group in the format YYYY-"
+#~ "MM-DD. This is intended to provide, for example, the release date of the "
+#~ "vinyl version of what you have on CD. (*Since Picard 2.6*. Prior to "
+#~ "Picard 2.6, this information was available in the ``originaldate`` tag.)"
+#~ msgstr ""
+#~ "Date de la version la plus ancienne du groupe de versions au format AAAA-"
+#~ "MM-JJ. Ceci est destiné à fournir, par exemple, la date de sortie de la "
+#~ "version vinyle de ce que vous avez sur CD. (*Depuis Picard 2.6*. Avant "
+#~ "Picard 2.6, ces informations étaient disponibles dans la balise "
+#~ "``originaldate``.)"

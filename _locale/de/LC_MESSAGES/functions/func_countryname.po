@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
+"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_countryname/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.2\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../functions/func_countryname.rst:6
+msgid "$countryname"
+msgstr "$countryname"
+
+#: ../../functions/func_countryname.rst:8
+msgid "Usage: **$countryname(country_code\\[,translate])**"
+msgstr "Verwendung: **$countryname(ländercode\\[,übersetzen])**"
+
+#: ../../functions/func_countryname.rst:9
+msgid "Category: text"
+msgstr "Kategorie: Text"
+
+#: ../../functions/func_countryname.rst:10
+msgid "Implemented: Picard 2.7"
+msgstr "Implementiert: Picard 2.7"
+
+#: ../../functions/func_countryname.rst:12
+msgid "**Description:**"
+msgstr "**Beschreibung:**"
+
+#: ../../functions/func_countryname.rst:14
+msgid ""
+"Returns the name of the country for the specified country code.  If the "
+"country code is invalid an empty string will be returned. If ``translate`` "
+"is not blank, the output will be translated into the current locale "
+"language, otherwise it will be in English."
+msgstr ""
+"Gibt den Ländernamen für den angegebenen Ländercode zurück. Falls der "
+"Ländercode ungültig ist, wird eine leere Zeichenkette zurückgegeben. Falls "
+"``übersetzen`` nicht leer ist, wird die Ausgabe in die aktuelle "
+"Anzeigesprache übersetzt, ansonsten in Englisch ausgegeben."
+
+#: ../../functions/func_countryname.rst:17
+msgid "**Examples:**"
+msgstr "**Beispiele:**"
+
+#: ../../functions/func_countryname.rst:19
+msgid ""
+"Assuming that the user's locale has been set to Russian, the following "
+"statements will return the values indicated:"
+msgstr ""
+"Unter der Annahme, dass die Sprache der Benutzeroberfläche auf Russisch "
+"eingestellt ist, geben die folgenden Ausdrücke die angegebenen Werte zurück:"

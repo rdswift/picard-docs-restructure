@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
+"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_setmulti/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.2\n"
+
+#: ../../functions/func_setmulti.rst:6
+msgid "$setmulti"
+msgstr "$setmulti"
+
+#: ../../functions/func_setmulti.rst:8
+msgid "Usage: **$setmulti(name,value[,separator])**"
+msgstr "Verwendung: **$setmulti(name,wert[,trenner])**"
+
+#: ../../functions/func_setmulti.rst:9
+msgid "Category: assignment"
+msgstr "Kategorie: Zuordnung"
+
+#: ../../functions/func_setmulti.rst:10
+msgid "Implemented: Picard 1.0"
+msgstr "Implementiert: Picard 1.0"
+
+#: ../../functions/func_setmulti.rst:12
+msgid "**Description:**"
+msgstr "**Beschreibung:**"
+
+#: ../../functions/func_setmulti.rst:14
+msgid ""
+"Sets the variable ``name`` to ``value``, using the ``separator`` (or a "
+"semicolon followed by a space \"; \" if not passed) to coerce the ``value`` "
+"back into a proper multi-valued variable. This can be used to operate on "
+"multi-valued variables as a string, and then set them back as proper multi-"
+"valued variable."
+msgstr ""
+"Setzt die Variable ``name`` auf ``wert``, wobei das Trennzeichen ``trenner`` "
+"(oder auf ein Semikolon gefolgt von einem Leerzeichen „; “, falls nicht "
+"übergeben) um den Wert zurück in ein richtiges mehrwertiges Tag umzuwandeln. "
+"Dies kann verwendet werden, um mit mehrwertigen Tags als Zeichenkette zu "
+"arbeiten und sie dann wieder in echte mehrwertige Tags zurückzusetzen."
+
+#: ../../functions/func_setmulti.rst:17
+msgid "**Example:**"
+msgstr "**Beispiel:**"
+
+#: ../../functions/func_setmulti.rst:19
+msgid "The following statements will return the values indicated:"
+msgstr "Die folgenden Ausdrücke geben den angegebenen Wert zurück:"

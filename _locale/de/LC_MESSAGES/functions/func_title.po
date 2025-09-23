@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
+"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_title/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.2\n"
+
+#: ../../functions/func_title.rst:6
+msgid "$title"
+msgstr "$title"
+
+#: ../../functions/func_title.rst:8
+msgid "Usage: **$title(text)**"
+msgstr "Verwendung: **$title(text)**"
+
+#: ../../functions/func_title.rst:9
+msgid "Category: text"
+msgstr "Kategorie: Text"
+
+#: ../../functions/func_title.rst:10
+msgid "Implemented: Picard 2.1"
+msgstr "Implementiert: Picard 2.1"
+
+#: ../../functions/func_title.rst:12
+msgid "**Description:**"
+msgstr "**Beschreibung:**"
+
+#: ../../functions/func_title.rst:14
+msgid ""
+"Returns ``text`` with the first character in every word capitalized. Note "
+"that other characters in the words will not be modified, which allows the "
+"preservation of all upper-case acronyms such as \"BBC\".  To only have the "
+"first character of each word capitalized you could first change the text to "
+"lower-case."
+msgstr ""
+"Gibt ``text`` mit den Anfangsbuchstaben jedes Wortes in Großbuchstaben "
+"zurück. Beachte, dass andere Zeichen in den Worten nicht verändert werden. "
+"Das erlaubt die Beibehaltung von Akronymen wie etwa „BBC“. Um ausschließlich "
+"den ersten Buchstaben in jedem Wort in Großbuchstaben zu haben, kann der "
+"Text zuerst in Kleinbuchstaben umgewandelt werden."
+
+#: ../../functions/func_title.rst:17
+msgid "**Examples:**"
+msgstr "**Beispiele:**"
+
+#: ../../functions/func_title.rst:19
+msgid "The following statements will return the values indicated:"
+msgstr "Die folgenden Ausdrücke geben den angegebenen Wert zurück:"

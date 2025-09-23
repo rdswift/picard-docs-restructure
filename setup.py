@@ -22,12 +22,12 @@ from subprocess import SubprocessError
 
 import restructuredtext_lint
 
+import conf
 import tag_mapping
-from docs import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.18'
-SCRIPT_COPYRIGHT = '2021-2023'
+SCRIPT_VERS = '0.19'
+SCRIPT_COPYRIGHT = '2021-2025'
 SCRIPT_AUTHOR = 'Bob Swift'
 
 PACKAGE_NAME = 'picard-docs'
@@ -51,7 +51,7 @@ PYTHON_FILES_TO_CHECK = [
     'conf.py',
     'tag_mapping.py',
     '_extensions/*.py',
-    'gitstage.py',
+    # 'gitstage.py',
 ]
 
 #################################################################
@@ -303,13 +303,14 @@ class SPHINX_():        # pylint: disable=too-few-public-methods
     BUILD = 'sphinx-build'
     INTL = 'sphinx-intl'
     BUILD_DIR = '_build'
-    SOURCE_DIR = 'docs'
+    SOURCE_DIR = '.'
     LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs else '_locale'
     GETTEXT_DIR = os.path.join(LOCALE_DIR, 'gettext')
     BUILD_TIMEOUT = 300
     BUILD_TARGETS = {
         'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
-        'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
+        # 'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
+        'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': ''},
         'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
     }
 

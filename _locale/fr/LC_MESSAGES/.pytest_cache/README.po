@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-04 18:11-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../.pytest_cache/README.md:1
+msgid "pytest cache directory"
+msgstr ""
+
+#: ../../.pytest_cache/README.md:3
+msgid ""
+"This directory contains data from the pytest's cache plugin, which provides "
+"the --lf and --ff options, as well as the cache fixture."
+msgstr ""
+
+#: ../../.pytest_cache/README.md:6
+msgid "Do not commit this to version control."
+msgstr ""
+
+#: ../../.pytest_cache/README.md:8
+msgid "See the docs for more information."
+msgstr ""

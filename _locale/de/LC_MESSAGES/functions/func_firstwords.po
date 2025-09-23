@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2023.
+# Bob Swift <bswift@rsds.ca>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"PO-Revision-Date: 2025-08-28 21:38+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: German <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_firstwords/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
+
+#: ../../functions/func_firstwords.rst:6
+msgid "$firstwords"
+msgstr "$firstwords"
+
+#: ../../functions/func_firstwords.rst:8
+msgid "Usage: **$firstwords(text,length)**"
+msgstr "Verwendung: **$firstwords(text,länge)**"
+
+#: ../../functions/func_firstwords.rst:9
+msgid "Category: text"
+msgstr "Kategorie: Text"
+
+#: ../../functions/func_firstwords.rst:10
+msgid "Implemented: Picard 0.12"
+msgstr "Implementiert: Picard 0.12"
+
+#: ../../functions/func_firstwords.rst:12
+msgid "**Description:**"
+msgstr "**Beschreibung:**"
+
+#: ../../functions/func_firstwords.rst:14
+msgid ""
+"Truncate ``text`` to ``length``, only returning the complete words from "
+"``text`` which fit within ``length`` characters.  If ``length`` is less than "
+"0, then the value used is the number of characters in ``text`` plus "
+"``length`` (e.g.: ``$firstwords(one two three,-3)`` is the same as "
+"``$firstwords(one two three,10)``).  If ``length`` is missing or a negative "
+"number greater than the number of characters in ``text``, the function will "
+"return an empty string."
+msgstr ""
+"Kürzt ``text`` auf ``länge``. Liefert nur die ersten vollständigen Wörter "
+"aus ``text`` zurück, die in die ersten ``länge`` Anzahl Zeichen passen. Wenn "
+"``länge`` kleiner als 0 ist, dann ist der verwendete Wert die Anzahl Zeichen "
+"in ``text`` plus ``länge`` (z. B. ist ``$firstwords(eins zwei drei,-3)`` "
+"gleichwertig zu ``$firstwords(eins zwei drei,11)``). Wenn ``länge`` nicht "
+"angegeben wurde oder kleiner als die negierte Anzahl Zeichen in ``text`` "
+"ist, gibt die Funktion eine leere Zeichenkette zurück."
+
+#: ../../functions/func_firstwords.rst:17
+msgid "**Example:**"
+msgstr "**Beispiel:**"
+
+#: ../../functions/func_firstwords.rst:19
+msgid "The following statements will return the values indicated:"
+msgstr "Die folgenden Ausdrücke geben den angegebenen Wert zurück:"
