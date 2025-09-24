@@ -1,4 +1,5 @@
 #! /usr/bin/bash
+printenv
 sphinx-build -M latex . _build
 cd _build/latex
 ls -l
