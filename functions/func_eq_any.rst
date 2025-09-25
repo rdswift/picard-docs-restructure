@@ -10,7 +10,7 @@ $eq_any
 
 **Description:**
 
-Returns true if ``x`` equals ``a1`` or ``a2``, etc.  Can be used with an arbitrary number of arguments.  Note that comparisons are case-sensitive.
+Returns true if ``x`` equals ``a1`` or ``a2``, etc. Can be used with an arbitrary number of arguments. Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$or($eq(x,a1),$eq(x,a2) ...)``.
 

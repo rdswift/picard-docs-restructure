@@ -10,7 +10,7 @@ $set
 
 **Description:**
 
-Sets the variable ``name`` to ``value``.  The value of a variable is available to other script functions if it is enclosed between '%' characters (e.g.: ``%name%``). If ``name`` is another variable (e.g.: ``%indirect%``) the value of the variable will be used as ``name``.  This allows the creation of dynamically named variables.
+Sets the variable ``name`` to ``value``. The value of a variable is available to other script functions if it is enclosed between '%' characters (e.g.: ``%name%``). If ``name`` is another variable (e.g.: ``%indirect%``) the value of the variable will be used as ``name``. This allows the creation of dynamically named variables.
 
 .. note::
 

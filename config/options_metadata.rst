@@ -10,9 +10,9 @@
 
    When checked, Picard will check each of the selected locales in order to see whether an artist has an alias for that locale. If it does, Picard will use that alias instead of the artist name when tagging. For example, if you have selected locales of "English (Canadian)" and "English (US)", and there are aliases for "English (US)", "English" and "Greek", then the "English (US)" alias will be used.
 
-   Note that Picard will attempt to use the first exact match first.  For example, if you have selected locales of "English (Canadian)", "English (US)" and "Greek, and there are aliases for "English" and "Greek", then the "Greek" alias will be used.
+   Note that Picard will attempt to use the first exact match first. For example, if you have selected locales of "English (Canadian)", "English (US)" and "Greek, and there are aliases for "English" and "Greek", then the "Greek" alias will be used.
 
-   If there are no exact matches to any of the selected locales, then Picard will attempt to find a match based on the root locale.  For example, if you have selected locales of "English (Canadian)", "English (US)" and "Greek (Cyprus)", and there are aliases for "English (UK)" and "Greek", then the "English (UK)" alias will be used.
+   If there are no exact matches to any of the selected locales, then Picard will attempt to find a match based on the root locale. For example, if you have selected locales of "English (Canadian)", "English (US)" and "Greek (Cyprus)", and there are aliases for "English (UK)" and "Greek", then the "English (UK)" alias will be used.
 
    When "English" is the selected locale, the artist sort name (which is, by Style Guideline, stored in Latin script) is used as a fallback if there is no English alias.
 
@@ -25,7 +25,7 @@
 
 **Ignore artist name translation for script**
 
-   Sometimes you may not want to have the artist names translated if they appear in a certain character set script.  When checked, this option will tell Picard to not perform the artist name translation if it is written using one of the selected scripts.
+   Sometimes you may not want to have the artist names translated if they appear in a certain character set script. When checked, this option will tell Picard to not perform the artist name translation if it is written using one of the selected scripts.
 
    Each selected script includes a matching threshold value used to determine if that script should be used. When an artist name is evaluated to determine if it matches one of your selected scripts, it is first parsed to determine which scripts are represented in the name, and what weighted percentage of the name belongs to each script. Then each of your selected scripts are checked, and if the name contains characters belonging to the script and the percentage of script characters in the name meets or exceeds the match threshold specified for the script, then the artist name will not be translated.
 

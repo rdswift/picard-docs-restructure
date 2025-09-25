@@ -3,12 +3,12 @@
 Configuration
 =============
 
-Once Picard has been installed on your system, the next step is to configure it to your preferences.  The configuration consists of enabling the desired screen sections for display, selecting the desired actions, and setting the various options.
+Once Picard has been installed on your system, the next step is to configure it to your preferences. The configuration consists of enabling the desired screen sections for display, selecting the desired actions, and setting the various options.
 
 :index:`Screen Setup <configuration; screen setup>`
 ---------------------------------------------------
 
-The screen setup is found under the :menuselection:`"View"` item on the menu bar.  To enable the display of an item, simply check the box for the screen option.  The items are:
+The screen setup is found under the :menuselection:`"View"` item on the menu bar. To enable the display of an item, simply check the box for the screen option. The items are:
 
 **File Browser**
 
@@ -18,7 +18,7 @@ The screen setup is found under the :menuselection:`"View"` item on the menu bar
 
 **Cover Art**
 
-   This displays the cover art for the currently selected item (track or release) in a window to the right of the tags section of the display.  This allows you to select or replace the cover art saved with the release.
+   This displays the cover art for the currently selected item (track or release) in a window to the right of the tags section of the display. This allows you to select or replace the cover art saved with the release.
 
 **Actions**
 
@@ -37,7 +37,7 @@ The screen setup is found under the :menuselection:`"View"` item on the menu bar
 :index:`Action Options <configuration; action options>`
 -------------------------------------------------------
 
-The action options are found under the :menuselection:`"Options"` item on the menu bar.  There are three available actions that Picard can perform when saving selected music files:
+The action options are found under the :menuselection:`"Options"` item on the menu bar. There are three available actions that Picard can perform when saving selected music files:
 
 **Rename Files**
 

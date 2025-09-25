@@ -14,7 +14,7 @@
 
 **Embed only a single front image**
 
-   Embeds only a single front image into your music files.  No other images, regardless of their type, will be embedded. Many music players will only display a single embedded image, so embedding additional images may not add any functionality.
+   Embeds only a single front image into your music files. No other images, regardless of their type, will be embedded. Many music players will only display a single embedded image, so embedding additional images may not add any functionality.
 
 .. _ref-local-images:
 
@@ -50,7 +50,7 @@
 
 **Save only a single front image as separate file**
 
-   This tells Picard to only save the first "front" image to a separate file with the release.  No other "front" images or images of any other type will be saved.  If left unchecked, all "front" images will be saved as separate files, along with any other specified image types to be downloaded.
+   This tells Picard to only save the first "front" image to a separate file with the release. No other "front" images or images of any other type will be saved. If left unchecked, all "front" images will be saved as separate files, along with any other specified image types to be downloaded.
 
 **Always use the primary image type as the file name for non-front images**
 

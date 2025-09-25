@@ -16,7 +16,7 @@ In this section you can decide which types of cover art you would like to downlo
 
 **Only use images of the following size**
 
-   This identifies what size of image to download from the CAA.  The options are 250px, 500px, 1200px amd full size.  The fixed sizes are generated automatically from the full size image, provided that it is greater than or equal to the fixed size being generated.  The generated images are square and padded as required if the original image is not square.
+   This identifies what size of image to download from the CAA. The options are 250px, 500px, 1200px amd full size. The fixed sizes are generated automatically from the full size image, provided that it is greater than or equal to the fixed size being generated. The generated images are square and padded as required if the original image is not square.
 
    .. note::
 
@@ -24,7 +24,7 @@ In this section you can decide which types of cover art you would like to downlo
 
 **Download only approved images**
 
-   When checked, Picard will only download images that have been approved (i.e.: the edit to add the image has been accepted and applied).  To allow using images from pending edits, leave this option unchecked.
+   When checked, Picard will only download images that have been approved (i.e.: the edit to add the image has been accepted and applied). To allow using images from pending edits, leave this option unchecked.
 
 .. note::
 

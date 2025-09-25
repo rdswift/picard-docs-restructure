@@ -10,7 +10,7 @@ $div
 
 **Description:**
 
-Divides x by y and returns the integer value (rounded down). Can be used with an arbitrary number of arguments (i.e.: ``$div(x,y,z)`` = (x / y) / z). If an argument is empty or not an integer, the function will return an empty string.  If the second or any subsequent argument is zero, the function will return an empty string.
+Divides x by y and returns the integer value (rounded down). Can be used with an arbitrary number of arguments (i.e.: ``$div(x,y,z)`` = (x / y) / z). If an argument is empty or not an integer, the function will return an empty string. If the second or any subsequent argument is zero, the function will return an empty string.
 
 
 **Example:**

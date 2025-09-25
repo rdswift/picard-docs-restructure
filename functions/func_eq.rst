@@ -11,7 +11,7 @@ $eq
 
 **Description:**
 
-Returns true if ``x`` equals ``y``.  Note that comparisons are case-sensitive.
+Returns true if ``x`` equals ``y``. Note that comparisons are case-sensitive.
 
 .. only:: html
 

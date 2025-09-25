@@ -15,9 +15,9 @@ What Picard does is as follows:
 
 2. Picard uses this fingerprint to lookup an AcoustID from the AcoustID server. The AcoustID server will compare the fingerprint and will try to match it to an existing AcoustID. There are three possibilities:
 
-   -  It doesn't find an AcoustID. The lookup failed.
-   -  The AcoustID server finds an existing AcoustID for the submitted fingerprint, but it is not associated with any MusicBrainz recording. The lookup failed.
-   -  The AcoustID server finds an existing AcoustID for the submitted fingerprint and it is associated with a MusicBrainz recording. Picard matches the file to one of the MusicBrainz recordings linked to the AcoustID.
+   - It doesn't find an AcoustID. The lookup failed.
+   - The AcoustID server finds an existing AcoustID for the submitted fingerprint, but it is not associated with any MusicBrainz recording. The lookup failed.
+   - The AcoustID server finds an existing AcoustID for the submitted fingerprint and it is associated with a MusicBrainz recording. Picard matches the file to one of the MusicBrainz recordings linked to the AcoustID.
 
 If there was no AcoustID found you can use the :menuselection:`"Submit"` button in Picard to submit the fingerprints to the AcoustID server once you have matched the files to the proper recordings. If there is no AcoustID already existing for a fingerprint, the server will generate a new AcoustID (which can take some time). It will also link the AcoustID to the MusicBrainz recording identified by the submitted metadata. Please see the :doc:`../usage/submit_acoustid` section for a detailed step-by-step procedure.
 

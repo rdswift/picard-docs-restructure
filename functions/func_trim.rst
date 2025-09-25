@@ -10,7 +10,7 @@ $trim
 
 **Description:**
 
-Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``character`` specifies the character to trim.  If multiple characters are provided in ``character``, each character will be applied separately to the function.
+Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``character`` specifies the character to trim. If multiple characters are provided in ``character``, each character will be applied separately to the function.
 
 
 **Examples:**

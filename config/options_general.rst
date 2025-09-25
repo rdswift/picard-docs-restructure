@@ -41,15 +41,15 @@
 
 **Ignore MBIDs when loading new files**
 
-   If you disable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track.  This is useful when re-processing files that have been previously tagged with incorrect information.
+   If you disable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track. This is useful when re-processing files that have been previously tagged with incorrect information.
 
 **Check for plugin updates during start-up**
 
-   This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup.  If this is enabled and an update to an installed plugin is available, a popup message will be displayed.
+   This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a popup message will be displayed.
 
 **Check for program updates during start-up**
 
-   This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`"Help --> Check for update"`.
+   This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during startup. In any case, you can have Picard check for program updates at any time using :menuselection:`"Help --> Check for update"`.
 
 **Days between checks**
 

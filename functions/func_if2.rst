@@ -10,7 +10,7 @@ $if2
 
 **Description:**
 
-Returns the first non empty argument.  Can be used with an arbitrary number of arguments.
+Returns the first non empty argument. Can be used with an arbitrary number of arguments.
 
 .. only:: html
 

@@ -10,7 +10,7 @@ $mod
 
 **Description:**
 
-Returns the remainder of ``x`` divided by ``y``. Can be used with an arbitrary number of arguments (i.e.: ``$mod(x,y,z)`` = (x % y) % z). If an argument is empty or not an integer, the function will return an empty string.  If the second or any subsequent argument is zero, the function will return an empty string.
+Returns the remainder of ``x`` divided by ``y``. Can be used with an arbitrary number of arguments (i.e.: ``$mod(x,y,z)`` = (x % y) % z). If an argument is empty or not an integer, the function will return an empty string. If the second or any subsequent argument is zero, the function will return an empty string.
 
 
 **Example:**

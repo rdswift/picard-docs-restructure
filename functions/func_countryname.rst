@@ -11,7 +11,7 @@ $countryname
 
 **Description:**
 
-Returns the name of the country for the specified country code.  If the country code is invalid an empty string will be returned. If ``translate`` is not blank, the output will be translated into the current locale language, otherwise it will be in English.
+Returns the name of the country for the specified country code. If the country code is invalid an empty string will be returned. If ``translate`` is not blank, the output will be translated into the current locale language, otherwise it will be in English.
 
 
 **Examples:**

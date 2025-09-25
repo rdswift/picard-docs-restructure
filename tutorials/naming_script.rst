@@ -35,7 +35,7 @@ That takes care of the directory portion of the renaming. The next part is the *
 
    %albumartist% - \(%date%\) %album%/%tracknumber% - %title%
 
-You can see that this looks nearly like the pattern that we said we wanted at the start. It's not perfect yet for a few reasons. What if there are 10 or more tracks on the album and they don't sort properly in the directory listing?  Also, we get a full date instead of just the year. Finally, sometimes if you tag existing files they might not have the ``albumartist`` set, just ``artist``.
+You can see that this looks nearly like the pattern that we said we wanted at the start. It's not perfect yet for a few reasons. What if there are 10 or more tracks on the album and they don't sort properly in the directory listing? Also, we get a full date instead of just the year. Finally, sometimes if you tag existing files they might not have the ``albumartist`` set, just ``artist``.
 
 Let's fix the track number first. We can take care of that by using the :ref:`func_num` function to add a leading zero to the number shown for tracks 1 through 9:
 

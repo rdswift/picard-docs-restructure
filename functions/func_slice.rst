@@ -15,7 +15,7 @@ Returns a multi-value variable containing the elements from the ``start`` index 
 
 Indexes are zero based. Negative numbers will be counted back from the number of elements in the list. If the ``start`` or ``end`` indexes are left blank, they will default to 0 and the number of elements in the list respectively.
 
-A typical use might be to create a multi-value variable with all artists in ``%artists%`` except the first, which can be used to create a "feat." list.  This would look something like ``$setmulti(supporting_artists,$slice(%artists%,1))``.
+A typical use might be to create a multi-value variable with all artists in ``%artists%`` except the first, which can be used to create a "feat." list. This would look something like ``$setmulti(supporting_artists,$slice(%artists%,1))``.
 
 
 **Example:**

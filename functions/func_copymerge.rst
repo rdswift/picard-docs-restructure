@@ -11,7 +11,7 @@ $copymerge
 
 **Description:**
 
-Merges metadata from variable ``source`` into ``target``, removing duplicates and appending to the end, so retaining the original ordering. Like :ref:`func_copy`, this will also copy multi-valued variables without flattening them.  Following the operation, ``target`` will be a multi-value variable.
+Merges metadata from variable ``source`` into ``target``, removing duplicates and appending to the end, so retaining the original ordering. Like :ref:`func_copy`, this will also copy multi-valued variables without flattening them. Following the operation, ``target`` will be a multi-value variable.
 
 If ``keep_duplicates`` is set, then the duplicates will not be removed from the result.
 

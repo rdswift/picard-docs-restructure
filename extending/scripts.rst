@@ -8,7 +8,7 @@ There are two types of scripts used in Picard: the file naming script and taggin
 :index:`File Naming Script <pair: file naming; scripts>`
 --------------------------------------------------------
 
-Multiple file naming scripts can be defined in a user's settings, although only one is selected at a time for use.  File naming scripts can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script.
+Multiple file naming scripts can be defined in a user's settings, although only one is selected at a time for use. File naming scripts can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script.
 
 File naming scripts are managed using the :doc:`../config/options_filerenaming_editor` which can be opened from the "File Naming" section of the :menuselection:`"Options --> Options..."` menu, or directly from the :menuselection:`"Options --> Open file naming script editor..."` menu item. The current file naming script can also be selected directly from the :menuselection:`"Options --> Select file naming script"` menu.
 
@@ -54,7 +54,7 @@ Append the disambiguation comment of a release to the album title:
 Release language as language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``%_releaselanguage%`` variable specifies the language of the track listing, whereas the ``%language%`` variable is supposed to be the lyrics language.  The following script will use the ``%_releaselanguage%`` instead if ``%language%`` is empty:
+The ``%_releaselanguage%`` variable specifies the language of the track listing, whereas the ``%language%`` variable is supposed to be the lyrics language. The following script will use the ``%_releaselanguage%`` instead if ``%language%`` is empty:
 
 .. code-block:: taggerscript
 
@@ -64,7 +64,7 @@ The ``%_releaselanguage%`` variable specifies the language of the track listing,
 Use original release date
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default Picard provides a tag ``date`` which holds the release date of a specific release and ``originaldate`` which provides the earliest release date of this release.  For example you might have a 2020 reissue of an album that originally was released in 1992.  In this case ``date`` will be set to "2020" and ``originaldate`` to "1992".  If you prefer to have always the original release date as the primary date in your file's tags you could use the following script:
+By default Picard provides a tag ``date`` which holds the release date of a specific release and ``originaldate`` which provides the earliest release date of this release. For example you might have a 2020 reissue of an album that originally was released in 1992. In this case ``date`` will be set to "2020" and ``originaldate`` to "1992". If you prefer to have always the original release date as the primary date in your file's tags you could use the following script:
 
 .. code-block:: taggerscript
 
@@ -88,7 +88,7 @@ Or if you want to keep the ``date`` for the actual release date of the specific 
 Set album sort name
 ^^^^^^^^^^^^^^^^^^^
 
-The ``albumsort`` tag is not filled by Picard by default.  You can set it to a meaningful value with prefixes "The" and "A" moved to the end with the following script:
+The ``albumsort`` tag is not filled by Picard by default. You can set it to a meaningful value with prefixes "The" and "A" moved to the end with the following script:
 
 .. code-block:: taggerscript
 
@@ -100,7 +100,7 @@ This will e.g. set the sort name for the release "The Best of Muddy Waters" to "
 Set compilation for multi artist releases
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default the ``compilation`` tag will be set to 1 only for Various Artists releases.  The following script will set it for all releases with more than one artist (as it was default behavior in Picard 1.2 and earlier):
+By default the ``compilation`` tag will be set to 1 only for Various Artists releases. The following script will set it for all releases with more than one artist (as it was default behavior in Picard 1.2 and earlier):
 
 .. code-block:: taggerscript
 
@@ -120,7 +120,7 @@ This always removes featuring artists from the album artist:
 Move featuring from artist to title
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-According to MusicBrainz guidelines featuring artists are part of the artist name, e.g. "Artist A feat. Artist B".  Some users prefer to have featuring added to the album or track title instead.  The following script moves featured track artists to the track title:
+According to MusicBrainz guidelines featuring artists are part of the artist name, e.g. "Artist A feat. Artist B". Some users prefer to have featuring added to the album or track title instead. The following script moves featured track artists to the track title:
 
 .. code-block:: taggerscript
 
@@ -140,10 +140,10 @@ The same can be done for moving featured artists from the album artist to the al
 Preserve original filename
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``originalfilename`` tag is supposed to hold the filename the file originally had.  By default Picard does not set or modify this tag.  If you want to save this information the following Script can be used:
+The ``originalfilename`` tag is supposed to hold the filename the file originally had. By default Picard does not set or modify this tag. If you want to save this information the following Script can be used:
 
 .. code-block:: taggerscript
 
    $set(originalfilename,$if2(%originalfilename%,%_filename%.%_extension%))
 
-This will keep any existing ``originalfilename`` tag.  But if this tag is not yet present the tag will be set to the current filename.  As this happens before the file is being saved the original name of the file before Picard modifies it can be preserved.
+This will keep any existing ``originalfilename`` tag. But if this tag is not yet present the tag will be set to the current filename. As this happens before the file is being saved the original name of the file before Picard modifies it can be preserved.

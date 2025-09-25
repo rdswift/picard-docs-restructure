@@ -30,7 +30,7 @@ Variables explanation:
 
 * **PLUGIN_NAME** should be a short but descriptive name for the plugin.
 
-* **PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function. If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax to format the text.  If your plugin targets earlier versions you can instead use simple HTML formatting. Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists (``<ul>``, ``<ol>``).
+* **PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function. If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax to format the text. If your plugin targets earlier versions you can instead use simple HTML formatting. Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists (``<ul>``, ``<ol>``).
 
 * **PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: "1.0" or "2.12.4"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_.
 
@@ -40,7 +40,7 @@ Variables explanation:
 
 * **PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text.
 
-* **PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin.  This variable is optional and may be omitted.  If a URL is provided, it will be shown as a clickable link in the description displayed for the plugin in the Plugins option settings screen.
+* **PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin. This variable is optional and may be omitted. If a URL is provided, it will be shown as a clickable link in the description displayed for the plugin in the Plugins option settings screen.
 
 
 :index:`Metadata Processors <plugins; metadata processors>`

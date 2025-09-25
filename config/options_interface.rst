@@ -33,11 +33,11 @@
 
    .. note::
 
-      The colors for the light and dark themes can be customized in the :doc:`options_interface_colors` section.  Separate sets of color selections are maintained for the light and dark themes.  The colors for the currently displayed theme are the ones displayed for editing.
+      The colors for the light and dark themes can be customized in the :doc:`options_interface_colors` section. Separate sets of color selections are maintained for the light and dark themes. The colors for the currently displayed theme are the ones displayed for editing.
 
 **Allow selection of multiple directories**
 
-   Enabling this option will bypass the native directory selector and use Qt's file dialog.  This may be desirable since the native directory selector generally doesn't allow you to select more than one directory. This applies to the :menuselection:`"File --> Add folder"` dialog. The file browser always allows multiple directory selection.
+   Enabling this option will bypass the native directory selector and use Qt's file dialog. This may be desirable since the native directory selector generally doesn't allow you to select more than one directory. This applies to the :menuselection:`"File --> Add folder"` dialog. The file browser always allows multiple directory selection.
 
    .. warning::
 

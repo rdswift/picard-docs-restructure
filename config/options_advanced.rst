@@ -20,7 +20,7 @@
 
 **Ignore track duration difference under this number of seconds**
 
-   This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same.  The default value is 2 seconds.
+   This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same. The default value is 2 seconds.
 
 **Maximum number of entities to return per MusicBrainz query**
 

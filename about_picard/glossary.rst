@@ -3,7 +3,7 @@
 :index:`Glossary of Terms <glossary>`
 =====================================
 
-Many of the terms used in this documentation and within Picard itself have specific meaning in the MusicBrainz environment.  Specific terms are defined as follows:
+Many of the terms used in this documentation and within Picard itself have specific meaning in the MusicBrainz environment. Specific terms are defined as follows:
 
 **acoustic fingerprint**
 
@@ -13,11 +13,11 @@ Many of the terms used in this documentation and within Picard itself have speci
 
 **AcoustID**
 
-   :index:`AcoustID` is an acoustic fingerprint system built entirely on open-source technology.  See the `AcoustID website <https://acoustid.org/>`_ for additional information.
+   :index:`AcoustID` is an acoustic fingerprint system built entirely on open-source technology. See the `AcoustID website <https://acoustid.org/>`_ for additional information.
 
 **albumartist**
 
-   The musician or group of musicians performing on a release.  For example, "The Beatles" is the :index:`albumartist` for the album "`Past Masters, Volume One
+   The musician or group of musicians performing on a release. For example, "The Beatles" is the :index:`albumartist` for the album "`Past Masters, Volume One
    <https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-8663aad3592b>`_", while the albumartist for "`No Boundaries: A Benefit for the Kosovar Refugees
    <https://musicbrainz.org/release/65536c6a-9219-4c41-9829-781eab7cdb50>`_" is "Various Artists".
 
@@ -27,7 +27,7 @@ Many of the terms used in this documentation and within Picard itself have speci
 
 **artist**
 
-   The musician or group of musicians performing on a track.  For example, "Jeen" is the :index:`artist` on the track "`Be (One in a Million) <https://musicbrainz.org/track/5acda7a7-697c-4614-8467-7c48b3d946a6>`_" on the album "`Tourist <https://musicbrainz.org/release/472f4da8-c7dd-4e4a-8aae-9e7824f85afc>`_".
+   The musician or group of musicians performing on a track. For example, "Jeen" is the :index:`artist` on the track "`Be (One in a Million) <https://musicbrainz.org/track/5acda7a7-697c-4614-8467-7c48b3d946a6>`_" on the album "`Tourist <https://musicbrainz.org/release/472f4da8-c7dd-4e4a-8aae-9e7824f85afc>`_".
 
    Please see the `Artist <https://musicbrainz.org/doc/Artist>`_ page on the MusicBrainz website for additional information.
 
@@ -37,7 +37,7 @@ Many of the terms used in this documentation and within Picard itself have speci
 
 **artist credit**
 
-   An :index:`artist credit` indicates who is the main credited artist (or artists) for releases, release groups, tracks and recordings, and how they are credited. They consist of artists, with (optionally) their names as credited in the specific release, track, etc., and join phrases between them.  For example, on the release "`Love Sponge <https://musicbrainz.org/release/6ca797fd-8f3a-4326-bdc7-f805cb2de088>`_" the artist is "`Walk off the Earth <https://musicbrainz.org/artist/e2a5eaeb-7de7-4ffe-a519-e18e427a5060>`_" but is credited as "Gianni and Sarah".
+   An :index:`artist credit` indicates who is the main credited artist (or artists) for releases, release groups, tracks and recordings, and how they are credited. They consist of artists, with (optionally) their names as credited in the specific release, track, etc., and join phrases between them. For example, on the release "`Love Sponge <https://musicbrainz.org/release/6ca797fd-8f3a-4326-bdc7-f805cb2de088>`_" the artist is "`Walk off the Earth <https://musicbrainz.org/artist/e2a5eaeb-7de7-4ffe-a519-e18e427a5060>`_" but is credited as "Gianni and Sarah".
 
    Please see the `Artist Credits <https://musicbrainz.org/doc/Artist_Credits>`_ page on the MusicBrainz website for additional information.
 
@@ -49,15 +49,15 @@ Many of the terms used in this documentation and within Picard itself have speci
 
 **disc id**
 
-   A :index:`Disc ID <disc id>` is the code number which MusicBrainz uses to link a physical CD to a release listing. It is a string of letters, like ``XzPS7vW.HPHsYemQh0HBUGr8vuU-``.  Disc IDs for a release can be seen on the disc IDs tab for the release on MusicBrainz. Clicking on these will give a detailed display of the disc ID, including the list of attached releases.
+   A :index:`Disc ID <disc id>` is the code number which MusicBrainz uses to link a physical CD to a release listing. It is a string of letters, like ``XzPS7vW.HPHsYemQh0HBUGr8vuU-``. Disc IDs for a release can be seen on the disc IDs tab for the release on MusicBrainz. Clicking on these will give a detailed display of the disc ID, including the list of attached releases.
 
-   A release may have any number of disc IDs, and a disc ID may be linked to multiple releases. This is because `disc ID calculation <https://musicbrainz.org/doc/Disc_ID_Calculation>`_ involves a hash of the frame offsets of the CD tracks.  Different pressing of a CD often have slightly different frame offsets, and hence different disc IDs.
+   A release may have any number of disc IDs, and a disc ID may be linked to multiple releases. This is because `disc ID calculation <https://musicbrainz.org/doc/Disc_ID_Calculation>`_ involves a hash of the frame offsets of the CD tracks. Different pressing of a CD often have slightly different frame offsets, and hence different disc IDs.
 
-   Conversely, two different CDs may happen to have exactly the same set of frame offsets and hence the same disc ID.  For example ``lwHl8fGzJyLXQR33ug60E8jhf4k-`` applies to a wide `variety of releases <https://musicbrainz.org/cdtoc/lwHl8fGzJyLXQR33ug60E8jhf4k->`_ by a variety of artists.
+   Conversely, two different CDs may happen to have exactly the same set of frame offsets and hence the same disc ID. For example ``lwHl8fGzJyLXQR33ug60E8jhf4k-`` applies to a wide `variety of releases <https://musicbrainz.org/cdtoc/lwHl8fGzJyLXQR33ug60E8jhf4k->`_ by a variety of artists.
 
 **mbid**
 
-   :index:`The <see: mbid; MusicBrainz Identifier>` :index:`MusicBrainz Identifier`, which is a unique code used to identify each element in the MusicBrainz database.  These are 128-bit Universally Unique Identifiers (UUID) represented as 32 hexadecimal digits, displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters.
+   :index:`The <see: mbid; MusicBrainz Identifier>` :index:`MusicBrainz Identifier`, which is a unique code used to identify each element in the MusicBrainz database. These are 128-bit Universally Unique Identifiers (UUID) represented as 32 hexadecimal digits, displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters.
 
    Please see the `UUID page on Wikipedia <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for more information.
 
@@ -85,7 +85,7 @@ Many of the terms used in this documentation and within Picard itself have speci
 
 **release group**
 
-   Groups several different releases into a single logical entity. Every release belongs to one, and only one :index:`release group`. Both release groups and releases are "albums" in a general sense, but with an important difference: a release is something you can buy as media such as a CD or a vinyl record, while a release group embraces the overall concept of an album — it doesn't matter how many CDs or editions / versions it had.  For example the `"Sea of No Cares"
+   Groups several different releases into a single logical entity. Every release belongs to one, and only one :index:`release group`. Both release groups and releases are "albums" in a general sense, but with an important difference: a release is something you can buy as media such as a CD or a vinyl record, while a release group embraces the overall concept of an album — it doesn't matter how many CDs or editions / versions it had. For example the `"Sea of No Cares"
    <https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>`_ release group contains multiple releases.
 
    Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ page on the MusicBrainz website for additional information.
@@ -98,7 +98,7 @@ Many of the terms used in this documentation and within Picard itself have speci
 
 **track**
 
-   A :index:`track` is the way a recording is represented on a particular release (or, more precisely, on a particular medium). Every track has a title and is credited to one or more artists.  For example, track 7 of the album "`Back to Boston <https://musicbrainz.org/release/9780e88d-a9e2-4e99-87c4-e54b65e7e49b>`_" by Jason Anderson is "`Driving Home <https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94>`_".
+   A :index:`track` is the way a recording is represented on a particular release (or, more precisely, on a particular medium). Every track has a title and is credited to one or more artists. For example, track 7 of the album "`Back to Boston <https://musicbrainz.org/release/9780e88d-a9e2-4e99-87c4-e54b65e7e49b>`_" by Jason Anderson is "`Driving Home <https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94>`_".
 
    Please see the `Track <https://musicbrainz.org/doc/Track>`_ page on the MusicBrainz website for additional information.
 

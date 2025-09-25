@@ -50,14 +50,14 @@ Picard Cannot...
 
 **File Formats**
 
-Picard currently supports most music file formats, with Matroska (.mka) being one notable exception. Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is not supported by all playback software.  In addition, Picard does not support writing custom tags for all formats.
+Picard currently supports most music file formats, with Matroska (.mka) being one notable exception. Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is not supported by all playback software. In addition, Picard does not support writing custom tags for all formats.
 
 The :doc:`Picard Tag Mappings <../appendices/tag_mapping>` section provides more information regarding the mapping between Picard internal tag names and various tagging formats.
 
 **Request Rate Limiting**
 
-Picard's metadata retrieval is limited to the standard **one request per second** :index:`rate limiting` for the MusicBrainz API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by extensions that perform additional information requests from the database.
+Picard's metadata retrieval is limited to the standard **one request per second** :index:`rate limiting` for the MusicBrainz API. This becomes quite noticeable when trying to process a large list of files, and is exacerbated by extensions that perform additional information requests from the database.
 
 **Network File Processing**
 
-Sometimes Picard needs to rewrite the entire music file in order to add or update the tags.  This can take a few seconds, and the delay becomes even longer if the file is accessed across a network (e.g.: file is read from or written to a NAS device).  The recommended "best practice" is to process all files on a local drive and then move them to the desired remote directory once processing is complete.
+Sometimes Picard needs to rewrite the entire music file in order to add or update the tags. This can take a few seconds, and the delay becomes even longer if the file is accessed across a network (e.g.: file is read from or written to a NAS device). The recommended "best practice" is to process all files on a local drive and then move them to the desired remote directory once processing is complete.

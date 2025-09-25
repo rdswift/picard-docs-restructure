@@ -11,7 +11,7 @@ $title
 
 **Description:**
 
-Returns ``text`` with the first character in every word capitalized. Note that other characters in the words will not be modified, which allows the preservation of all upper-case acronyms such as "BBC".  To only have the first character of each word capitalized you could first change the text to lower-case.
+Returns ``text`` with the first character in every word capitalized. Note that other characters in the words will not be modified, which allows the preservation of all upper-case acronyms such as "BBC". To only have the first character of each word capitalized you could first change the text to lower-case.
 
 
 **Examples:**

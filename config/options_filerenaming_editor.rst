@@ -26,7 +26,7 @@ The editor screen has the following sections:
 
    The script editor automatically highlights the elements of the script, including :doc:`function names <../functions/list_by_type>` and :doc:`tag and variable names <../variables/variables>`. Hovering your mouse pointer over one of the highlighted entries will display help information about the entry if available.
 
-   Unicode characters can be entered into the script using the format ``\uXXXX`` where "XXXX" is the hexadecimal value of the unicode character.  It is not recommended to include unicode characters in the directory or filename.
+   Unicode characters can be entered into the script using the format ``\uXXXX`` where "XXXX" is the hexadecimal value of the unicode character. It is not recommended to include unicode characters in the directory or filename.
 
    The use of a '/' in the formatting string separates the output directory from the file name. The formatting string is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location, and everything after the last '/' becomes the file's name.
 
@@ -40,7 +40,7 @@ The editor screen has the following sections:
 
 **Files will be named like this**
 
-   Below the file naming script is a section showing examples of the output of the script in two columns: Before and After.  If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples.  If you have not selected any files, then some default examples will be provided.
+   Below the file naming script is a section showing examples of the output of the script in two columns: Before and After. If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples. If you have not selected any files, then some default examples will be provided.
 
 **Menu bar**
 
@@ -56,7 +56,7 @@ The editor screen has the following sections:
 
    * Import a new script from a file, either as a plain-text script or a Picard Naming Script Package.
    * Export the current script to a file, either as a plain-text script or a Picard Naming Script Package.
-   * Add a new (default) script.  This can be a blank script or one of the basic system preset scripts provided by Picard.
+   * Add a new (default) script. This can be a blank script or one of the basic system preset scripts provided by Picard.
    * Copy the current script as a new script.
    * Delete the current script.
    * Reset all scripts, also available via the :guilabel:`Reset` button.
@@ -75,7 +75,7 @@ The editor screen has the following sections:
 
    There is also an option to view/edit the metadata details for the current script. These details include such things as title,
    author, version, license, description, and date and time of the last update. It is recommended that the description include
-   things such as any required plugins, settings, or tagging scripts.  This can also be triggered by double clicking the script
+   things such as any required plugins, settings, or tagging scripts. This can also be triggered by double clicking the script
    title text box.
 
    This information is saved in the Picard Naming Script Package file, and is included when a script package file is imported.

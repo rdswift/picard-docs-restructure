@@ -11,7 +11,7 @@ $firstwords
 
 **Description:**
 
-Truncate ``text`` to ``length``, only returning the complete words from ``text`` which fit within ``length`` characters.  If ``length`` is less than 0, then the value used is the number of characters in ``text`` plus ``length`` (e.g.: ``$firstwords(one two three,-3)`` is the same as ``$firstwords(one two three,10)``).  If ``length`` is missing or a negative number greater than the number of characters in ``text``, the function will return an empty string.
+Truncate ``text`` to ``length``, only returning the complete words from ``text`` which fit within ``length`` characters. If ``length`` is less than 0, then the value used is the number of characters in ``text`` plus ``length`` (e.g.: ``$firstwords(one two three,-3)`` is the same as ``$firstwords(one two three,10)``). If ``length`` is missing or a negative number greater than the number of characters in ``text``, the function will return an empty string.
 
 
 **Example:**

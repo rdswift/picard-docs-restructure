@@ -10,7 +10,7 @@ $eq_all
 
 **Description:**
 
-Returns true if ``x`` equals ``a1`` and ``a2``, etc.  Can be used with an arbitrary number of arguments.  Note that comparisons are case-sensitive.
+Returns true if ``x`` equals ``a1`` and ``a2``, etc. Can be used with an arbitrary number of arguments. Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$and($eq(x,a1),$eq(x,a2) ...)``.
 

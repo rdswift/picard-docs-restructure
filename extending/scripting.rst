@@ -20,7 +20,7 @@ The syntax is derived from `Foobar2000's titleformat <https://wiki.hydrogenaud.i
 
 .. note::
 
-   When entering input strings into Picard scripts you have to escape a backslash "\\", dollar sign "$", comma "," and the left and right parentheses "(" and ")" in order to force Picard to not interpret them as part of the script command.  This is done by inserting a backslash before the character to be escaped.  For example, to set a tag value to ``($1,000,000)`` it would have to be entered as ``$set(test_tag,\(\$1\,000\,000\))``.
+   When entering input strings into Picard scripts you have to escape a backslash "\\", dollar sign "$", comma "," and the left and right parentheses "(" and ")" in order to force Picard to not interpret them as part of the script command. This is done by inserting a backslash before the character to be escaped. For example, to set a tag value to ``($1,000,000)`` it would have to be entered as ``$set(test_tag,\(\$1\,000\,000\))``.
 
 .. note::
 

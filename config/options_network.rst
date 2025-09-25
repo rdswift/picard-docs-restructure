@@ -8,18 +8,18 @@
 
 **Web Proxy**
 
-   If you need a proxy to make an outside network connection you may specify one here.  You can choose between HTTP and SOCKS proxy.  The required settings are **Server Address** and **Port**. If the proxy requires authentication also enter **Username** and **Password**.
+   If you need a proxy to make an outside network connection you may specify one here. You can choose between HTTP and SOCKS proxy. The required settings are **Server Address** and **Port**. If the proxy requires authentication also enter **Username** and **Password**.
 
 **Request timeout in seconds**
 
-   By default Picard will abort running network requests after 30 seconds of inactivity.  If needed you can change the timeout period here.
+   By default Picard will abort running network requests after 30 seconds of inactivity. If needed you can change the timeout period here.
 
 .. |lookup_tagger| image:: images/mblookup-tagger.png
    :height: 1em
 
 **Browser Integration**
 
-   The browser integration allows you to load releases and recordings into Picard directly from the MusicBrainz website. Once you have opened musicbrainz.org in your browser from Picard, the website will show the green tagger button |lookup_tagger| next to releases and recordings.  Clicking on this button will load the corresponding release or recording into Picard.
+   The browser integration allows you to load releases and recordings into Picard directly from the MusicBrainz website. Once you have opened musicbrainz.org in your browser from Picard, the website will show the green tagger button |lookup_tagger| next to releases and recordings. Clicking on this button will load the corresponding release or recording into Picard.
 
 **Default listening port**
 

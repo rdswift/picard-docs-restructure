@@ -11,7 +11,7 @@ $in
 
 **Description:**
 
-Returns true, if ``x`` contains ``y``.  Note that comparisons are case-sensitive.
+Returns true, if ``x`` contains ``y``. Note that comparisons are case-sensitive.
 
 .. only:: html
 

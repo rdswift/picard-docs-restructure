@@ -11,7 +11,7 @@ $startswith
 
 **Description:**
 
-Returns true if ``text`` starts with ``prefix``.  Note that the comparison is case-sensitive.
+Returns true if ``text`` starts with ``prefix``. Note that the comparison is case-sensitive.
 
 .. only:: html
 

@@ -30,7 +30,7 @@ Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes 
 My tags are :index:`truncated <tags; truncated, WMP; tags>` to 30 characters in Windows Media Player!
 -----------------------------------------------------------------------------------------------------
 
-Picard's default settings write ID3v2.4 and ID3v1 tags to files.  Older WMP versions can't read ID3v2.4, so it falls back to ID3v1 which has a limitation of 30 characters per title.  To resolve this issue, configure Picard to write ID3v2.3 tags instead.
+Picard's default settings write ID3v2.4 and ID3v1 tags to files. Older WMP versions can't read ID3v2.4, so it falls back to ID3v1 which has a limitation of 30 characters per title. To resolve this issue, configure Picard to write ID3v2.3 tags instead.
 
 Since Windows 10 Creators Update (version 1703) ID3v2.4 is supported and the above issue should no longer apply.
 

@@ -8,7 +8,7 @@
 
 **ID3v2 version**
 
-   ID3v2.4 is the latest version and the default since Picard 2.9. Most modern software and devices can read ID3v2.4 tags.  If you encounter issues with tag reading with your music player try using v2.3 instead.
+   ID3v2.4 is the latest version and the default since Picard 2.9. Most modern software and devices can read ID3v2.4 tags. If you encounter issues with tag reading with your music player try using v2.3 instead.
 
    Other than native support for multi-valued tags in v2.4, the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section will show you what you lose when choosing v2.3 instead of v2.4.
 

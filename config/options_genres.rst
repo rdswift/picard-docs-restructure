@@ -40,15 +40,15 @@
 
    * **Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: ``#comment``, ``!comment`` or ``comment``)
 
-   * **Strict filtering**: Exclude exact word by prefixing it with '-' (e.g.: ``-word``).  Include exact word, even if another rule would exclude it, by prefixing it with '+' (e.g.: ``+word``).
+   * **Strict filtering**: Exclude exact word by prefixing it with '-' (e.g.: ``-word``). Include exact word, even if another rule would exclude it, by prefixing it with '+' (e.g.: ``+word``).
 
-   * **Wildcard filtering**: Exclude all genres ending with "word" (e.g.: ``-*word``).  Include all genres starting with "word" (e.g.: ``+word*``).  Exclude all genres starting with 'w' and ending with "rd" (e.g.: ``-w*rd``).
+   * **Wildcard filtering**: Exclude all genres ending with "word" (e.g.: ``-*word``). Include all genres starting with "word" (e.g.: ``+word*``). Exclude all genres starting with 'w' and ending with "rd" (e.g.: ``-w*rd``).
 
    * **Regular expressions filtering (Python "re" syntax)**: Exclude genres starting with 'w' followed by any character, then 'r' followed by at least one 'd' (e.g.: ``-/^w.rd+/``).
 
 **Playground for genres or folksonomy tags filters:**
 
-   This area allows you to enter genre tags, one per line, to test your filters.  If a tag is marked in red, it will be filtered out.  A tag marked green will be allowed.
+   This area allows you to enter genre tags, one per line, to test your filters. If a tag is marked in red, it will be filtered out. A tag marked green will be allowed.
 
    .. note::
 

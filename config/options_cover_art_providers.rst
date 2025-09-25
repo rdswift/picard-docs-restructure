@@ -24,7 +24,7 @@ Picard can download Cover Art from a number of sources, and you can choose which
 
    .. note::
 
-      This relationship type is now deprecated in MusicBrainz, and is no longer used.  See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more information.
+      This relationship type is now deprecated in MusicBrainz, and is no longer used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more information.
 
 **Local Files**
 

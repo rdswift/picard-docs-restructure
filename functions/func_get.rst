@@ -10,7 +10,7 @@ $get
 
 **Description:**
 
-Returns the variable ``name`` (equivalent to ``%name%``) or an empty string if ``name`` has not been set.  If ``name`` is another variable (e.g. ``%indirect%``) the value of the variable will be used as ``name``.  This allows the retrieval of dynamically named variables.
+Returns the variable ``name`` (equivalent to ``%name%``) or an empty string if ``name`` has not been set. If ``name`` is another variable (e.g. ``%indirect%``) the value of the variable will be used as ``name``. This allows the retrieval of dynamically named variables.
 
 .. note::
 

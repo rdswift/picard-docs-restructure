@@ -96,7 +96,7 @@ These functions are used to manage text (e.g.: extract, replace or format) in ta
 :index:`Multi-Value Functions <scripting functions; multi-value>`
 -----------------------------------------------------------------
 
-These functions are used to manage multi-value tags or variables.  The multi-value scripting functions are:
+These functions are used to manage multi-value tags or variables. The multi-value scripting functions are:
 
 .. only:: not epub
 
@@ -133,7 +133,7 @@ These functions are used to manage multi-value tags or variables.  The multi-val
 :index:`Mathematical Functions <scripting functions; mathematical>`
 -------------------------------------------------------------------
 
-These functions are used to perform arithmetic operations on tags or variables.  The mathematical scripting functions are:
+These functions are used to perform arithmetic operations on tags or variables. The mathematical scripting functions are:
 
 .. only:: not epub
 
@@ -270,7 +270,7 @@ These functions provide additional system or data information. The information s
 :index:`Loop Functions <scripting functions; loop>`
 ---------------------------------------------------
 
-These functions provide the ability to repeat actions based on the contents of a multi-value variable or the result of a conditional test.  The loop scripting functions are:
+These functions provide the ability to repeat actions based on the contents of a multi-value variable or the result of a conditional test. The loop scripting functions are:
 
 .. only:: not epub
 

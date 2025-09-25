@@ -10,7 +10,7 @@ $ne_any
 
 **Description:**
 
-Returns true if ``x`` does not equal ``a1`` or ``a2``, etc. Can be used with an arbitrary number of arguments.  Note that comparisons are case-sensitive.
+Returns true if ``x`` does not equal ``a1`` or ``a2``, etc. Can be used with an arbitrary number of arguments. Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$or($ne(x,a1),$ne(x,a2) ...)``.
 

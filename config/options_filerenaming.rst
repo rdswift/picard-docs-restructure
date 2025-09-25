@@ -22,7 +22,7 @@ These options determine how Picard handles files when they are saved with update
 
 **Destination directory**
 
-   This specifies the destination parent directory to which files are moved when they are saved, if the "Move files when saving" option is selected.  If you use the directory "." the files will be moved relative to their current location. If they are already in some sort of directory structure, this will probably not do what you want!
+   This specifies the destination parent directory to which files are moved when they are saved, if the "Move files when saving" option is selected. If you use the directory "." the files will be moved relative to their current location. If they are already in some sort of directory structure, this will probably not do what you want!
 
 **Move additional files**
 
@@ -43,7 +43,7 @@ These options determine how Picard handles files when they are saved with update
 
    .. note::
 
-      This option can also be used to move subdirectories to the new release directory.  This is done by specifying the name of the subdirectory in the list of files to be moved. For example, if your album folders have a subfolder called "Artwork", "covers" or "scans" that contains additional image files that you also want to move to the new release directory, simply add "artwork", "covers" and "scans" to the list of additional file matching patterns.
+      This option can also be used to move subdirectories to the new release directory. This is done by specifying the name of the subdirectory in the list of files to be moved. For example, if your album folders have a subfolder called "Artwork", "covers" or "scans" that contains additional image files that you also want to move to the new release directory, simply add "artwork", "covers" and "scans" to the list of additional file matching patterns.
 
 **Delete empty directories**
 
@@ -55,11 +55,11 @@ These options determine how Picard handles files when they are saved with update
 
 **Selected file naming script**
 
-   As of Picard version 2.7, multiple file naming scripts are supported.  This option allows the user to select the file naming script to use from the list of scripts available. Scripts can be either system preset scripts or user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>` screen, which is displayed when the :guilabel:`Edit script...` button is selected.
+   As of Picard version 2.7, multiple file naming scripts are supported. This option allows the user to select the file naming script to use from the list of scripts available. Scripts can be either system preset scripts or user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>` screen, which is displayed when the :guilabel:`Edit script...` button is selected.
 
 **Files will be named like this**
 
-   Below the file naming script selector is a section showing examples of the output of the script in two columns: Before and After.  If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples.  If you have not selected any files, then some default examples will be provided.
+   Below the file naming script selector is a section showing examples of the output of the script in two columns: Before and After. If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples. If you have not selected any files, then some default examples will be provided.
 
    You can change the randomly selected example files from your selected files list by clicking on the :guilabel:`Reload examples` button.
 

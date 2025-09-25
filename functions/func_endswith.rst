@@ -11,7 +11,7 @@ $endswith
 
 **Description:**
 
-Returns true if ``text`` ends with ``suffix``.  Note that the comparison is case-sensitive.
+Returns true if ``text`` ends with ``suffix``. Note that the comparison is case-sensitive.
 
 .. only:: html
 

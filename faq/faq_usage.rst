@@ -6,7 +6,7 @@ Using Picard
 How do I tag files with Picard?
 -------------------------------
 
-There is a separate section that explains the tagging process.  Please see :doc:`../usage/using` for details.
+There is a separate section that explains the tagging process. Please see :doc:`../usage/using` for details.
 
 
 The green "Tagger" :index:`icon <tagger icon, icon; tagger>` disappeared from MusicBrainz.org, how do I get it back?
@@ -44,17 +44,17 @@ On macOS 10.12 and 10.13 there have been reports that sometimes the MusicBrainz 
 
    "MusicBrainz Picard.app" is damaged and can't be opened. You should move it to the Trash.
 
-This mostly seems to happen after moving the file to the Applications folder and seems to be caused by Gatekeeper mistakenly marking the app as damaged.  To solve the issue open a terminal and run::
+This mostly seems to happen after moving the file to the Applications folder and seems to be caused by Gatekeeper mistakenly marking the app as damaged. To solve the issue open a terminal and run::
 
     xattr -c "/Applications/MusicBrainz Picard.app"
 
-This will clear the app being marked as damaged.  If you have placed the app in a different location than :file:`/Applications` adjust the path in the command above accordingly.
+This will clear the app being marked as damaged. If you have placed the app in a different location than :file:`/Applications` adjust the path in the command above accordingly.
 
 
 Picard is installed on Linux as a Snap, how can I access removable media?
 -------------------------------------------------------------------------
 
-Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to removable media by running the following command on a terminal:
+Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and folders on your system. By default Picard has access to your home folder. You can additionally give it access to removable media by running the following command on a terminal:
 
 .. code-block:: bash
 
@@ -64,9 +64,9 @@ Picard installed as a Snap is running inside a sandbox and thus it does not have
 On Windows, how do I solve errors on saving to cloud storage drives mounted with rclone?
 ----------------------------------------------------------------------------------------
 
-rclone can provide access to cloud storage by mounting a virtual filesystem as a drive.  This virtual filesystem has some differences to a real filesystem which can cause compatibility issues.
+rclone can provide access to cloud storage by mounting a virtual filesystem as a drive. This virtual filesystem has some differences to a real filesystem which can cause compatibility issues.
 
-For full compatibility with Picard you need to mount the cloud storage with rclone as a network drive with the ``--network-mode`` parameter and set the cache mode to ``--vfs-cache-mode=writes`` or ``--vfs-cache-mode=full``.  Your rclone command to mount a remote as drive X: might look like this:
+For full compatibility with Picard you need to mount the cloud storage with rclone as a network drive with the ``--network-mode`` parameter and set the cache mode to ``--vfs-cache-mode=writes`` or ``--vfs-cache-mode=full``. Your rclone command to mount a remote as drive X: might look like this:
 
 .. code-block:: batch
 

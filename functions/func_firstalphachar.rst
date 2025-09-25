@@ -11,7 +11,7 @@ $firstalphachar
 
 **Description:**
 
-Returns the first character of ``text`` in upper case. If ``text`` does not begin with an alphabetic character, then ``nonalpha`` is returned instead.  If ``nonalpha`` is not specified, the default value "#" will be used.
+Returns the first character of ``text`` in upper case. If ``text`` does not begin with an alphabetic character, then ``nonalpha`` is returned instead. If ``nonalpha`` is not specified, the default value "#" will be used.
 
 
 **Example:**

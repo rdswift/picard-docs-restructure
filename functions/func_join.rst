@@ -11,7 +11,7 @@ $join
 
 **Description:**
 
-Joins all elements in the multi-value variable ``name``, placing ``text`` between each element, and returns the result as a string.   A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable.
+Joins all elements in the multi-value variable ``name``, placing ``text`` between each element, and returns the result as a string. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable.
 
 
 **Example:**

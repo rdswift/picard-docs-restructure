@@ -10,7 +10,7 @@ $add
 
 **Description:**
 
-Adds ``y`` to ``x``.  Can be used with an arbitrary number of arguments (i.e.: ``$add(x,y,z)`` = (x + y) + z). Returns an empty string if an argument is missing or not an integer.
+Adds ``y`` to ``x``. Can be used with an arbitrary number of arguments (i.e.: ``$add(x,y,z)`` = (x + y) + z). Returns an empty string if an argument is missing or not an integer.
 
 **Example:**
 

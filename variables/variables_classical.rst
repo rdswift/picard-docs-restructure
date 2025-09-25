@@ -21,8 +21,7 @@ With the help of plugins like "Classical Extras" or "Work & Movement" you can ma
 
 **showmovement**
 
-   Show Work & Movement: If this tag is set to "1" players supporting this tag, such as iTunes and MusicBee, will display the work, movement number and movement name instead of the track title. For example, the track will be displayed as
-   "Symphony no. 5 in C minor, op. 67: II. Andante con moto" regardless of the value of the title tag.
+   Show Work & Movement: If this tag is set to "1" players supporting this tag, such as iTunes and MusicBee, will display the work, movement number and movement name instead of the track title. For example, the track will be displayed as "Symphony no. 5 in C minor, op. 67: II. Andante con moto" regardless of the value of the title tag.
 
 **work**
 
