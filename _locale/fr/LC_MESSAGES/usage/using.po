@@ -34,7 +34,6 @@ msgid "**Retrieving album information from MusicBrainz**"
 msgstr "**Récupération des informations sur l'album depuis MusicBrainz**"
 
 #: ../../usage/using.rst:12
-#, fuzzy
 msgid ""
 "This stage identifies the album on MusicBrainz that will provide the "
 "information used for tagging the files, and retrieves the metadata from the "
@@ -79,7 +78,6 @@ msgid "**Saving the updated audio files**"
 msgstr "**Enregistrement des fichiers audio mis à jour**"
 
 #: ../../usage/using.rst:27
-#, fuzzy
 msgid ""
 "This stage is where Picard updates the matched files with the metadata "
 "retrieved in the first stage, based on the settings configured in the "

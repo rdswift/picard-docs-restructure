@@ -30,7 +30,6 @@ msgstr ""
 "digitale acoustique; soumission, empreinte digitale; soumission>`"
 
 #: ../../usage/submit_acoustid.rst:6
-#, fuzzy
 msgid ""
 "Acoustic fingerprints are very useful for identifying tracks and recordings, "
 "allowing them to be looked up in the MusicBrainz database. Thus, it is very "
@@ -41,12 +40,11 @@ msgstr ""
 "Les empreintes acoustiques sont très utiles pour identifier les pistes et "
 "les enregistrements, ce qui permet de les rechercher dans la base de données "
 "MusicBrainz. Il est donc très utile de les ajouter lorsque vous étiquetez "
-"des fichiers.  Notez qu'une empreinte acoustique **n'est pas** un AcoustID. "
-"Veuillez consulter le tutoriel :doc:`/tutorials/acoustid` pour de plus "
+"des fichiers. Notez qu'une empreinte acoustique **n'est pas** un AcoustID. "
+"Veuillez consulter le tutoriel :doc:`../tutorials/acoustid` pour de plus "
 "amples informations."
 
 #: ../../usage/submit_acoustid.rst:10
-#, fuzzy
 msgid ""
 "When using Picard to submit acoustic fingerprints, it is recommended to "
 "enable the Fingerprint column in the table view in the right-hand pane. This "
@@ -64,12 +62,11 @@ msgstr ""
 "soumis)."
 
 #: ../../usage/submit_acoustid.rst:16
-#, fuzzy
 msgid ""
 "There is also a :doc:`Video Tutorial <../tutorials/v_submit_acoustid>` "
 "available which demonstrates how to submit AcoustIDs."
 msgstr ""
-"Il existe également un :doc:`Tutoriel vidéo </tutorials/v_submit_acoustid>` "
+"Il existe également un :doc:`Tutoriel vidéo <../tutorials/v_submit_acoustid>` "
 "qui montre comment soumettre des AcoustID."
 
 #: ../../usage/submit_acoustid.rst:18
@@ -103,7 +100,6 @@ msgid "Submitting when using Scan to identify the release"
 msgstr "Envoi lors de l'utilisation de Scan pour identifier la version"
 
 #: ../../usage/submit_acoustid.rst:25
-#, fuzzy
 msgid ""
 "Load files into the clustering pane. Select the files and click the \"Scan\" "
 "button, or select :menuselection:`\"Tools --> Scan\"`."
@@ -113,7 +109,6 @@ msgstr ""
 "--> Scan\"`."
 
 #: ../../usage/submit_acoustid.rst:34
-#, fuzzy
 msgid ""
 "If the files are matched to a track and move to the right-hand pane, they "
 "already exist in the AcoustID database and do not need to be re-submitted. "
@@ -124,7 +119,6 @@ msgstr ""
 "besoin d'être soumis à nouveau. Le bouton \"Soumettre\" restera désactivé."
 
 #: ../../usage/submit_acoustid.rst:41
-#, fuzzy
 msgid ""
 "If the files are not matched, or you manually move them to match to a "
 "different track they could be submitted. The AcoustID icon for the tracks "

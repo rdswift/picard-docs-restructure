@@ -38,7 +38,6 @@ msgid "**Attaching disc ids to releases on MusicBrainz**"
 msgstr "**Joindre les identifiants de disque aux versions sur MusicBrainz**"
 
 #: ../../usage/other.rst:12
-#, fuzzy
 msgid ""
 "This will read the id of a cd and attach it to a specified release in the "
 "MusicBrainz database. This will allow the release to be included in the list "
@@ -76,14 +75,13 @@ msgid "**Submitting cluster as a release**"
 msgstr "**Soumettre le cluster comme une version**"
 
 #: ../../usage/other.rst:24
-#, fuzzy
 msgid ""
 "You can submit a cluster as a release to the MusicBrainz database. This "
 "functionality has long been available through a plugin, but has been "
 "included within Picard itself as of v2.7."
 msgstr ""
 "Vous pouvez soumettre un cluster en tant que release à la base de données "
-"MusicBrainz.  Cette fonctionnalité a longtemps été disponible via un plugin, "
+"MusicBrainz. Cette fonctionnalité a longtemps été disponible via un plugin, "
 "mais a été incluse dans Picard lui-même à partir de la v2.7."
 
 #: ../../usage/other.rst:30

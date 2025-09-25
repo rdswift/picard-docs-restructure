@@ -312,9 +312,8 @@ msgid "``artists``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
-#, fuzzy
 msgid "``TXXX:Artists``"
-msgstr "Artistes"
+msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``ARTISTS``"
@@ -1814,9 +1813,8 @@ msgid "``ICNT``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1043
-#, fuzzy
 msgid "`Release Date <https://musicbrainz.org/doc/Release_Date>`_"
-msgstr "`Estat de publicació <https://musicbrainz.org/doc/Release_Status>`_"
+msgstr "`Estat de publicació <https://musicbrainz.org/doc/Release_Date>`_"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``date``"

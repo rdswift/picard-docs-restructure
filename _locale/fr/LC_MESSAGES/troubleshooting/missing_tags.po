@@ -42,7 +42,6 @@ msgstr ""
 "configuration**"
 
 #: ../../troubleshooting/missing_tags.rst:10
-#, fuzzy
 msgid ""
 "Confirm that the :menuselection:`\"Options --> Save tags\"` setting has been "
 "enabled. See :ref:`action_options` for more information."
@@ -57,7 +56,6 @@ msgstr ""
 "**Les balises sont définies dans le script de dénomination de fichier**"
 
 #: ../../troubleshooting/missing_tags.rst:15
-#, fuzzy
 msgid ""
 "Tags created or updated in the file naming script will not be written to the "
 "output files. This script is only used for developing the file name and "
@@ -71,7 +69,7 @@ msgstr ""
 "utilisé pour développer le nom de fichier et la structure de répertoires "
 "pour la sortie. Si vous souhaitez définir ou mettre à jour une valeur de "
 "balise dans un script, elle doit se trouver dans un script de balisage. "
-"Veuillez consulter la section :doc:`/extending/scripts` pour plus "
+"Veuillez consulter la section :doc:`../extending/scripts` pour plus "
 "d'informations sur les différents types de scripts."
 
 #: ../../troubleshooting/missing_tags.rst:18
@@ -79,7 +77,6 @@ msgid "**The tags begin with an underscore**"
 msgstr "**Les balises commencent par un trait de soulignement**"
 
 #: ../../troubleshooting/missing_tags.rst:20
-#, fuzzy
 msgid ""
 "Tags whose names begin with an underscore, regardless of how they are "
 "created, will not be written to the output files. These are considered "
@@ -91,7 +88,7 @@ msgstr ""
 "que soit la façon dont elles sont créées, ne seront pas écrites dans les "
 "fichiers de sortie. Celles-ci sont considérées comme des variables à "
 "utiliser dans Picard plutôt que des balises. Veuillez consulter la section :"
-"doc:`/variables/variables` pour plus d'informations concernant la différence "
+"doc:`../variables/variables` pour plus d'informations concernant la différence "
 "entre les balises et les variables."
 
 #: ../../troubleshooting/missing_tags.rst:23
@@ -99,7 +96,6 @@ msgid "**The file type does not support writing tags**"
 msgstr "**Le type de fichier ne prend pas en charge l'écriture de balises**"
 
 #: ../../troubleshooting/missing_tags.rst:25
-#, fuzzy
 msgid ""
 "Confirm that the file type that you are writing actually supports the tags "
 "that are to be written. Not all file types support all the tags Picard "
@@ -110,12 +106,11 @@ msgstr ""
 "toutes les balises prises en charge par Picard."
 
 #: ../../troubleshooting/missing_tags.rst:27
-#, fuzzy
 msgid ""
 "Please see the :doc:`../appendices/tag_mapping` section for details about "
 "the tags supported by various file formats."
 msgstr ""
-"Veuillez consulter la section :doc:`/appendices/tag_mapping` pour plus de "
+"Veuillez consulter la section :doc:`../appendices/tag_mapping` pour plus de "
 "détails sur les balises prises en charge par différents formats de fichiers."
 
 #~ msgid ""

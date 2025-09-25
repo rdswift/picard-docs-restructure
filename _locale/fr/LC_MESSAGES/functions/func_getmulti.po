@@ -55,7 +55,6 @@ msgstr ""
 "valeur multiple appropriée variable."
 
 #: ../../functions/func_getmulti.rst:16
-#, fuzzy
 msgid ""
 "The ``index`` is zero based. If ``index`` is less than 0, then the value "
 "used is the number of elements in ``name`` plus ``index`` (e.g.: "

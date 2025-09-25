@@ -38,14 +38,13 @@ msgid "**Description:**"
 msgstr "**Beschreibung:**"
 
 #: ../../functions/func_ne_all.rst:13
-#, fuzzy
 msgid ""
 "Returns true if ``x`` does not equal ``a1`` and ``a2``, etc. Can be used "
 "with an arbitrary number of arguments. Note that comparisons are case-"
 "sensitive."
 msgstr ""
-"Gibt wahr zurück, wenn ``x`` ungleich ``a1`` und ``a2`` usw.  Kann mit einer "
-"beliebigen Anzahl an Argumenten verwendet werden.  Beachte, dass bei "
+"Gibt wahr zurück, wenn ``x`` ungleich ``a1`` und ``a2`` usw. Kann mit einer "
+"beliebigen Anzahl an Argumenten verwendet werden. Beachte, dass bei "
 "Vergleichen zwischen Groß- und Kleinschreibung unterschieden wird."
 
 #: ../../functions/func_ne_all.rst:15

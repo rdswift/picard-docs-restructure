@@ -40,7 +40,6 @@ msgstr ""
 "un arrêt rouge comme une icône**"
 
 #: ../../troubleshooting/not_saving.rst:10
-#, fuzzy
 msgid ""
 "This indicates an error occurred during saving. In the majority of times "
 "people see this it is because the files they want to save are write "
@@ -66,7 +65,6 @@ msgstr ""
 "sur un partage samba sur le réseau."
 
 #: ../../troubleshooting/not_saving.rst:14
-#, fuzzy
 msgid ""
 "Another possibility is that the total length of the destination path and "
 "file name exceeds the maximum length allowed by the operating system. If you "
@@ -88,7 +86,6 @@ msgstr ""
 "devant les pistes**"
 
 #: ../../troubleshooting/not_saving.rst:18
-#, fuzzy
 msgid ""
 "That means that this is just the track data from MusicBrainz, but no file "
 "has been associated with it. In that case the save button is disabled. Check "
@@ -100,10 +97,9 @@ msgstr ""
 "qu'aucun fichier n'y est associé. Dans ce cas, le bouton Enregistrer est "
 "désactivé. Assurez-vous que les fichiers correspondent correctement aux "
 "pistes avant de réessayer de sauvegarder. Veuillez consulter les sections :"
-"doc:`/usage/match` et :doc:`/usage/save` pour plus d'informations."
+"doc:`../usage/match` et :doc:`../usage/save` pour plus d'informations."
 
 #: ../../troubleshooting/not_saving.rst:20
-#, fuzzy
 msgid ""
 "A third possibility, although very rare, is that you are trying to set a tag "
 "with an invalid key. If the two solutions above don't resolve your problem, "

@@ -63,13 +63,12 @@ msgid "Implemented: Picard 2.9"
 msgstr "Implémenté : Picard 2.9"
 
 #: ../../usage/exec_commands.rst:14
-#, fuzzy
 msgid ""
 "Clear all entries from Picard's log. This is the equivalent of clicking the :"
 "guilabel:`Clear Log` button from the log viewing screen opened using the :"
 "menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
-"Efface toutes les entrées du journal de Picard.  C'est l'équivalent de "
+"Efface toutes les entrées du journal de Picard. C'est l'équivalent de "
 "cliquer sur le bouton :guilabel:`Effacer le journal` à partir de l'écran de "
 "visualisation du journal ouvert par la commande :menuselection:`\"Aide --> "
 "Afficher le journal des erreurs et des débogages\"`."
@@ -83,12 +82,11 @@ msgid "Usage: **CLUSTER**"
 msgstr "Utilisation : **CLUSTER**"
 
 #: ../../usage/exec_commands.rst:22
-#, fuzzy
 msgid ""
 "Cluster all files in the cluster pane. This is the equivalent of using the :"
 "menuselection:`\"Tools --> Cluster\"` command."
 msgstr ""
-"Regroupe tous les fichiers dans le volet de regroupement.  Cela équivaut à "
+"Regroupe tous les fichiers dans le volet de regroupement. Cela équivaut à "
 "utiliser la commande :menuselection:`\"Outils --> Cluster\"`."
 
 #: ../../usage/exec_commands.rst:25
@@ -118,7 +116,6 @@ msgid "Usage: **FROM_FILE <file path>**"
 msgstr "Utilisation : **FROM_FILE <chemin du fichier>**"
 
 #: ../../usage/exec_commands.rst:38
-#, fuzzy
 msgid ""
 "Load commands from a file. The file path can be either an absolute or "
 "relative path to a text file containing the commands to be executed. Each "
@@ -129,7 +126,7 @@ msgid ""
 "command file that is currently being processed) are ignored and will be "
 "logged as a warning."
 msgstr ""
-"Charge les commandes à partir d'un fichier.  Le chemin du fichier peut être "
+"Charge les commandes à partir d'un fichier. Le chemin du fichier peut être "
 "un chemin absolu ou relatif vers un fichier texte contenant les commandes à "
 "exécuter. Chaque commande à traiter doit être sur une ligne séparée avec ses "
 "arguments (le cas échéant). Les lignes vides et les lignes commençant par un "
@@ -279,7 +276,6 @@ msgid "Usage: **QUIT \\[force\\]**"
 msgstr "Utilisation : **QUIT \\[force\\]**"
 
 #: ../../usage/exec_commands.rst:125
-#, fuzzy
 msgid ""
 "The ``QUIT`` command waits until all queued executable commands have "
 "completed, and then initiates a shutdown request the same as if the user "
@@ -291,7 +287,7 @@ msgstr ""
 "soient terminées, puis lance une demande d'arrêt de la même manière que si "
 "l'utilisateur fermait Picard depuis l'interface utilisateur. Cela permet à "
 "Picard d'effectuer les mêmes vérifications pour les fichiers non sauvegardés "
-"et autres.  Lorsque 'force' est entré comme argument de la commande, Picard "
+"et autres. Lorsque 'force' est entré comme argument de la commande, Picard "
 "contourne la vérification des fichiers non sauvegardés."
 
 #: ../../usage/exec_commands.rst:127
@@ -400,12 +396,11 @@ msgid "Usage: **SCAN**"
 msgstr "Utilisation : **SCAN**"
 
 #: ../../usage/exec_commands.rst:191
-#, fuzzy
 msgid ""
 "Scans all files in the cluster pane. This is the equivalent of using the :"
 "menuselection:`\"Tools --> Scan\"` command."
 msgstr ""
-"Analyse tous les fichiers du volet cluster.  Cela équivaut à l'utilisation "
+"Analyse tous les fichiers du volet cluster. Cela équivaut à l'utilisation "
 "de la commande :menuselection:`\"Outils --> Scan\"`."
 
 #: ../../usage/exec_commands.rst:194

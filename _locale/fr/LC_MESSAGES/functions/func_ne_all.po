@@ -38,7 +38,6 @@ msgid "**Description:**"
 msgstr "**Description:**"
 
 #: ../../functions/func_ne_all.rst:13
-#, fuzzy
 msgid ""
 "Returns true if ``x`` does not equal ``a1`` and ``a2``, etc. Can be used "
 "with an arbitrary number of arguments. Note that comparisons are case-"

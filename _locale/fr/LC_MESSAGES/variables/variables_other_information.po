@@ -25,13 +25,12 @@ msgid ":index:`Other Information <tags; writing>`"
 msgstr ":index:`Autres informations <balises; écriture>`"
 
 #: ../../variables/variables_other_information.rst:6
-#, fuzzy
 msgid ""
 "For technical details on how tags are written into files, see the :doc:"
 "`Picard Tag Mapping <../appendices/tag_mapping>` section."
 msgstr ""
 "Pour des détails techniques sur l'écriture des balises dans les fichiers, "
-"consultez la section :doc:`Correspondances des balises Picardes </appendices/"
+"consultez la section :doc:`Correspondances des balises Picardes <../appendices/"
 "tag_mapping>`."
 
 #: ../../variables/variables_other_information.rst:8
@@ -55,7 +54,6 @@ msgstr ""
 "l'utilisateur ID3 (TXXX)."
 
 #: ../../variables/variables_other_information.rst:11
-#, fuzzy
 msgid ""
 "For MP4 files these tags will be saved with a prefix of ``----:com.apple."
 "iTunes:``. This is widely understood by other tools to be used for custom "
@@ -86,7 +84,6 @@ msgstr ""
 "0.9*)."
 
 #: ../../variables/variables_other_information.rst:18
-#, fuzzy
 msgid ""
 "Saving custom tags to MP4 files is supported since Picard 2.3. Earlier "
 "versions will neither save nor load custom tags in MP4 files."

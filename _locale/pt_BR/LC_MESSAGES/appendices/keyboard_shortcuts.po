@@ -157,52 +157,44 @@ msgid ":kbd:`⌘+B`"
 msgstr ":kbd:`⌘+B`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid "Toggle metadata view"
-msgstr "Visão de Metadados"
+msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`Ctrl+Shift+M`"
-msgstr ":kbd:`Ctrl+Shift+Y`"
+msgstr ":kbd:`Ctrl+Shift+M`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+⇧+M`"
-msgstr ":kbd:`⌘+⇧+Y`"
+msgstr ":kbd:`⌘+⇧+M`"
 
 #: ../../appendices/keyboard_shortcuts.rst:58
-#, fuzzy
 msgid "Options"
-msgstr "Esconder sugestões de auto-completar"
+msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid "Open file naming script editor"
 msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`Ctrl+Shift+S`"
-msgstr ":kbd:`Ctrl+Shift+Y`"
+msgstr ":kbd:`Ctrl+Shift+S`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+⇧+S`"
-msgstr ":kbd:`⌘+⇧+Y`"
+msgstr ":kbd:`⌘+⇧+S`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid "Open profile editor"
 msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`Ctrl+Shift+P`"
-msgstr ":kbd:`Ctrl+Shift+Y`"
+msgstr ":kbd:`Ctrl+Shift+P`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+⇧+P`"
-msgstr ":kbd:`⌘+⇧+Y`"
+msgstr ":kbd:`⌘+⇧+P`"
 
 #: ../../appendices/keyboard_shortcuts.rst:69
 msgid "Tools"
@@ -281,9 +273,8 @@ msgid ":kbd:`⌘+⇧+L`"
 msgstr ":kbd:`⌘+⇧+L`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid "Search for similar albums / tracks"
-msgstr "Pesquisar trilhas semelhantes"
+msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid ":kbd:`Ctrl+T`"
@@ -298,14 +289,12 @@ msgid "Show other album versions"
 msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`Ctrl+Shift+O`"
-msgstr ":kbd:`Ctrl+Shift+Y`"
+msgstr ":kbd:`Ctrl+Shift+O`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+⇧+O`"
-msgstr ":kbd:`⌘+⇧+Y`"
+msgstr ":kbd:`⌘+⇧+O`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid "Generate AcoustID fingerprints"
@@ -320,9 +309,8 @@ msgid ":kbd:`⌘+⇧+Y`"
 msgstr ":kbd:`⌘+⇧+Y`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid "Tags from file names"
-msgstr "Etiquetas a partir dos nomes do arquivo"
+msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid ":kbd:`Ctrl+Shift+T`"
@@ -430,9 +418,8 @@ msgid "Other"
 msgstr "Outro"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid "Focus search"
-msgstr "Focar pesquisa"
+msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid ":kbd:`Ctrl+F`"
@@ -487,37 +474,32 @@ msgid ":kbd:`Esc`"
 msgstr ":kbd:`Esc`"
 
 #: ../../appendices/keyboard_shortcuts.rst:137
-#, fuzzy
 msgid "File naming script editor"
-msgstr "Editor de Script"
+msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid "Edit script metadata"
 msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`Ctrl+M`"
-msgstr ":kbd:`Ctrl+Y`"
+msgstr ":kbd:`Ctrl+M`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+M`"
-msgstr ":kbd:`⌘+Y`"
+msgstr ":kbd:`⌘+M`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid "Word wrap on/off"
 msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`Ctrl+Shift+W`"
-msgstr ":kbd:`Ctrl+Shift+Y`"
+msgstr ":kbd:`Ctrl+Shift+W`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+⇧+W`"
-msgstr ":kbd:`⌘+⇧+Y`"
+msgstr ":kbd:`⌘+⇧+W`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
 msgid "Show/hide help tooltips"
@@ -528,19 +510,9 @@ msgid "Show/hide documentation"
 msgstr ""
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid ":kbd:`⌘+H`"
-msgstr ":kbd:`⌘+Y`"
+msgstr ":kbd:`⌘+H`"
 
 #: ../../appendices/keyboard_shortcuts.rst:1
-#, fuzzy
 msgid "Help (in browser)"
-msgstr "Buscar no navegador"
-
-#, fuzzy
-#~ msgid ":kbd:`Ctrl+Shift+I`"
-#~ msgstr ":kbd:`Ctrl+Shift+Y`"
-
-#, fuzzy
-#~ msgid ":kbd:`⌘+⇧+I`"
-#~ msgstr ":kbd:`⌘+⇧+Y`"
+msgstr ""

@@ -38,7 +38,6 @@ msgid "**Description:**"
 msgstr "**Description:**"
 
 #: ../../functions/func_ne.rst:13
-#, fuzzy
 msgid ""
 "Returns true if ``x`` does not equal ``y``. Note that comparisons are case-"
 "sensitive."

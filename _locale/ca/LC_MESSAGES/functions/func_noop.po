@@ -36,12 +36,11 @@ msgid "**Description:**"
 msgstr "**Descripció:**"
 
 #: ../../functions/func_noop.rst:13
-#, fuzzy
 msgid ""
 "Does nothing and always returns an empty string. This is useful for comments "
 "or disabling a block of code."
 msgstr ""
-"No fa res i sempre retorna una cadena buida.  És útil per a introduir "
+"No fa res i sempre retorna una cadena buida. És útil per a introduir "
 "comentaris o inhabilitar un bloc de codi."
 
 #: ../../functions/func_noop.rst:16

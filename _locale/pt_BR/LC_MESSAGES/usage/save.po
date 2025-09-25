@@ -23,7 +23,6 @@ msgid ":index:`Saving Updated Files <files; saving, saving files>`"
 msgstr "index:`Salvando Arquivos Atualizados <files; saving, saving files>`"
 
 #: ../../usage/save.rst:8
-#, fuzzy
 msgid ""
 "This stage is where Picard updates the matched files with the metadata "
 "retrieved in the first stage, based on the settings configured in the "
@@ -31,7 +30,7 @@ msgid ""
 "different directory."
 msgstr ""
 "Neste estágio o Picard atualiza os arquivos correspondidos com os metadados "
-"obtidos na primeira etapa, baseando-se nas configurações em Opções.  Isto "
+"obtidos na primeira etapa, baseando-se nas configurações em Opções. Isto "
 "pode incluir a renomeação de arquivos e movimentação desses para um "
 "diretório diferente."
 
@@ -48,7 +47,6 @@ msgstr ""
 "mark verde aparecerá, indicando que o arquivo foi salvo."
 
 #: ../../usage/save.rst:15
-#, fuzzy
 msgid ""
 "Once the files have been saved successfully, you can remove the album from "
 "the right-hand pane by selecting it and using :menuselection:`\"Edit --> "
@@ -56,5 +54,5 @@ msgid ""
 "remove the files themselves."
 msgstr ""
 "Após salvar os arquivos, você pode remover o álbum do painel direito "
-"selecionando-o e usando :menuselection:`\"Editar --> Remover\"`.  Note que "
+"selecionando-o e usando :menuselection:`\"Editar --> Remover\"`. Note que "
 "isso apenas remove o álbum do Picard, não apagando os arquivos em si."

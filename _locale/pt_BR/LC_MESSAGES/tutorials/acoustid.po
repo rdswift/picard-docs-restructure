@@ -88,7 +88,6 @@ msgid ""
 msgstr ""
 
 #: ../../tutorials/acoustid.rst:24
-#, fuzzy
 msgid ""
 "You don't need the AcoustID fingerprinting software to manually generate new "
 "AcoustIDs. The difference is, that the fingerprinting software is meant to "

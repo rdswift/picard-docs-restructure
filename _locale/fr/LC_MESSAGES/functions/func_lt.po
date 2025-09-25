@@ -38,7 +38,6 @@ msgid "**Description:**"
 msgstr "**Description:**"
 
 #: ../../functions/func_lt.rst:13
-#, fuzzy
 msgid ""
 "Returns \"1\" (True) if ``x`` is less than ``y`` using the comparison "
 "specified in ``type``. Possible values of ``type`` are \"int\" (integer), "
@@ -59,13 +58,12 @@ msgstr ""
 "l'ordre de préférence suivant : \"int\", \"float\" et \"text\"."
 
 #: ../../functions/func_lt.rst:17
-#, fuzzy
 msgid ""
 "The ``type`` argument was added in Picard v2.9. Prior to that, if an "
 "argument was missing or was not an integer, the function would return an "
 "empty string."
 msgstr ""
-"L'argument ``type`` a été ajouté dans Picard v2.9.  Avant cela, si un "
+"L'argument ``type`` a été ajouté dans Picard v2.9. Avant cela, si un "
 "argument était manquant ou n'était pas un entier, la fonction retournait une "
 "chaîne vide."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-07-02 17:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -37,11 +37,11 @@ msgstr "**Descripció:**"
 
 #: ../../functions/func_set.rst:13
 msgid ""
-"Sets the variable ``name`` to ``value``.  The value of a variable is "
+"Sets the variable ``name`` to ``value``. The value of a variable is "
 "available to other script functions if it is enclosed between '%' characters "
 "(e.g.: ``%name%``). If ``name`` is another variable (e.g.: ``%indirect%``) "
-"the value of the variable will be used as ``name``.  This allows the "
-"creation of dynamically named variables."
+"the value of the variable will be used as ``name``. This allows the creation "
+"of dynamically named variables."
 msgstr ""
 
 #: ../../functions/func_set.rst:17

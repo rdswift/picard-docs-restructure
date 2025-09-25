@@ -318,9 +318,8 @@ msgid "``artists``"
 msgstr "``artists``"
 
 #: ../../appendices/tag_mapping.rst:1
-#, fuzzy
 msgid "``TXXX:Artists``"
-msgstr "``Artists``"
+msgstr "``TXXX:Artists``"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``ARTISTS``"
@@ -1823,9 +1822,8 @@ msgid "``ICNT``"
 msgstr "``ICNT``"
 
 #: ../../appendices/tag_mapping.rst:1043
-#, fuzzy
 msgid "`Release Date <https://musicbrainz.org/doc/Release_Date>`_"
-msgstr "`État de sortie <https://musicbrainz.org/doc/Release_Status>`_"
+msgstr "`Date de sortie <https://musicbrainz.org/doc/Release_Date>`_"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``date``"
@@ -2192,7 +2190,6 @@ msgid "``totaldiscs``"
 msgstr "``totaldiscs``"
 
 #: ../../appendices/tag_mapping.rst:1
-#, fuzzy
 msgid "``DISCTOTAL and TOTALDISCS``"
 msgstr "``DISCTOTAL`` et ``TOTALDISCS``"
 

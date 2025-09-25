@@ -26,7 +26,6 @@ msgid "Retrieving Album Information"
 msgstr "Récupération des informations sur l'album"
 
 #: ../../usage/retrieve.rst:8
-#, fuzzy
 msgid ""
 "This stage identifies the album on MusicBrainz that will provide the "
 "information used for tagging the files, and retrieves the metadata from the "
@@ -59,7 +58,6 @@ msgid ":doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`"
 msgstr ":doc:`Recherche du journal du CD ou du ripper <retrieve_lookup_cd>`"
 
 #: ../../usage/retrieve.rst:21
-#, fuzzy
 msgid ""
 "This is the preferred method of automatically identifying the album to "
 "retrieve, and should be used when you have the CD or :ref:`supported ripper "
@@ -76,11 +74,11 @@ msgstr ""
 "récupérer, et devrait être utilisée lorsque vous avez le CD ou :ref:`le "
 "journal des rippeurs supportés <faq_supported_rippers>` disponible. "
 "Typiquement, cette fonction est utilisée juste après avoir rippé les "
-"fichiers audio du CD.  Lorsqu'elle est lancée, la table des matières (TOC) "
+"fichiers audio du CD. Lorsqu'elle est lancée, la table des matières (TOC) "
 "est lue à partir du CD et une requête est envoyée à MusicBrainz pour "
-"retourner une liste des sorties qui correspondent à la TOC.  S'il y a des "
+"retourner une liste des sorties qui correspondent à la TOC. S'il y a des "
 "correspondances, elles seront listées pour que vous puissiez choisir celle à "
-"utiliser.  S'il n'y a pas de correspondance ou si aucune correspondance "
+"utiliser. S'il n'y a pas de correspondance ou si aucune correspondance "
 "n'est correcte, vous pouvez rechercher manuellement l'album correspondant "
 "dans la base de données, et vous avez la possibilité d'attacher la TOC de "
 "votre CD à la sortie sélectionnée pour une consultation ultérieure."
@@ -116,14 +114,13 @@ msgstr ""
 "données MusicBrainz et affichera une liste des versions correspondantes."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:12
-#, fuzzy
 msgid ""
 "Select the correct release from the list and click on the :guilabel:`Load "
 "into Picard` button. This will load the information for the release into "
 "Picard."
 msgstr ""
 "Sélectionnez la bonne version dans la liste et cliquez sur le bouton :"
-"guilabel:`Charger dans Picard`.  Cela chargera les informations relatives à "
+"guilabel:`Charger dans Picard`. Cela chargera les informations relatives à "
 "la version dans Picard."
 
 #: ../../usage/retrieve_browser_steps.txt:50
@@ -139,7 +136,6 @@ msgstr ""
 "indique qu'aucun fichier n'a été attribué à la piste."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:21
-#, fuzzy
 msgid ""
 "If there are no matches or none of the matches are correct, use the :"
 "guilabel:`Submit disc ID` option to locate the correct release. Enter the "
@@ -149,19 +145,18 @@ msgid ""
 msgstr ""
 "Si aucune correspondance n'est trouvée ou si aucune correspondance n'est "
 "correcte, utilisez l'option :guilabel:`Soumettre l'ID du disque` pour "
-"trouver la bonne version.  Saisissez le titre du disque ou le nom de "
-"l'artiste et lancez la recherche.  Vous obtiendrez une liste des disques qui "
+"trouver la bonne version. Saisissez le titre du disque ou le nom de "
+"l'artiste et lancez la recherche. Vous obtiendrez une liste des disques qui "
 "correspondent à vos critères de recherche et qui ont le même nombre de "
 "pistes que votre CD TOC."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:31
-#, fuzzy
 msgid ""
 "Use the green arrow |lookup_tagger| to load the information for a release "
 "into Picard. In addition, you can select the release and attach the CD TOC."
 msgstr ""
 "Utilisez la flèche verte |lookup_tagger| pour charger les informations d'un "
-"communiqué dans Picard.  De plus, vous pouvez sélectionner la version et "
+"communiqué dans Picard. De plus, vous pouvez sélectionner la version et "
 "joindre la TOC du CD."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:28
@@ -186,7 +181,6 @@ msgid ":doc:`Lookup Files <retrieve_lookup>`"
 msgstr ":doc:`Rechercher des fichiers <retrieve_lookup>`"
 
 #: ../../usage/retrieve.rst:37
-#, fuzzy
 msgid ""
 "If you don't have the CD available, and your files are grouped by album, "
 "this is the preferred method of automatically identifying the album to "
@@ -210,7 +204,6 @@ msgstr ""
 #: ../../usage/retrieve_lookup_steps.txt:5
 #: ../../usage/retrieve_manual_steps.txt:5
 #: ../../usage/retrieve_scan_steps.txt:5
-#, fuzzy
 msgid ""
 "Add your files using :menuselection:`\"Files --> Add Files...\"` or :"
 "menuselection:`\"Files --> Add Folder...\"`. For ease of use it is "
@@ -257,7 +250,6 @@ msgstr ""
 "précédentes, l'album apparaîtra dans le volet de droite."
 
 #: ../../usage/retrieve_lookup_steps.txt:35
-#, fuzzy
 msgid ""
 "If you're not sure that the album retrieved is correct, you can use :"
 "menuselection:`\"Tools --> Show other album versions...\"` to open a window "
@@ -268,7 +260,7 @@ msgstr ""
 "Si vous n'êtes pas sûr que l'album récupéré est correct, vous pouvez "
 "utiliser :menuselection:`\"Outils --> Afficher les autres versions de "
 "l'album...\"` pour ouvrir une fenêtre affichant toutes les versions "
-"correspondantes.  À partir de cette fenêtre, vous pouvez sélectionner une "
+"correspondantes. À partir de cette fenêtre, vous pouvez sélectionner une "
 "autre version correspondante à utiliser, ou affiner les critères de "
 "recherche et effectuer une nouvelle recherche."
 
@@ -290,7 +282,6 @@ msgid ":doc:`Scan Files <retrieve_scan>`"
 msgstr ":doc:`Analyser les fichiers <retrieve_scan>`"
 
 #: ../../usage/retrieve.rst:53
-#, fuzzy
 msgid ""
 "If your files are not grouped into albums and you don't have the CD "
 "available, this is the only remaining method of automatically identifying "
@@ -349,7 +340,6 @@ msgid ":doc:`Lookup in Browser <retrieve_browser>`"
 msgstr ":doc:`Recherche dans le navigateur <retrieve_browser>`"
 
 #: ../../usage/retrieve.rst:69
-#, fuzzy
 msgid ""
 "If none of the automated methods are available, or don't produce the desired "
 "results, you have the option of retrieving the album information by having "
@@ -435,7 +425,6 @@ msgstr ""
 "sont:"
 
 #: ../../usage/retrieve_manual_steps.txt:19
-#, fuzzy
 msgid ""
 "Enter your search information into the search box and select the type of "
 "records to search, then click the magnifying glass symbol to initiate the "

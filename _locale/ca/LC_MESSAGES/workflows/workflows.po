@@ -25,14 +25,13 @@ msgstr ""
 ":index:`Recomanacions de fluxos de treball <fluxos de treball; general>`"
 
 #: ../../workflows/workflows.rst:6
-#, fuzzy
 msgid ""
 "This section provides some recommended workflows for various tagging "
 "scenarios. These workflows are based on what are believed to be best "
 "practices."
 msgstr ""
 "Aquesta secció descriu alguns fluxos de treball recomanats per a diverses "
-"situacions d'etiquetatge.  Es basen en el que es consideren pràctiques "
+"situacions d'etiquetatge. Es basen en el que es consideren pràctiques "
 "recomanades."
 
 #: ../../workflows/workflows.rst:8

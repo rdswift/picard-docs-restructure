@@ -35,7 +35,6 @@ msgid "**Description:**"
 msgstr "**Beschreibung:**"
 
 #: ../../functions/func_noop.rst:13
-#, fuzzy
 msgid ""
 "Does nothing and always returns an empty string. This is useful for comments "
 "or disabling a block of code."

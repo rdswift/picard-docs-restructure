@@ -41,7 +41,6 @@ msgstr ""
 "pode ser aberto. Você deve movê-lo para o lixo."
 
 #: ../../troubleshooting/macos_startup_error.rst:10
-#, fuzzy
 msgid ""
 "This mostly seems to happen after moving the file to the Applications folder "
 "and seems to be caused by Gatekeeper mistakenly marking the app as damaged. "
@@ -49,7 +48,7 @@ msgid ""
 msgstr ""
 "Isto parece ocorrer após mover o arquivo para a pasta de Aplicações e parece "
 "causado pelo Gatekeeper marcando o aplicativo como danificado "
-"indevidamente.  Para resolver o problema, abra o terminal e execute::"
+"indevidamente. Para resolver o problema, abra o terminal e execute::"
 
 #: ../../troubleshooting/macos_startup_error.rst:14
 msgid ""

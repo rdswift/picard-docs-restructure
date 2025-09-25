@@ -38,7 +38,6 @@ msgid "**Description:**"
 msgstr "**Description:**"
 
 #: ../../functions/func_rreplace.rst:13
-#, fuzzy
 msgid ""
 "Regular expression replace. This function will replace the matching group "
 "specified by ``pattern`` with ``replace`` in ``text``. For more information "
@@ -51,7 +50,6 @@ msgstr ""
 "`l'article sur Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
 
 #: ../../functions/func_rreplace.rst:17
-#, fuzzy
 msgid ""
 "When entering regular expressions into Picard scripts you have to escape a "
 "backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
@@ -65,8 +63,8 @@ msgstr ""
 "vous devez échapper la barre oblique inversée \"\\\\\", le signe dollar \"$"
 "\", la virgule \",\" et les parenthèses gauche et droite \"(\" et \")\" afin "
 "de forcer Picard à ne pas les interpréter comme faisant partie de la "
-"commande du script.  Cela se fait en insérant une barre oblique inverse "
-"avant le caractère à échapper.  Par exemple, l'expression régulière "
+"commande du script. Cela se fait en insérant une barre oblique inverse "
+"avant le caractère à échapper. Par exemple, l'expression régulière "
 "``^\\s*([0-9,\\.]*)$`` doit être saisie comme ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\"
 "$``."
 

@@ -27,12 +27,11 @@ msgid ":index:`Tags from Plugins <tags; plugins>`"
 msgstr ":index:`Balises des plugins <balises; des plugins>`"
 
 #: ../../variables/variables_plugins.rst:8
-#, fuzzy
 msgid ""
 "Plugins from Picard :doc:`Plugins <../config/options_plugins>` can add more "
 "tags. Following are some examples."
 msgstr ""
-"Plugins de Picard :doc:`Les plugins </config/options_plugins>` peuvent "
+"Plugins de Picard :doc:`Les plugins <../config/options_plugins>` peuvent "
 "ajouter plus de balises. Voici quelques exemples."
 
 #: ../../variables/variables_plugins.rst:11
@@ -465,7 +464,6 @@ msgid "The number of artists listed as track artists"
 msgstr "Le nombre d'artistes répertoriés comme artistes de piste"
 
 #: ../../variables/variables_plugins.rst:164
-#, fuzzy
 msgid ""
 "Some plugins make a large number of web service calls to get additional "
 "track-specific data such as performer and work relationships, so loading a "

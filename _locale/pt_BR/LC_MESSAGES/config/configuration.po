@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2021-10-11 00:14+0000\n"
 "Last-Translator: inkhorn <inkhorn@hostux.ninja>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
@@ -27,12 +27,12 @@ msgstr "Configuração"
 #: ../../config/configuration.rst:6
 msgid ""
 "Once Picard has been installed on your system, the next step is to configure "
-"it to your preferences.  The configuration consists of enabling the desired "
+"it to your preferences. The configuration consists of enabling the desired "
 "screen sections for display, selecting the desired actions, and setting the "
 "various options."
 msgstr ""
 "Logo que o Picard tenha sido instalado em seu sistema, o próximo passo será "
-"configurá-lo de acordo com suas preferências.  A configuração consiste em "
+"configurá-lo de acordo com suas preferências. A configuração consiste em "
 "habilitar as seções de tela desejadas para exibição, selecionar as ações "
 "desejadas e definir várias opções."
 
@@ -43,12 +43,12 @@ msgstr ":index:`Configuração da tela <configuração; configuração da tela>`
 #: ../../config/configuration.rst:11
 msgid ""
 "The screen setup is found under the :menuselection:`\"View\"` item on the "
-"menu bar.  To enable the display of an item, simply check the box for the "
-"screen option.  The items are:"
+"menu bar. To enable the display of an item, simply check the box for the "
+"screen option. The items are:"
 msgstr ""
 "A configuração da tela é encontrada em :menuselection:`\"Vista\"` em barra "
-"de menu.  Para ativar a exibição de um item, basta marcar a caixa com a "
-"opção de tela.  Os itens são:"
+"de menu. Para ativar a exibição de um item, basta marcar a caixa com a "
+"opção de tela. Os itens são:"
 
 #: ../../config/configuration.rst:13
 msgid "**File Browser**"
@@ -83,11 +83,11 @@ msgstr "**Arte da capa***"
 #: ../../config/configuration.rst:21
 msgid ""
 "This displays the cover art for the currently selected item (track or "
-"release) in a window to the right of the tags section of the display.  This "
+"release) in a window to the right of the tags section of the display. This "
 "allows you to select or replace the cover art saved with the release."
 msgstr ""
 "Isto exibe a arte da capa do item atualmente selecionado (faixa ou álbum) em "
-"uma janela à direita da seção de ids do display.  Isto permite selecionar ou "
+"uma janela à direita da seção de ids do display. Isto permite selecionar ou "
 "substituir a arte da capa salva com o álbum."
 
 #: ../../config/configuration.rst:23
@@ -130,11 +130,11 @@ msgstr ":index:`Opções de ação <configuração; opções de ação>`"
 #: ../../config/configuration.rst:40
 msgid ""
 "The action options are found under the :menuselection:`\"Options\"` item on "
-"the menu bar.  There are three available actions that Picard can perform "
-"when saving selected music files:"
+"the menu bar. There are three available actions that Picard can perform when "
+"saving selected music files:"
 msgstr ""
 "As opções de ação são encontradas em :menuselection:`\"Opções\"` na barra de "
-"menu.  Há três ações disponíveis que o Picard pode executar ao salvar "
+"menu. Há três ações disponíveis que o Picard pode executar ao salvar "
 "arquivos de música selecionados:"
 
 #: ../../config/configuration.rst:42
@@ -175,7 +175,6 @@ msgstr ""
 ":index:`Configurações de opção <ver: configurações de opção; configuração>`"
 
 #: ../../config/configuration.rst:58
-#, fuzzy
 msgid ""
 "The option settings are found under the :menuselection:`\"Options --> "
 "Options...\"` item on the menu bar. On macOS they can be accessed with :"
@@ -185,9 +184,9 @@ msgid ""
 "majority of Picard's customization is performed."
 msgstr ""
 "As configurações de opções são encontradas em :menuselection:`\"Opções --> "
-"Opções...\"` na barra de menu.  Isto abrirá uma nova janela com os grupos de "
+"Opções...\"` na barra de menu. Isto abrirá uma nova janela com os grupos de "
 "opções listados em um formato de árvore no lado esquerdo, e as configurações "
-"individuais no lado direito.  É aqui que a maior parte de personalização do "
+"individuais no lado direito. É aqui que a maior parte de personalização do "
 "Picard é feita."
 
 #: ../../config/configuration.rst:61
@@ -199,7 +198,6 @@ msgid ""
 msgstr ""
 
 #: ../../config/configuration.rst:68
-#, fuzzy
 msgid ""
 "In addition to the basic \"user settings\", this is also where option "
 "setting changes are made to individual option profiles. This is covered in "
@@ -229,7 +227,6 @@ msgstr ""
 "processamento."
 
 #: ../../config/configuration.rst:94
-#, fuzzy
 msgid ""
 ":doc:`options_general` / :doc:`options_profiles` / :doc:"
 "`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:"
@@ -239,7 +236,6 @@ msgid ""
 msgstr ""
 ":doc:`options_general` / :doc:`options_profiles` / :doc:"
 "`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:"
-"`options_filerenaming` / :doc:`options_acousticbrainz` / :doc:"
-"`options_fingerprinting` / :doc:`options_cdlookup` / :doc:"
-"`options_plugins` / :doc:`options_interface` / :doc:`options_scripting` / :"
-"doc:`options_advanced`"
+"`options_filerenaming` / :doc:`options_fingerprinting` / :doc:"
+"`options_cdlookup` / :doc:`options_plugins` / :doc:`options_interface` / :"
+"doc:`options_scripting` / :doc:`options_advanced`"

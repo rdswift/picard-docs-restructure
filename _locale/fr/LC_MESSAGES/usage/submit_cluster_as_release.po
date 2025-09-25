@@ -31,7 +31,6 @@ msgstr ""
 "release; soumettre>`"
 
 #: ../../usage/submit_cluster_as_release.rst:6
-#, fuzzy
 msgid ""
 "Picard can assist you in submitting information to the MusicBrainz database "
 "by automatically populating the submission form on the website with data "
@@ -40,7 +39,7 @@ msgid ""
 msgstr ""
 "Picard peut vous aider à soumettre des informations à la base de données "
 "MusicBrainz en remplissant automatiquement le formulaire de soumission sur "
-"le site Web avec les données de vos fichiers.  Cette méthode est "
+"le site Web avec les données de vos fichiers. Cette méthode est "
 "généralement utilisée lorsque vous disposez des fichiers musicaux d'un "
 "album, mais que celui-ci n'est pas encore disponible sur MusicBrainz."
 
@@ -70,7 +69,6 @@ msgid "**2. Cluster the files**"
 msgstr "**2. Regroupez les fichiers**"
 
 #: ../../usage/submit_cluster_as_release.rst:26
-#, fuzzy
 msgid ""
 "Select the files in the clustering pane and combine them into album clusters "
 "using the :menuselection:`\"Tools --> Cluster\"` command. Picard will "
@@ -81,8 +79,8 @@ msgid ""
 msgstr ""
 "Sélectionnez les fichiers dans le panneau de clustering et combinez-les en "
 "clusters d'albums en utilisant la commande :menuselection:`\"Outils --> "
-"Cluster\"`.  Picard tentera de regrouper les fichiers en se basant sur leurs "
-"métadonnées existantes.  Selon la qualité des métadonnées, vous devrez peut-"
+"Cluster\"`. Picard tentera de regrouper les fichiers en se basant sur leurs "
+"métadonnées existantes. Selon la qualité des métadonnées, vous devrez peut-"
 "être ajouter manuellement des éléments au cluster ou en supprimer pour vous "
 "assurer qu'il est complet pour l'album et qu'il ne contient pas de fichiers "
 "supplémentaires."
@@ -92,7 +90,6 @@ msgid "**3. Submit the cluster**"
 msgstr "**3. Soumettre le cluster**"
 
 #: ../../usage/submit_cluster_as_release.rst:37
-#, fuzzy
 msgid ""
 "Once you have the proper files in the cluster and it is complete for the "
 "album, you can submit it to MusicBrainz by selecting the cluster and right-"
@@ -102,7 +99,7 @@ msgstr ""
 "Une fois que vous avez les bons fichiers dans le cluster et qu'il est "
 "complet pour l'album, vous pouvez le soumettre à MusicBrainz en "
 "sélectionnant le cluster et en faisant un clic droit pour faire apparaître "
-"le menu contextuel.  De là, vous devriez voir une option :menuselection:"
+"le menu contextuel. De là, vous devriez voir une option :menuselection:"
 "`\"Soumettre le cluster en tant que communiqué...\"`."
 
 #: ../../usage/submit_cluster_as_release.rst:46
@@ -110,7 +107,6 @@ msgid "**4. Confirm submitted information**"
 msgstr "**4. Confirmez les informations soumises**"
 
 #: ../../usage/submit_cluster_as_release.rst:48
-#, fuzzy
 msgid ""
 "When the option is selected, the system will submit a request to add the "
 "information to MusicBrainz, and you will be presented with a confirmation "
@@ -119,7 +115,7 @@ msgid ""
 msgstr ""
 "Lorsque l'option est sélectionnée, le système soumet une demande d'ajout des "
 "informations à MusicBrainz, et un écran de confirmation s'affiche dans votre "
-"navigateur.  Vous pouvez voir les informations qui seront soumises en "
+"navigateur. Vous pouvez voir les informations qui seront soumises en "
 "développant le lien \"Données soumises avec cette demande\"."
 
 #: ../../usage/submit_cluster_as_release.rst:53
@@ -138,7 +134,6 @@ msgstr ""
 "modification comme si vous aviez saisi toutes les informations manuellement."
 
 #: ../../usage/submit_cluster_as_release.rst:59
-#, fuzzy
 msgid ""
 "Before submitting the edit, you should check that all of the information has "
 "been correctly entered in accordance with the `MusicBrainz Style Guides "
@@ -150,7 +145,7 @@ msgstr ""
 "informations ont été correctement saisies conformément aux `Guides de style "
 "MusicBrainz <https://musicbrainz.org/doc/Style>`_ et que les groupes "
 "d'artistes et de sorties ont été mis en correspondance avec des éléments "
-"existants, le cas échéant.  Vous devriez également ajouter une note "
+"existants, le cas échéant. Vous devriez également ajouter une note "
 "d'édition citant la source de l'information."
 
 #: ../../usage/submit_cluster_as_release.rst:62
@@ -158,7 +153,6 @@ msgid "Submitting a single track"
 msgstr "Soumission d'une seule piste"
 
 #: ../../usage/submit_cluster_as_release.rst:64
-#, fuzzy
 msgid ""
 "You can also use this feature to submit a single track as a release or as a "
 "standalone recording. To do this, right-click the file and select either :"
@@ -171,7 +165,7 @@ msgid ""
 "information."
 msgstr ""
 "Vous pouvez également utiliser cette fonctionnalité pour soumettre une seule "
-"piste en tant que parution ou en tant qu'enregistrement isolé.  Pour ce "
+"piste en tant que parution ou en tant qu'enregistrement isolé. Pour ce "
 "faire, cliquez avec le bouton droit de la souris sur le fichier et "
 "sélectionnez :menuselection:`\"Soumettre le fichier comme enregistrement "
 "isolé...\"` ou :menuselection:`\"Soumettre le fichier comme parution...\"` "
@@ -179,5 +173,5 @@ msgstr ""
 "informations ont été correctement saisies conformément aux `Guides de style "
 "MusicBrainz <https://musicbrainz.org/doc/Style>`_ et que les groupes "
 "d'artistes et de parutions ont été mis en correspondance avec des éléments "
-"existants, le cas échéant.  Vous devez également ajouter une note de "
+"existants, le cas échéant. Vous devez également ajouter une note de "
 "modification citant la source de l'information."

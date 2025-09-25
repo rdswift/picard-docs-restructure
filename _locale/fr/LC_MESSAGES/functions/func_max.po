@@ -48,7 +48,6 @@ msgstr ""
 "``type``."
 
 #: ../../functions/func_max.rst:16
-#, fuzzy
 msgid ""
 "Possible values of ``type`` are \"int\" (integer), \"float\" (floating "
 "point), \"text\" (case-sensitive text), \"nocase\" (case-insensitive text) "
@@ -61,17 +60,16 @@ msgstr ""
 "flottante), \"text\" (texte sensible à la casse), \"nocase\" (texte "
 "insensible à la casse) et \"auto\" (détermine automatiquement le type des "
 "arguments fournis), avec \"auto\" utilisé comme méthode de comparaison par "
-"défaut si ``type`` n'est pas spécifié.  Le type \"auto\" utilisera le "
+"défaut si ``type`` n'est pas spécifié. Le type \"auto\" utilisera le "
 "premier type qui s'applique aux deux arguments dans l'ordre de préférence "
 "suivant : \"int\", \"float\" et \"text\"."
 
 #: ../../functions/func_max.rst:18
-#, fuzzy
 msgid ""
 "Can be used with an arbitrary number of arguments. Multi-value arguments "
 "will be expanded automatically."
 msgstr ""
-"Peut être utilisé avec un nombre arbitraire d'arguments.  Les arguments à "
+"Peut être utilisé avec un nombre arbitraire d'arguments. Les arguments à "
 "valeurs multiples seront développés automatiquement."
 
 #: ../../functions/func_max.rst:21

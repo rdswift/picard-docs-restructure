@@ -58,12 +58,11 @@ msgid "enable debug-level logging"
 msgstr "Debug-Protokollierung aktivieren"
 
 #: ../../appendices/command_line.rst:32
-#, fuzzy
 msgid ""
 "execute one or more COMMANDs at start-up (see :doc:`../usage/exec_commands` "
 "for more information)"
 msgstr ""
-"einen oder mehrere BEFEHLe beim Start ausführen (siehe :doc:`/usage/"
+"einen oder mehrere BEFEHLe beim Start ausführen (siehe :doc:`../usage/"
 "exec_commands` für weitere Informationen)"
 
 #: ../../appendices/command_line.rst:36

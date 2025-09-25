@@ -103,7 +103,6 @@ msgid ""
 msgstr ""
 
 #: ../../getting_started/download.rst:49
-#, fuzzy
 msgid ""
 "Picard installed as a Snap is running inside a sandbox and thus it does not "
 "have full access to all files and folders on your system. By default Picard "
@@ -111,8 +110,8 @@ msgid ""
 "removable media by running the following command on a terminal:"
 msgstr ""
 "Snaps são executados dentro de uma caixa de areia e portanto não tem acesso "
-"a todos os arquivos e pastas no seu sistema.  Por padrão, o Picard tem "
-"acesso à sua pasta de usuário.  Você pode dar permissões adicionais para "
+"a todos os arquivos e pastas no seu sistema. Por padrão, o Picard tem "
+"acesso à sua pasta de usuário. Você pode dar permissões adicionais para "
 "discos removíveis com o seguinte comando:"
 
 #: ../../getting_started/download.rst:57

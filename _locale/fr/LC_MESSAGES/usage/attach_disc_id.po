@@ -45,13 +45,12 @@ msgid "Please do not add DiscIDs from CDs that are burned at home."
 msgstr "Veuillez ne pas ajouter de DiscID à partir de CD gravés à la maison."
 
 #: ../../usage/attach_disc_id.rst:16
-#, fuzzy
 msgid ""
 "There is also a :doc:`Video Tutorial <../tutorials/v_attach_disc_id>` "
 "available which demonstrates how to attach a disc id to a release in "
 "MusicBrainz."
 msgstr ""
-"Il existe également un :doc:`Tutoriel vidéo </tutorials/v_attach_disc_id>` "
+"Il existe également un :doc:`Tutoriel vidéo <../tutorials/v_attach_disc_id>` "
 "qui montre comment attacher un numéro de disque à une sortie dans "
 "MusicBrainz."
 
@@ -90,7 +89,6 @@ msgid "**2. Review list of matching releases**"
 msgstr "**2. Examiner la liste des communiqués correspondants**"
 
 #: ../../usage/attach_disc_id.rst:34
-#, fuzzy
 msgid ""
 "If the target release appears in this list, the disc id has already been "
 "attached and you do not need to do anything further. If there are no matches "
@@ -110,7 +108,6 @@ msgstr ""
 "TOC."
 
 #: ../../usage/attach_disc_id.rst:45
-#, fuzzy
 msgid ""
 "If you search by artist, use the radio button next to the artist's name to "
 "select the desired artist. If you click on the artist's name link, you will "
@@ -126,7 +123,6 @@ msgid "**3. Select the release**"
 msgstr "**3. Sélectionnez le communiqué**"
 
 #: ../../usage/attach_disc_id.rst:53
-#, fuzzy
 msgid ""
 "Select the desired target release frm the list displayed by clicking the "
 "radio button next to the release, and then click the \"Attach CD TOC\" "
@@ -136,8 +132,8 @@ msgid ""
 msgstr ""
 "Sélectionnez la version cible souhaitée dans la liste affichée en cliquant "
 "sur le bouton radio à côté de la parution, puis cliquez sur le bouton "
-"« Joindre le CD TOC » sous la liste des parutions.  Cela préparera une "
-"modification pour joindre l'identifiant du disque à la parution.  Vous devez "
+"« Joindre le CD TOC » sous la liste des parutions. Cela préparera une "
+"modification pour joindre l'identifiant du disque à la parution. Vous devez "
 "ensuite ajouter une note de modification appropriée et soumettre la "
 "modification."
 
@@ -146,7 +142,6 @@ msgid "**4. Add release if missing**"
 msgstr "**4. Ajouter la parution si elle est manquante**"
 
 #: ../../usage/attach_disc_id.rst:60
-#, fuzzy
 msgid ""
 "If none of the releases displayed are correct, you have the option to add a "
 "new release (with some information automatically included). The disc id will "

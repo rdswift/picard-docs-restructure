@@ -313,9 +313,8 @@ msgid "``artists``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
-#, fuzzy
 msgid "``TXXX:Artists``"
-msgstr "Interpreten"
+msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``ARTISTS``"
@@ -1813,10 +1812,8 @@ msgid "``ICNT``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1043
-#, fuzzy
 msgid "`Release Date <https://musicbrainz.org/doc/Release_Date>`_"
 msgstr ""
-"`Veröffentlichungsstatus <https://musicbrainz.org/doc/Release_Status>`_"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``date``"
@@ -2184,7 +2181,6 @@ msgid "``totaldiscs``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
-#, fuzzy
 msgid "``DISCTOTAL and TOTALDISCS``"
 msgstr "``DISCTOTAL`` und ``TOTALDISCS``"
 
@@ -2466,11 +2462,3 @@ msgstr "Aus der iTunes Metadata Format Specification"
 #~ "Weise, wie die meisten Programme diesen Tag interpretieren. Seit Picard "
 #~ "2.9 gibt es das separate Tag ``releasedate``, das von Skripten und "
 #~ "Plugins verwendet werden kann, aber standardmäßig nicht gefüllt wird."
-
-#, fuzzy
-#~ msgid "``syncedlyrics:language:description``"
-#~ msgstr "``lyrics:Beschreibung``"
-
-#, fuzzy
-#~ msgid "``SYLT:description``"
-#~ msgstr "``USLT:Beschreibung``"

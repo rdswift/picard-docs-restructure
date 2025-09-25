@@ -35,7 +35,6 @@ msgid "**Description:**"
 msgstr "**Beschreibung:**"
 
 #: ../../functions/func_right.rst:13
-#, fuzzy
 msgid ""
 "Returns the last ``number`` characters from ``text``. If ``number`` is less "
 "than 1, then the value used is the number of characters in ``text`` plus "

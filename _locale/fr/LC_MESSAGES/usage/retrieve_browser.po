@@ -34,7 +34,6 @@ msgstr ""
 "dans le navigateur>` sur MusicBrainz sont:"
 
 #: ../../usage/retrieve_browser_steps.txt:8
-#, fuzzy
 msgid ""
 "Add your files using :menuselection:`\"Files --> Add Files...\"` or :"
 "menuselection:`\"Files --> Add Folder...\"`. For ease of use it is "

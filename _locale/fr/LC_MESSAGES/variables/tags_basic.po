@@ -78,7 +78,6 @@ msgstr ""
 "données MusicBrainz."
 
 #: ../../variables/tags_basic.rst:23
-#, fuzzy
 msgid ""
 "Some of these tags are only supported for certain file types or tag formats. "
 "Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section "
@@ -86,7 +85,7 @@ msgid ""
 msgstr ""
 "Certaines de ces balises ne sont prises en charge que pour certains types de "
 "fichiers ou formats de balises. Veuillez consulter la section :doc:"
-"`Cartographie des étiquettes Picard </appendices/tag_mapping>` pour plus de "
+"`Cartographie des étiquettes Picard <../appendices/tag_mapping>` pour plus de "
 "détails."
 
 #: ../../variables/tags_basic.rst:27
@@ -644,7 +643,6 @@ msgid "**acoustid_id**"
 msgstr "**acoustid_id**"
 
 #: ../../variables/tags_basic.rst:200
-#, fuzzy
 msgid ""
 "The AcoustID associated with the track. The AcoustID is the identifier "
 "assigned to an audio file based on its acoustic fingerprint. Multiple "
@@ -656,7 +654,7 @@ msgstr ""
 "fichier audio sur la base de son empreinte acoustique. Plusieurs empreintes "
 "peuvent se voir attribuer le même AcoustID si elles sont suffisamment "
 "similaires. Voir la section :doc:`Comprendre l'empreinte acoustique et les "
-"AcoustIDs </tutorials/acoustid>` pour plus d'informations."
+"AcoustIDs <../tutorials/acoustid>` pour plus d'informations."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_basic.rst:202

@@ -32,7 +32,6 @@ msgstr ""
 "recherche>` sont:"
 
 #: ../../usage/retrieve_lookup_steps.txt:5
-#, fuzzy
 msgid ""
 "Add your files using :menuselection:`\"Files --> Add Files...\"` or :"
 "menuselection:`\"Files --> Add Folder...\"`. For ease of use it is "
@@ -84,7 +83,6 @@ msgstr ""
 "indique qu'aucun fichier n'a été attribué à la piste."
 
 #: ../../usage/retrieve_lookup_steps.txt:35
-#, fuzzy
 msgid ""
 "If you're not sure that the album retrieved is correct, you can use :"
 "menuselection:`\"Tools --> Show other album versions...\"` to open a window "
@@ -95,7 +93,7 @@ msgstr ""
 "Si vous n'êtes pas sûr que l'album récupéré est correct, vous pouvez "
 "utiliser :menuselection:`\"Outils --> Afficher les autres versions de "
 "l'album...\"` pour ouvrir une fenêtre affichant toutes les versions "
-"correspondantes.  À partir de cette fenêtre, vous pouvez sélectionner une "
+"correspondantes. À partir de cette fenêtre, vous pouvez sélectionner une "
 "autre version correspondante à utiliser, ou affiner les critères de "
 "recherche et effectuer une nouvelle recherche."
 

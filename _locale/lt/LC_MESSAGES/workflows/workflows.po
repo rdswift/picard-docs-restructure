@@ -26,14 +26,13 @@ msgid ":index:`Work Flow Recommendations <workflows; general>`"
 msgstr ":index:`Work Flow Recommendations <workflows; general>`"
 
 #: ../../workflows/workflows.rst:6
-#, fuzzy
 msgid ""
 "This section provides some recommended workflows for various tagging "
 "scenarios. These workflows are based on what are believed to be best "
 "practices."
 msgstr ""
 "Šis skyrius pateikia keletą rekomenduojamų darbo eigos būdų įvairiems "
-"žymėjimo atvejams.  Šios darbo eigos pagrįstos, kaip manoma, geriausia "
+"žymėjimo atvejams. Šios darbo eigos pagrįstos, kaip manoma, geriausia "
 "praktika."
 
 #: ../../workflows/workflows.rst:8

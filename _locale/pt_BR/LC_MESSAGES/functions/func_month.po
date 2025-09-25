@@ -76,9 +76,8 @@ msgid ""
 msgstr ""
 
 #: ../../functions/func_month.rst:27
-#, fuzzy
 msgid "**Examples:**"
-msgstr "**Exemplo:**"
+msgstr ""
 
 #: ../../functions/func_month.rst:29
 msgid "The following statements will return the values indicated:"

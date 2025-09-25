@@ -36,7 +36,6 @@ msgstr ""
 "données MusicBrainz."
 
 #: ../../usage/match.rst:12
-#, fuzzy
 msgid ""
 "Once you have retrieved the desired album information into the right-hand "
 "pane, the next step is to match the files from the left-hand pane to the "
@@ -56,7 +55,6 @@ msgstr ""
 "appropriés sur l'album et la piste appropriés."
 
 #: ../../usage/match.rst:19
-#, fuzzy
 msgid ""
 "If you drag and drop multiple files onto a specific track the first selected "
 "file will be matched to the track on which you dropped the files. The rest "
@@ -82,7 +80,6 @@ msgstr ""
 "correspondre les fichiers aux pistes en fonction des métadonnées."
 
 #: ../../usage/match.rst:23
-#, fuzzy
 msgid ""
 "Depending on your previous metadata, Picard will try to guess the matching "
 "tracks. The order is green > yellow > orange > red, where green is the best "
@@ -104,7 +101,6 @@ msgstr ""
 "la piste à son emplacement correct dans le volet de droite."
 
 #: ../../usage/match.rst:28
-#, fuzzy
 msgid ""
 "Right-clicking an item in the track list brings up a menu of commands, "
 "including \"Info\", \"Open in Player\", \"Open Containing Folder\", \"Search "
@@ -123,7 +119,6 @@ msgstr ""
 "apparaître un menu similaire de commandes."
 
 #: ../../usage/match.rst:30
-#, fuzzy
 msgid ""
 "When you select an item in the right-hand pane, the original and new "
 "metadata for the item is displayed. Right-clicking a line in the tag list "

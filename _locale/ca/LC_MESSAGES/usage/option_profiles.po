@@ -153,7 +153,6 @@ msgid ""
 msgstr ""
 
 #: ../../usage/option_profiles.rst:76
-#, fuzzy
 msgid ""
 "The profile stack order can be rearranged either by selecting a profile and "
 "using the up and down arrow buttons below the list, or by dragging the "
@@ -162,7 +161,7 @@ msgid ""
 msgstr ""
 "L'ordre de la llista de perfils es pot canviar seleccionant un perfil i fent "
 "servir els botons amb fletxes sota la llista, o bé arrossegant el perfil a "
-"una posició nova a la llista.  Els perfils s'habiliten quan la casella al "
+"una posició nova a la llista. Els perfils s'habiliten quan la casella al "
 "costat del nom del perfil està marcada."
 
 #: ../../usage/option_profiles.rst:78

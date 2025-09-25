@@ -42,7 +42,6 @@ msgid "Basic usage"
 msgstr "Utilisation de base"
 
 #: ../../usage/tags_from_file_names.rst:12
-#, fuzzy
 msgid ""
 "To use this tool, select one or more files loaded into Picard and open the "
 "Tags From File Names dialog from the menu at :menuselection:`\"Tools --> "
@@ -57,7 +56,6 @@ msgstr ""
 "correspondant."
 
 #: ../../usage/tags_from_file_names.rst:17
-#, fuzzy
 msgid ""
 "The matching pattern can consist of Picard tag names enclosed in ``%`` signs "
 "and other characters that are matched verbatim. For the tag names you can "
@@ -69,7 +67,7 @@ msgstr ""
 "Le modèle de correspondance peut être constitué de noms de balises Picard "
 "entourés de signes ``%`` et d'autres caractères correspondant textuellement. "
 "Pour les noms de balises, vous pouvez utiliser des noms prédéfinis tels que "
-"``%artist%``, ``%album%`` ou ``%title%`` (voir :doc:`/variables/variables`) "
+"``%artist%``, ``%album%`` ou ``%title%`` (voir :doc:`../variables/variables`) "
 "ou utilisez des noms personnalisés. Vous pouvez sélectionner quelques "
 "modèles prédéfinis, mais vous pouvez également les ajuster ou définir les "
 "vôtres."
@@ -91,7 +89,6 @@ msgstr ""
 "inclure ce séparateur, comme :samp:`%tracknumber% - %title%`."
 
 #: ../../usage/tags_from_file_names.rst:21
-#, fuzzy
 msgid ""
 "Clicking on the \"Preview\" button next to the matching pattern will show a "
 "preview of the extracted tags for each file name. Once you are satisfied "
@@ -113,7 +110,6 @@ msgid "Matching folders"
 msgstr "Dossiers correspondants"
 
 #: ../../usage/tags_from_file_names.rst:27
-#, fuzzy
 msgid ""
 "The pattern can also match the parent folders of the file. To match for "
 "folders use a slash (``/``) as separator. If for example the file is in a "
@@ -135,7 +131,6 @@ msgid "Replace underscores with spaces"
 msgstr "Remplacer les traits de soulignement par des espaces"
 
 #: ../../usage/tags_from_file_names.rst:36
-#, fuzzy
 msgid ""
 "Sometimes files have been named without spaces and use underscores instead. "
 "For example a file could be named :file:`04_Heart_of_Gold.mp3`. By default "
@@ -156,7 +151,6 @@ msgid "Ignoring parts of the file name"
 msgstr "Ignorer certaines parties du nom de fichier"
 
 #: ../../usage/tags_from_file_names.rst:42
-#, fuzzy
 msgid ""
 "Sometimes you don't want to include parts of the file name in your tags and "
 "just want to ignore them. The pattern must always match the entire file "
@@ -172,12 +166,11 @@ msgstr ""
 "utiliser une variable masquée pour les parties du nom de fichier que vous ne "
 "souhaitez pas faire correspondre à une balise réelle. Les variables masquées "
 "commencent par un trait de soulignement comme :samp:`%_dummy%`. Cette "
-"variable sera toujours disponible dans le fichier pour :doc:`/extending/"
+"variable sera toujours disponible dans le fichier pour :doc:`../extending/"
 "scripting`, mais ne sera pas écrite dans les balises réelles du fichier lors "
 "de l'enregistrement."
 
 #: ../../usage/tags_from_file_names.rst:44
-#, fuzzy
 msgid ""
 "One example might be if you want to extract only the track number from a "
 "file name like :file:`04 Are You Ready for the Country_.mp3`. Maybe the "
@@ -199,7 +192,6 @@ msgstr ""
 "arbitrairement, il suffit de commencer par un trait de soulignement."
 
 #: ../../usage/tags_from_file_names.rst:48
-#, fuzzy
 msgid ""
 "Parsing hidden variables from file names is supported since Picard 2.5. "
 "Earlier versions would create an actual tag which would get stored to the "

@@ -32,7 +32,6 @@ msgstr ""
 "sont:"
 
 #: ../../usage/retrieve_manual_steps.txt:5
-#, fuzzy
 msgid ""
 "Add your files using :menuselection:`\"Files --> Add Files...\"` or :"
 "menuselection:`\"Files --> Add Folder...\"`. For ease of use it is "
@@ -58,7 +57,6 @@ msgstr ""
 "noms passeront du gris au noir."
 
 #: ../../usage/retrieve_manual_steps.txt:19
-#, fuzzy
 msgid ""
 "Enter your search information into the search box and select the type of "
 "records to search, then click the magnifying glass symbol to initiate the "

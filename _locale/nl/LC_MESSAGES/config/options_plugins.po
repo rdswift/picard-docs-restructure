@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -25,24 +25,24 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:9
 msgid ""
-"This section allows you to manage the plugins used by Picard.  You can "
+"This section allows you to manage the plugins used by Picard. You can "
 "install new plugins or enable, disable or uninstall plugins that are "
-"currently installed.  Picard provides a list of plugins that have been "
-"submitted to the project.  A list of the standard plugins is available on "
-"the `plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard "
+"currently installed. Picard provides a list of plugins that have been "
+"submitted to the project. A list of the standard plugins is available on the "
+"`plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard "
 "website."
 msgstr ""
 
 #: ../../config/options_plugins.rst:11
 msgid ""
 "There are also a number of plugins available by :index:`third-party "
-"developers <plugins; third party>`.  Often these are discussed on the "
+"developers <plugins; third party>`. Often these are discussed on the "
 "`Community Discussion Forum <https://community.metabrainz.org/>`_ so if "
 "you're looking for a particular enhancement or functionality, a search there "
-"might be useful.  In addition, one of the MusicBrainz editors, `Colby Ray "
+"might be useful. In addition, one of the MusicBrainz editors, `Colby Ray "
 "<https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list "
 "of available plugins on a `wiki page <https://wiki.musicbrainz.org/User:"
-"Colbydray/PicardPlugins>`_.  Instructions regarding installation of third-"
+"Colbydray/PicardPlugins>`_. Instructions regarding installation of third-"
 "party plugins are included in the :ref:`\"Installing Third-Party Plugins\" "
 "<ref_installingplugins>` section below."
 msgstr ""
@@ -54,8 +54,8 @@ msgstr ""
 #: ../../config/options_plugins.rst:16
 msgid ""
 "The screen displays a list of the standard plugins and any others that have "
-"been installed.  Each plugin is displayed on a separate line showing the "
-"version number and one or more status / action icons.  The icons are:"
+"been installed. Each plugin is displayed on a separate line showing the "
+"version number and one or more status / action icons. The icons are:"
 msgstr ""
 
 #: ../../config/options_plugins.rst:22
@@ -68,8 +68,8 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:0
 msgid ""
-"This icon indicates that the plugin is not installed.  Clicking the icon "
-"will download and install the plugin."
+"This icon indicates that the plugin is not installed. Clicking the icon will "
+"download and install the plugin."
 msgstr ""
 
 #: ../../config/options_plugins.rst:31
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:0
 msgid ""
-"This icon indicates that a newer version of the plugin is available.  "
+"This icon indicates that a newer version of the plugin is available. "
 "Clicking the icon will download and install the updated version."
 msgstr ""
 
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:0
 msgid ""
-"This icon indicates that the plugin is installed and currently enabled.  "
+"This icon indicates that the plugin is installed and currently enabled. "
 "Clicking the icon will disable the plugin, but it will still be installed."
 msgstr ""
 
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:0
 msgid ""
-"This icon indicates that the plugin is installed but currently disabled.  "
+"This icon indicates that the plugin is installed but currently disabled. "
 "Clicking the icon will enable the plugin."
 msgstr ""
 
@@ -124,15 +124,15 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:0
 msgid ""
-"This icon indicates that the plugin is currently installed.  Clicking the "
+"This icon indicates that the plugin is currently installed. Clicking the "
 "icon will uninstall the plugin."
 msgstr ""
 
 #: ../../config/options_plugins.rst:63
 msgid ""
 "When a plugin in the list is selected (i.e.: highlighted), a brief "
-"description of the plugin will be shown in  the \"Details\" section below "
-"the list."
+"description of the plugin will be shown in the \"Details\" section below the "
+"list."
 msgstr ""
 
 #: ../../config/options_plugins.rst:70
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../config/options_plugins.rst:86
 msgid ""
-"Navigate to the file you downloaded in Step 1 and select it.  The file will "
+"Navigate to the file you downloaded in Step 1 and select it. The file will "
 "be copied to the plugin folder, and will appear in the list of plugins."
 msgstr ""
 

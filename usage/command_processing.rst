@@ -69,9 +69,9 @@ or even something like:
    # Any files remaining in the cluster pane could not be
    # matched automatically
 
-Please see the :doc:`../usage/exec_commands` section for details regarding the commands available for execution.
+Please see the :doc:`exec_commands` section for details regarding the commands available for execution.
 
 .. toctree::
    :hidden:
 
-   /usage/exec_commands
+   exec_commands

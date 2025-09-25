@@ -39,7 +39,6 @@ msgid "**Processing a large number of files at one time**"
 msgstr "**Traitement d'un grand nombre de fichiers à la fois**"
 
 #: ../../troubleshooting/stopped_working.rst:10
-#, fuzzy
 msgid ""
 "When processing a large number of files in one batch, Picard can run into "
 "issues either due to processing each file (e.g.: AcoustID fingerprinting) or "
@@ -69,7 +68,6 @@ msgstr ""
 "supplémentaires à l'API du serveur MusicBrains."
 
 #: ../../troubleshooting/stopped_working.rst:14
-#, fuzzy
 msgid ""
 "If you are processing a large library of files, it is generally more "
 "effective to process smaller batches (e.g.: 200 files) at a time, first "
@@ -82,14 +80,13 @@ msgstr ""
 "la fois, en récupérant d'abord les informations à l'aide d'un cluster et "
 "d'un processus de recherche, puis en traitant les fichiers restants sans "
 "correspondance à l'aide de l'analyse processus. Veuillez consulter la "
-"section :doc:`/usage/retrieve` pour plus d'informations."
+"section :doc:`../usage/retrieve` pour plus d'informations."
 
 #: ../../troubleshooting/stopped_working.rst:16
 msgid "**Processing files across a network connection**"
 msgstr "**Traitement des fichiers via une connexion réseau**"
 
 #: ../../troubleshooting/stopped_working.rst:18
-#, fuzzy
 msgid ""
 "If you are processing files across a network connection, this can impact the "
 "speed at which Picard works because of the speed difference between a "

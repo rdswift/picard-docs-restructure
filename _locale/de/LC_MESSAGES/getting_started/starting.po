@@ -26,7 +26,6 @@ msgid ":index:`Starting Picard <starting>`"
 msgstr ":index:`Picard starten<starting>`"
 
 #: ../../getting_started/starting.rst:6
-#, fuzzy
 msgid ""
 "Once Picard has been installed on your system, most of the time you will be "
 "starting it by clicking an icon on your desktop or in a start menu. This "
@@ -45,7 +44,7 @@ msgstr ""
 "Möglichkeit einige Einstellungen zu ändern.  Über die Befehlszeile können "
 "auch Dateien oder Verzeichnisse angeben werden, die in Picard zur "
 "Verarbeitung geladen werden sollen.  Weitere Einzelheiten zu den verfügbaren "
-"Optionen finden sich in :doc:`/appendices/command_line`."
+"Optionen finden sich in :doc:`../appendices/command_line`."
 
 #: ../../getting_started/starting.rst:8
 msgid ""

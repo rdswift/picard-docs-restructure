@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 10:15-0600\n"
 "PO-Revision-Date: 2025-01-31 08:09+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -25,9 +25,8 @@ msgid "About Picard"
 msgstr ""
 
 #: ../../index.rst:30
-#, fuzzy
 msgid "Getting Started"
-msgstr "Darbo pradžia"
+msgstr ""
 
 #: ../../index.rst:44
 msgid "General Usage"
@@ -61,14 +60,9 @@ msgstr ""
 msgid "Appendices"
 msgstr ""
 
-#: ../../index.rst:117
-msgid "References"
-msgstr ""
-
-#: ../../index.rst:10 ../../index.rst:163
-#, fuzzy
+#: ../../index.rst:10
 msgid "MusicBrainz Picard"
-msgstr "„MusicBrainz Picard“"
+msgstr ""
 
 #: ../../index.rst:12
 msgid "**User Guide for MusicBrainz Picard, the next generation tagger.**"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -26,7 +26,7 @@ msgstr ""
 #: ../../config/configuration.rst:6
 msgid ""
 "Once Picard has been installed on your system, the next step is to configure "
-"it to your preferences.  The configuration consists of enabling the desired "
+"it to your preferences. The configuration consists of enabling the desired "
 "screen sections for display, selecting the desired actions, and setting the "
 "various options."
 msgstr ""
@@ -38,8 +38,8 @@ msgstr ""
 #: ../../config/configuration.rst:11
 msgid ""
 "The screen setup is found under the :menuselection:`\"View\"` item on the "
-"menu bar.  To enable the display of an item, simply check the box for the "
-"screen option.  The items are:"
+"menu bar. To enable the display of an item, simply check the box for the "
+"screen option. The items are:"
 msgstr ""
 
 #: ../../config/configuration.rst:13
@@ -68,7 +68,7 @@ msgstr ""
 #: ../../config/configuration.rst:21
 msgid ""
 "This displays the cover art for the currently selected item (track or "
-"release) in a window to the right of the tags section of the display.  This "
+"release) in a window to the right of the tags section of the display. This "
 "allows you to select or replace the cover art saved with the release."
 msgstr ""
 
@@ -107,8 +107,8 @@ msgstr ""
 #: ../../config/configuration.rst:40
 msgid ""
 "The action options are found under the :menuselection:`\"Options\"` item on "
-"the menu bar.  There are three available actions that Picard can perform "
-"when saving selected music files:"
+"the menu bar. There are three available actions that Picard can perform when "
+"saving selected music files:"
 msgstr ""
 
 #: ../../config/configuration.rst:42

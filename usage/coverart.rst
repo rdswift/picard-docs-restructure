@@ -12,9 +12,9 @@ Once the release information has been downloaded, selecting an album or track in
 .. image:: images/drop-cover-art.png
    :width: 100 %
 
-You can also choose a local file as cover art by right clicking on the image and selecting :menuselection:`"Choose local file…"`` from the menu.
+You can also choose a local file as cover art by right clicking on the image and selecting :menuselection:`"Choose local file…"` from the menu.
 
-The menu also provides additional options including :menuselection:`"Show more details"`, :menuselection:`"Keep original cover art"`, and options for the way that images dropped onto the selection are processed. Selecting :menuselection:`"Show more details"`` will bring up a new window as:
+The menu also provides additional options including :menuselection:`"Show more details"`, :menuselection:`"Keep original cover art"`, and options for the way that images dropped onto the selection are processed. Selecting :menuselection:`"Show more details"` will bring up a new window as:
 
 .. image:: images/coverart_info.png
    :width: 100 %

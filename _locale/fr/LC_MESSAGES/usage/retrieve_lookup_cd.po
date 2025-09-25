@@ -56,14 +56,13 @@ msgstr ""
 "données MusicBrainz et affichera une liste des versions correspondantes."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:12
-#, fuzzy
 msgid ""
 "Select the correct release from the list and click on the :guilabel:`Load "
 "into Picard` button. This will load the information for the release into "
 "Picard."
 msgstr ""
 "Sélectionnez la bonne version dans la liste et cliquez sur le bouton :"
-"guilabel:`Charger dans Picard`.  Cela chargera les informations relatives à "
+"guilabel:`Charger dans Picard`. Cela chargera les informations relatives à "
 "la version dans Picard."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:14
@@ -75,7 +74,6 @@ msgstr ""
 "indique qu'aucun fichier n'a été attribué à la piste."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:21
-#, fuzzy
 msgid ""
 "If there are no matches or none of the matches are correct, use the :"
 "guilabel:`Submit disc ID` option to locate the correct release. Enter the "
@@ -85,19 +83,18 @@ msgid ""
 msgstr ""
 "Si aucune correspondance n'est trouvée ou si aucune correspondance n'est "
 "correcte, utilisez l'option :guilabel:`Soumettre l'ID du disque` pour "
-"trouver la bonne version.  Saisissez le titre du disque ou le nom de "
-"l'artiste et lancez la recherche.  Vous obtiendrez une liste des disques qui "
+"trouver la bonne version. Saisissez le titre du disque ou le nom de "
+"l'artiste et lancez la recherche. Vous obtiendrez une liste des disques qui "
 "correspondent à vos critères de recherche et qui ont le même nombre de "
 "pistes que votre CD TOC."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:31
-#, fuzzy
 msgid ""
 "Use the green arrow |lookup_tagger| to load the information for a release "
 "into Picard. In addition, you can select the release and attach the CD TOC."
 msgstr ""
 "Utilisez la flèche verte |lookup_tagger| pour charger les informations d'un "
-"communiqué dans Picard.  De plus, vous pouvez sélectionner la version et "
+"communiqué dans Picard. De plus, vous pouvez sélectionner la version et "
 "joindre la TOC du CD."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:28

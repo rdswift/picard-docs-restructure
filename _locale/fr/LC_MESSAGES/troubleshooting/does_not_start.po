@@ -27,7 +27,6 @@ msgstr ""
 ":index:`Picard ne démarre pas <dépannage; le programme ne démarre pas>`"
 
 #: ../../troubleshooting/does_not_start.rst:6
-#, fuzzy
 msgid ""
 "If you find that Picard won't start there are a few common possible reasons, "
 "and things to try to correct the issue. Before doing anything drastic, it is "
@@ -49,7 +48,6 @@ msgid "**The program files have become corrupted**"
 msgstr "**Les fichiers du programme sont corrompus**"
 
 #: ../../troubleshooting/does_not_start.rst:10
-#, fuzzy
 msgid ""
 "If you suspect that this may be the problem, the first (and simplest) thing "
 "to try is to reinstall the program. This should address any potential file "
@@ -66,7 +64,6 @@ msgid "**A plugin file has become corrupted or is incompatible**"
 msgstr "**Un fichier de plugin est corrompu ou est incompatible**"
 
 #: ../../troubleshooting/does_not_start.rst:14
-#, fuzzy
 msgid ""
 "To check whether one of the plugin files has become corrupted or, in the "
 "case of a recent upgrade to a plugin or Picard, a plugin is not compatible, "
@@ -102,7 +99,6 @@ msgid "*Linux*: :file:`~/.config/MusicBrainz/Picard/plugins`"
 msgstr "*Linux*: :file:`~/.config/MusicBrainz/Picard/plugins`"
 
 #: ../../troubleshooting/does_not_start.rst:20
-#, fuzzy
 msgid ""
 "Once you have located the plugin files, they should be removed from the "
 "``plugins`` directory and moved to a temporary directory. Then try to start "
@@ -123,7 +119,6 @@ msgstr ""
 "**Le fichier de paramètres d'options est corrompu ou est incompatible**"
 
 #: ../../troubleshooting/does_not_start.rst:24
-#, fuzzy
 msgid ""
 "To check whether Picard's option settings file has become corrupted or, in "
 "the case of a recent upgrade to Picard, it is not compatible, you should try "
@@ -171,7 +166,6 @@ msgid "**There really is a bug in Picard**"
 msgstr "**Il y a vraiment un bug en Picard**"
 
 #: ../../troubleshooting/does_not_start.rst:34
-#, fuzzy
 msgid ""
 "If this problem started just after updating Picard, in spite of all the "
 "testing that is performed prior to releasing a new version, it may be "

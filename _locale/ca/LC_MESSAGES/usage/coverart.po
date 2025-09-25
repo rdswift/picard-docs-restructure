@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-26 06:31-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../usage/coverart.rst:15
 msgid ""
 "You can also choose a local file as cover art by right clicking on the image "
-"and selecting :menuselection:`\"Choose local file…\"`` from the menu."
+"and selecting :menuselection:`\"Choose local file…\"` from the menu."
 msgstr ""
 
 #: ../../usage/coverart.rst:17
@@ -45,7 +45,7 @@ msgid ""
 "The menu also provides additional options including :menuselection:`\"Show "
 "more details\"`, :menuselection:`\"Keep original cover art\"`, and options "
 "for the way that images dropped onto the selection are processed. Selecting :"
-"menuselection:`\"Show more details\"`` will bring up a new window as:"
+"menuselection:`\"Show more details\"` will bring up a new window as:"
 msgstr ""
 
 #: ../../usage/coverart.rst:22

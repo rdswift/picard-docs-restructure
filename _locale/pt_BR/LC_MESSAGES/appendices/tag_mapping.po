@@ -314,9 +314,8 @@ msgid "``artists``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
-#, fuzzy
 msgid "``TXXX:Artists``"
-msgstr "Artistas"
+msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``ARTISTS``"
@@ -1776,9 +1775,8 @@ msgid "``ICNT``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1043
-#, fuzzy
 msgid "`Release Date <https://musicbrainz.org/doc/Release_Date>`_"
-msgstr "`Data <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
+msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``date``"

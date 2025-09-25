@@ -57,7 +57,6 @@ msgid "**2. Cluster and lookup the files**"
 msgstr "**2. Regrouper et rechercher les fichiers**"
 
 #: ../../workflows/workflow_album.rst:15
-#, fuzzy
 msgid ""
 "Select the files in the left-hand pane and combine them into an album "
 "cluster using the :menuselection:`\"Tools --> Cluster\"` command. Select the "
@@ -69,14 +68,13 @@ msgstr ""
 "groupe d'albums à l'aide de la commande :menuselection:`\"Outils --> "
 "Cluster\"`. Sélectionnez le groupe dans le volet de gauche et lancez la "
 "recherche à l'aide de :menuselection:`\"Outils --> Recherche\"`. Voir la "
-"section :doc:`/usage/retrieve_lookup` pour plus de détails."
+"section :doc:`../usage/retrieve_lookup` pour plus de détails."
 
 #: ../../workflows/workflow_album.rst:18
 msgid "**3. Select the correct release**"
 msgstr "**3. Sélectionnez la parution appropriée**"
 
 #: ../../workflows/workflow_album.rst:20
-#, fuzzy
 msgid ""
 "If there is only one release that matches the lookup, it will be loaded "
 "automatically. Before proceeding, please check to ensure that it properly "
@@ -96,7 +94,6 @@ msgid "**4. Match the files to the tracks on the release**"
 msgstr "**4. Faites correspondre les fichiers aux pistes de la version**"
 
 #: ../../workflows/workflow_album.rst:25
-#, fuzzy
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in the "
 "right-hand pane. Check that each track on the release is associated with "
@@ -106,14 +103,13 @@ msgstr ""
 "Faites glisser les fichiers du volet de gauche et déposez-les sur la "
 "parution dans le volet de droite. Vérifiez que chaque piste de la parution "
 "est associée à un seul fichier. L'icône de parution devrait devenir dorée. "
-"Voir la section :doc:`/usage/match` pour plus de détails."
+"Voir la section :doc:`../usage/match` pour plus de détails."
 
 #: ../../workflows/workflow_album.rst:28
 msgid "**5. Verify the metadata and cover art**"
 msgstr "**5. Vérifiez les métadonnées et la pochette**"
 
 #: ../../workflows/workflow_album.rst:30
-#, fuzzy
 msgid ""
 "Check that the metadata and cover art image for the release and tracks are "
 "what you want. Adjust if required. See the :doc:`../usage/coverart` section "
@@ -121,20 +117,19 @@ msgid ""
 msgstr ""
 "Vérifiez que les métadonnées et l'image de la pochette de la parution et des "
 "pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la section :"
-"doc:`/usage/coverart` pour plus de détails."
+"doc:`../usage/coverart` pour plus de détails."
 
 #: ../../workflows/workflow_album.rst:33
 msgid "**6. Save the files**"
 msgstr "**6. Enregistrez les fichiers**"
 
 #: ../../workflows/workflow_album.rst:35
-#, fuzzy
 msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command. See "
 "the :doc:`../usage/save` section for details."
 msgstr ""
 "Enregistrez les fichiers à l'aide de la commande :menuselection:`\"Fichier --"
-"> Enregistrer\"`. Voir la section :doc:`/usage/save` pour plus de détails."
+"> Enregistrer\"`. Voir la section :doc:`../usage/save` pour plus de détails."
 
 #: ../../workflows/workflow_album.rst:38
 msgid "**7. Calculate and submit AcoustID fingerprints**"
@@ -151,7 +146,6 @@ msgstr ""
 "d'autres pourront rechercher pour le marquage."
 
 #: ../../workflows/workflow_album.rst:42
-#, fuzzy
 msgid ""
 "Select the album entry in the right-hand pane and calculate the AcoustID "
 "fingerprints using :menuselection:`\"Tools --> Generate AcoustID "

@@ -26,7 +26,6 @@ msgid ":index:`Work Flow Recommendations <workflows; general>`"
 msgstr ":index:`Recommandations de flux de travail <workflows; général>`"
 
 #: ../../workflows/workflows.rst:6
-#, fuzzy
 msgid ""
 "This section provides some recommended workflows for various tagging "
 "scenarios. These workflows are based on what are believed to be best "

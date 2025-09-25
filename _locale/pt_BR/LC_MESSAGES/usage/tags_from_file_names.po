@@ -40,7 +40,6 @@ msgid "Basic usage"
 msgstr "Uso básico"
 
 #: ../../usage/tags_from_file_names.rst:12
-#, fuzzy
 msgid ""
 "To use this tool, select one or more files loaded into Picard and open the "
 "Tags From File Names dialog from the menu at :menuselection:`\"Tools --> "
@@ -49,7 +48,7 @@ msgid ""
 msgstr ""
 "Para usar esta ferramenta, selecione um ou mais arquivos carregados no "
 "Picard e abra a janela Etiquetas dos nomes do Arquivo através do menu :"
-"menuselection:`\"Ferramentas --> Etiquetas dos nomes do &Arquivo\"`.  A "
+"menuselection:`\"Ferramentas --> Etiquetas dos nomes do &Arquivo\"`. A "
 "janela irá mostrar-lhe a lista com nomes dos arquivos e um campo de entrada "
 "no qual você pode digitar o padrão das etiquetas a serem extraídas."
 

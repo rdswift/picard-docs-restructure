@@ -42,7 +42,6 @@ msgid "**Description:**"
 msgstr "**Description:**"
 
 #: ../../functions/func_substr.rst:14
-#, fuzzy
 msgid ""
 "Returns the substring of ``text`` beginning with the character at the "
 "``start`` index, up to (but not including) the character at the ``end`` "

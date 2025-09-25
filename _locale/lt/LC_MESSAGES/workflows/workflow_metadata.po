@@ -37,14 +37,13 @@ msgid ""
 msgstr ""
 
 #: ../../workflows/workflow_metadata.rst:10
-#, fuzzy
 msgid ""
 "This workflow will likely only partially match the files to a release in "
 "each batch processed. This means that an album may not be fully matched, "
 "tagged and renamed until multiple batches have been processed."
 msgstr ""
 "Ši darbo eiga greičiausiai tik iš dalies atitiks kiekvieno apdorojamo paketo "
-"failus su leidiniu.  Tai reiškia, kad albumas gali būti ne visiškai "
+"failus su leidiniu. Tai reiškia, kad albumas gali būti ne visiškai "
 "atitiktas, pažymėtas ir pervadintas tol, kol bus apdoroti keli paketai."
 
 #: ../../workflows/workflow_metadata.rst:12

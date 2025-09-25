@@ -30,7 +30,6 @@ msgstr ""
 "<flux de travail; fichiers non groupés>`"
 
 #: ../../workflows/workflow_metadata.rst:6
-#, fuzzy
 msgid ""
 "In this situation, you will need to feed batches of files to Picard to "
 "process. In order to minimize the performance impact, it is recommended to "
@@ -45,7 +44,6 @@ msgstr ""
 "clusters en fonction des métadonnées existant actuellement dans les fichiers."
 
 #: ../../workflows/workflow_metadata.rst:10
-#, fuzzy
 msgid ""
 "This workflow will likely only partially match the files to a release in "
 "each batch processed. This means that an album may not be fully matched, "
@@ -73,7 +71,6 @@ msgid "**2. Cluster and lookup the files**"
 msgstr "**2. Regrouper et rechercher les fichiers**"
 
 #: ../../workflows/workflow_metadata.rst:19
-#, fuzzy
 msgid ""
 "Select the files in the left-hand pane and combine them into album clusters "
 "using the :menuselection:`\"Tools --> Cluster\"` command. Picard will "
@@ -87,7 +84,7 @@ msgstr ""
 "Picard tentera de regrouper les fichiers en se basant sur leurs métadonnées "
 "existantes. Sélectionnez les groupes souhaités dans le volet gauche et "
 "lancez la recherche à l'aide de la commande :menuselection:`\"Outils --> "
-"Recherche\"`. Consultez la section :doc:`/usage/retrieve_lookup` pour plus "
+"Recherche\"`. Consultez la section :doc:`../usage/retrieve_lookup` pour plus "
 "de détails."
 
 #: ../../workflows/workflow_metadata.rst:21
@@ -95,7 +92,6 @@ msgid "**3. Match the files to the tracks on the release**"
 msgstr "**3. Faites correspondre les fichiers aux pistes de la version**"
 
 #: ../../workflows/workflow_metadata.rst:23
-#, fuzzy
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in the "
 "right-hand pane. Check that each track on the release is associated with "
@@ -107,14 +103,13 @@ msgstr ""
 "dans le volet de droite. Vérifiez que chaque piste de la version est "
 "associée à un seul fichier. L'icône de version restera probablement "
 "argentée, indiquant que toutes les pistes n'ont pas été associées aux "
-"fichiers. Voir la section :doc:`/usage/match` pour plus de détails."
+"fichiers. Voir la section :doc:`../usage/match` pour plus de détails."
 
 #: ../../workflows/workflow_metadata.rst:26
 msgid "**4. Verify the metadata and cover art**"
 msgstr "**4. Vérifiez les métadonnées et la pochette**"
 
 #: ../../workflows/workflow_metadata.rst:28
-#, fuzzy
 msgid ""
 "Check that the metadata and cover art image for the release and tracks are "
 "what you want. Adjust if required. See the :doc:`../usage/coverart` section "
@@ -122,20 +117,19 @@ msgid ""
 msgstr ""
 "Vérifiez que les métadonnées et l'image de la pochette de la parution et des "
 "pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la section :"
-"doc:`/usage/coverart` pour plus de détails."
+"doc:`../usage/coverart` pour plus de détails."
 
 #: ../../workflows/workflow_metadata.rst:31
 msgid "**5. Save the files**"
 msgstr "**5. Enregistrez les fichiers**"
 
 #: ../../workflows/workflow_metadata.rst:33
-#, fuzzy
 msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command. See "
 "the :doc:`../usage/save` section for details."
 msgstr ""
 "Enregistrez les fichiers à l'aide de la commande :menuselection:`\"Fichier --"
-"> Enregistrer\"`. Voir la section :doc:`/usage/save` pour plus de détails."
+"> Enregistrer\"`. Voir la section :doc:`../usage/save` pour plus de détails."
 
 #: ../../workflows/workflow_metadata.rst:38
 msgid ""

@@ -20,12 +20,10 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/retrieve.rst:4
-#, fuzzy
 msgid "Retrieving Album Information"
 msgstr "Recuperando Informações do Álbum"
 
 #: ../../usage/retrieve.rst:8
-#, fuzzy
 msgid ""
 "This stage identifies the album on MusicBrainz that will provide the "
 "information used for tagging the files, and retrieves the metadata from the "
@@ -35,7 +33,7 @@ msgid ""
 msgstr ""
 "Este estágio identifica o álbum no MusicBrainz, que provê informações "
 "utilizadas para etiquetar os arquivos, e requisita os metadados do banco de "
-"dados MusicBrainz.  Existem diferentes jeitos de se fazer isto, dependendo "
+"dados MusicBrainz. Existem diferentes jeitos de se fazer isto, dependendo "
 "da informações disponíveis no seu sistema (por exemplo: metadados pré-"
 "existentes nos arquivos, ou ter o CD original)."
 
@@ -54,7 +52,6 @@ msgid ":doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`"
 msgstr ""
 
 #: ../../usage/retrieve.rst:21
-#, fuzzy
 msgid ""
 "This is the preferred method of automatically identifying the album to "
 "retrieve, and should be used when you have the CD or :ref:`supported ripper "
@@ -68,11 +65,11 @@ msgid ""
 "TOC from your CD to the selected release for future lookup."
 msgstr ""
 "Este é o método indicado para identificar automáticamente o álbum a ser "
-"recuperado, e deve ser usado quando você possuir o CD em mãos.  Tipicamente "
-"é utilizado logo após digitalizar os arquivos de áudio do CD.  Quando "
+"recuperado, e deve ser usado quando você possuir o CD em mãos. Tipicamente "
+"é utilizado logo após digitalizar os arquivos de áudio do CD. Quando "
 "iniciado, a tabela de conteúdos (table of contents - toc) é lida do CD e uma "
 "requisição é enviada para o MusicBrainz, que retorna uma lista de "
-"lançamentos similares com o toc.  Se houver correspondências, você deverá "
+"lançamentos similares com o toc. Se houver correspondências, você deverá "
 "escolher qual utilizar.  Se não houver lançamentos correspondentes ou nenhum "
 "dos lançamentos listados forem corretos, você pode buscar o banco de dados "
 "manualmente pelo álbum correto, e então anexar o toc do seu CD ao lançamento "

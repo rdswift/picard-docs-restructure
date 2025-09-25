@@ -27,7 +27,6 @@ msgstr ""
 "enregistrement de fichiers>`"
 
 #: ../../usage/save.rst:8
-#, fuzzy
 msgid ""
 "This stage is where Picard updates the matched files with the metadata "
 "retrieved in the first stage, based on the settings configured in the "
@@ -55,7 +54,6 @@ msgstr ""
 "emplacement approprié."
 
 #: ../../usage/save.rst:15
-#, fuzzy
 msgid ""
 "Once the files have been saved successfully, you can remove the album from "
 "the right-hand pane by selecting it and using :menuselection:`\"Edit --> "

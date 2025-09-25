@@ -59,12 +59,11 @@ msgid "enable debug-level logging"
 msgstr "Habilita el registre de depuració"
 
 #: ../../appendices/command_line.rst:32
-#, fuzzy
 msgid ""
 "execute one or more COMMANDs at start-up (see :doc:`../usage/exec_commands` "
 "for more information)"
 msgstr ""
-"Executa una o més ordres en iniciar el programa (consulteu :doc:`/usage/"
+"Executa una o més ordres en iniciar el programa (consulteu :doc:`../usage/"
 "exec_commands` per a més informació)"
 
 #: ../../appendices/command_line.rst:36

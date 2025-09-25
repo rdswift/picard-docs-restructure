@@ -21,9 +21,8 @@ msgstr ""
 "X-Generator: Weblate 5.9.2\n"
 
 #: ../../epub.rst:8
-#, fuzzy
 msgid "MusicBrainz Picard"
-msgstr "„MusicBrainz Picard“"
+msgstr "MusicBrainz Picard"
 
 #: ../../epub.rst:10
 msgid "**User Guide for MusicBrainz Picard, the next generation tagger.**"

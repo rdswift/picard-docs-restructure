@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 10:15-0600\n"
 "PO-Revision-Date: 2021-08-24 20:50+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
@@ -53,19 +53,14 @@ msgid "Tutorials"
 msgstr "Tutoriais"
 
 #: ../../index.rst:93
-#, fuzzy
 msgid "Video Tutorials"
-msgstr "Tutoriais"
+msgstr ""
 
 #: ../../index.rst:104
 msgid "Appendices"
 msgstr "Apêndices"
 
-#: ../../index.rst:117
-msgid "References"
-msgstr "Referências"
-
-#: ../../index.rst:10 ../../index.rst:163
+#: ../../index.rst:10
 msgid "MusicBrainz Picard"
 msgstr "MusicBrainz Picard"
 
@@ -90,6 +85,9 @@ msgstr ""
 "Picard <https://picard.musicbrainz.org/>`_, além de formatos alternativos, "
 "incluindo PDF para impressão. Links para conteúdo adicional como scripts, "
 "plugins e tutoriais serão listados invés de se reproduzir neste documento."
+
+#~ msgid "References"
+#~ msgstr "Referências"
 
 #~ msgid ""
 #~ "This documentation is licensed under CC0 1.0. To view a copy of this "

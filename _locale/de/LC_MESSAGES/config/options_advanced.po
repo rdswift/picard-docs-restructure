@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2021-08-24 12:50+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translate.uploadedlobster.com/projects/picard-"
@@ -70,7 +70,7 @@ msgstr ""
 msgid ""
 "This specifies the number of seconds that a file can differ in length from "
 "the length in the MusicBrainz database and still be considered to be the "
-"same.  The default value is 2 seconds."
+"same. The default value is 2 seconds."
 msgstr ""
 
 #: ../../config/options_advanced.rst:25
@@ -114,8 +114,7 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_advanced.rst:41
-#, fuzzy
 msgid ""
 "Details: :doc:`options_network` / :doc:`options_matching` / :doc:"
 "`options_plugin_execution_order` / :doc:`options_maintenance`"
-msgstr "Details: :doc:`options_network` / :doc:`options_matching`"
+msgstr ""

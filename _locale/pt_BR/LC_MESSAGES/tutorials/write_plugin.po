@@ -27,7 +27,6 @@ msgid "Writing a :index:`Plugin <plugin; writing>`"
 msgstr "Criando um :index:`Plugin <plugin; writing>`"
 
 #: ../../tutorials/write_plugin.rst:6
-#, fuzzy
 msgid ""
 "You have a great idea for extending Picard with a plugin but don't know "
 "where to start. Unfortunately, this is a common problem and prevents far too "
@@ -35,13 +34,12 @@ msgid ""
 "tutorial will help get you started in turning your great idea a reality."
 msgstr ""
 "Digamos que você tem uma idéia brilhante de como extender o Picard e poderia "
-"fazer isto com um plugin, mas não faz idéia de por onde começar.  "
+"fazer isto com um plugin, mas não faz idéia de por onde começar. "
 "Infelizmente este é um problema comum e que impede diversas idéias de "
-"acontecerem.  Talvez este tutorial seja capaz de te ajudar a começar a "
+"acontecerem. Talvez este tutorial seja capaz de te ajudar a começar a "
 "transformar sua idéia em realidade."
 
 #: ../../tutorials/write_plugin.rst:8
-#, fuzzy
 msgid ""
 "Picard plugins are written in Python, so that's the programming language "
 "you'll be using. Please check the `INSTALL.md <https://github.com/metabrainz/"
@@ -51,16 +49,15 @@ msgid ""
 "plugins_api>` for additional information, including the parameters passed to "
 "each of the function types."
 msgstr ""
-"Plugins do Picard são escritos em Python, que você também precisará usar.  "
+"Plugins do Picard são escritos em Python, que você também precisará usar. "
 "Cheque o arquivo `INSTALL.md <https://github.com/metabrainz/picard/blob/"
 "master/INSTALL.md>`_ no repositório do Picard hospedado no GitHub para ver a "
 "versão mínima dos requisitos dele. O tutorial foi escrito com a versão 3.6 "
-"do Python.  Olhe também a seção :doc:`APIs de Plugins <../appendices/"
+"do Python. Olhe também a seção :doc:`APIs de Plugins <../appendices/"
 "plugins_api>` para informações adicionais, incluindo parâmetros passados "
 "para cada tipo de funções."
 
 #: ../../tutorials/write_plugin.rst:10
-#, fuzzy
 msgid ""
 "For the purpose of this tutorial, we're going to develop a simple plugin to "
 "save the argument information provided by Picard to ``track`` and "
@@ -70,7 +67,7 @@ msgid ""
 msgstr ""
 "Neste tutorial mostraremos o desenvolvimento de um plugin simples que salva "
 "os argumentos providos pelo Picard para plugins processando trilhas "
-"(``tracks``) e lançamentos (``releases``).  Dessa forma mostraremos como se "
+"(``tracks``) e lançamentos (``releases``). Dessa forma mostraremos como se "
 "acessar as informações que deseja processar e utilidades que você pode achar "
 "útil durante o desenvolvimento de seus próprios plugins."
 
@@ -83,7 +80,6 @@ msgstr ""
 "descrevem o plugin."
 
 #: ../../tutorials/write_plugin.rst:24
-#, fuzzy
 msgid ""
 "Next we list the modules that will be referenced in our code. In this case, "
 "we will be using the ``os`` module to build the output file path, and the "
@@ -93,18 +89,17 @@ msgid ""
 "so that we can write debug or error messages to Picard's log. Finally, we "
 "import the appropriate processing hooks and plugin priority settings."
 msgstr ""
-"Em seguida, nós listamos os módulos referenciados no nosso código.  Neste "
+"Em seguida, nós listamos os módulos referenciados no nosso código. Neste "
 "caso, nós usamos os módulos ``os`` e ``json`` para montar o caminho do "
 "arquivo de saída e formatar o dicionário para legibilidade respectivamente. "
 "Nós iremos salvar nosso arquivo de saída no diretório base utilizado para "
 "renomeação de arquivos, então importamos o módulo ``config`` do Picard, "
 "assim como o módulo ``log`` para que possamos escrever mensagens de "
-"depuração e erro no arquivo de log do Picard.  Finalmente, importamos "
+"depuração e erro no arquivo de log do Picard. Finalmente, importamos "
 "funções para registrar ganchos de processamento e configurações de "
 "prioridade dos plugins."
 
 #: ../../tutorials/write_plugin.rst:38
-#, fuzzy
 msgid ""
 "To ensure maximum compatibility, you should only use standard Python "
 "modules, or third-party modules that are already included in Picard. If you "
@@ -113,7 +108,7 @@ msgid ""
 "someone is using an executable version of Picard."
 msgstr ""
 "Para garantir uma maior compatibilidade, tente usar apenas módulos padrão "
-"Python ou módulos de terceiros já inclusos no Picard.  Se quiser usar "
+"Python ou módulos de terceiros já inclusos no Picard. Se quiser usar "
 "outros, o plugin não funcionará corretamente se utilizado em um sistema sem "
 "a versão adequada daquele módulo ou se alguém estiver usando uma versão "
 "executável do Picard."
@@ -142,7 +137,6 @@ msgstr ""
 "options/renaming.py>`_."
 
 #: ../../tutorials/write_plugin.rst:46
-#, fuzzy
 msgid ""
 "The next part is a function to write a Python object to our output file. To "
 "allow the same function to be used for different situations, we include "
@@ -153,7 +147,7 @@ msgid ""
 "file."
 msgstr ""
 "A próxima etapa é chamar a função que escreve um objeto Python para o nosso "
-"arquivo de saída.  Para permitir que a mesma função seja reutilizada em "
+"arquivo de saída. Para permitir que a mesma função seja reutilizada em "
 "situações diferentes, incluímos os parâmetros que identificam o tipo da "
 "linha (tipo de entrada), o objeto a ser escrito, além das opções para "
 "escrever em JSON subescrevendo o arquivo de saída ou escrevendo ao seu final "
@@ -170,7 +164,6 @@ msgstr ""
 "eventos do Picard em caso de exceção."
 
 #: ../../tutorials/write_plugin.rst:64
-#, fuzzy
 msgid ""
 "Now we include the functions to be called when releases and tracks are "
 "retrieved by Picard. The release function hook provides three arguments, and "
@@ -209,7 +202,6 @@ msgstr ""
 "Picard."
 
 #: ../../tutorials/write_plugin.rst:68
-#, fuzzy
 msgid ""
 "The ``track`` and ``release`` arguments are Python dictionaries containing "
 "the information provided in response to Picard's calls to the MusicBrainz "
@@ -224,7 +216,6 @@ msgstr ""
 "disponíveis no menu de opções de metadados :doc:`../config/options_metadata`."
 
 #: ../../tutorials/write_plugin.rst:81
-#, fuzzy
 msgid ""
 "Finally, we need to register our functions so that they are processed with "
 "the appropriate events. In our case, we set the priority to ``HIGH`` so that "
@@ -232,7 +223,7 @@ msgid ""
 "other plugins have an opportunity to modify it."
 msgstr ""
 "Finalmente, precisamos registrar nossas funções para que sejam processadas "
-"pelos eventos apropriados.  No nosso caso, podemos setar a prioridade do "
+"pelos eventos apropriados. No nosso caso, podemos setar a prioridade do "
 "plugin para ALTO (``HIGH``), de maneira que gravemos as informações "
 "recebidas pelo Picard antes que outros plugins tenham a oportunidade de "
 "alterá-los."
@@ -242,7 +233,6 @@ msgid "The complete plugin code file looks something like:"
 msgstr "O código completo para o plugin deve se parecer com:"
 
 #: ../../tutorials/write_plugin.rst:138
-#, fuzzy
 msgid ""
 "That's it for our plugin code. Now we need to package it so that we can "
 "install it into Picard. If we're going to just use it locally for ourself, "
@@ -255,11 +245,11 @@ msgid ""
 "as something like::"
 msgstr ""
 "E é só para o código do nosso plugin. Agora precisamos empacotá-lo para "
-"poder instalá-lo no Picard.  Se formos usar apenas localmente, o jeito mais "
-"fácil é renomear o arquivo para algo como :file:`meu_plugin.py`.  Se forem "
+"poder instalá-lo no Picard. Se formos usar apenas localmente, o jeito mais "
+"fácil é renomear o arquivo para algo como :file:`meu_plugin.py`. Se forem "
 "múltiplos arquivos, como em plugins com telas adicionais de configuração, os "
 "arquivos devem ser salvos numa pasta como :file:`meu_plugin` com o arquivo "
-"principal chamado :file:`__init__.py`.  A pasta deve ser comprimida para um "
+"principal chamado :file:`__init__.py`. A pasta deve ser comprimida para um "
 "arquivo :file:`meu_plugin.zip`, com o mesmo nome da pasta compactada. Os "
 "conteúdos do arquivo devem ser algo assim::"
 

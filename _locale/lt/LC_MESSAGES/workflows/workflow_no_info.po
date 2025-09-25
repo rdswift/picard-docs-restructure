@@ -39,7 +39,6 @@ msgstr ""
 "failai bus pažymėti neteisingu atitikmeniu iš „MusicBrainz“ duomenų bazės."
 
 #: ../../workflows/workflow_no_info.rst:8
-#, fuzzy
 msgid ""
 "In this situation, you will need to feed batches of files to Picard to "
 "process. In order to minimize the performance impact, it is recommended to "
@@ -47,20 +46,19 @@ msgid ""
 "a single batch). Picard will try to group them into clusters based on their "
 "AcoustID fingerprints."
 msgstr ""
-"Šioje padėtyje turėsite pateikti „Picard“ apdoroti failų paketus.  Norint "
+"Šioje padėtyje turėsite pateikti „Picard“ apdoroti failų paketus. Norint "
 "sumažinti poveikį veikimui, rekomenduojama, kad paketai būtų palyginti maži "
-"(t. y. maždaug 200 failų viename pakete).  „Picard“ bandys juos sugrupuoti į "
+"(t. y. maždaug 200 failų viename pakete). „Picard“ bandys juos sugrupuoti į "
 "sankaupas pagal jų „AcoustID“ atspaudus."
 
 #: ../../workflows/workflow_no_info.rst:12
-#, fuzzy
 msgid ""
 "This workflow will likely only partially match the files to a release in "
 "each batch processed. This means that an album may not be fully matched, "
 "tagged and renamed until multiple batches have been processed."
 msgstr ""
 "Ši darbo eiga greičiausiai tik iš dalies atitiks kiekvieno apdorojamo paketo "
-"failus su leidiniu.  Tai reiškia, kad albumas gali būti ne visiškai "
+"failus su leidiniu. Tai reiškia, kad albumas gali būti ne visiškai "
 "atitiktas, pažymėtas ir pervadintas tol, kol bus apdoroti keli paketai."
 
 #: ../../workflows/workflow_no_info.rst:14

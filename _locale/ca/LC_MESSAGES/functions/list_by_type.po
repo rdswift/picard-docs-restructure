@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-06-18 12:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -178,11 +178,11 @@ msgstr ":index:`Funcions multivalor <funcions de scripts; multivalor>`"
 
 #: ../../functions/list_by_type.rst:99
 msgid ""
-"These functions are used to manage multi-value tags or variables.  The multi-"
+"These functions are used to manage multi-value tags or variables. The multi-"
 "value scripting functions are:"
 msgstr ""
 "Aquestes funcions es fan servir per a administrar les etiquetes o variables "
-"multivalor.  Les funcions de scripts multivalor són:"
+"multivalor. Les funcions de scripts multivalor són:"
 
 #: ../../functions/list_by_type.rst:120
 msgid ":doc:`func_cleanmulti`"
@@ -235,10 +235,10 @@ msgstr ":index:`Funcions matemàtiques <funcions de scripts; matemàtiques>`"
 #: ../../functions/list_by_type.rst:136
 msgid ""
 "These functions are used to perform arithmetic operations on tags or "
-"variables.  The mathematical scripting functions are:"
+"variables. The mathematical scripting functions are:"
 msgstr ""
 "Aquestes funcions es fan servir per a fer operacions aritmètiques amb "
-"etiquetes o variables.  Les funcions de scripts matemàtiques són:"
+"etiquetes o variables. Les funcions de scripts matemàtiques són:"
 
 #: ../../functions/list_by_type.rst:151
 msgid ":doc:`func_add`"
@@ -442,11 +442,11 @@ msgstr ":index:`Funcions de bucle <funcions de scripts; bucle>`"
 #: ../../functions/list_by_type.rst:273
 msgid ""
 "These functions provide the ability to repeat actions based on the contents "
-"of a multi-value variable or the result of a conditional test.  The loop "
+"of a multi-value variable or the result of a conditional test. The loop "
 "scripting functions are:"
 msgstr ""
 "Aquestes funcions ofereixen la possibilitat de repetir accions segons el "
-"contingut d'una variable multivalor o el resultat d'una prova condicional.  "
+"contingut d'una variable multivalor o el resultat d'una prova condicional. "
 "Les funcions de scripts de bucle són:"
 
 #: ../../functions/list_by_type.rst:285

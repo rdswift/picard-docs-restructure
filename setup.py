@@ -315,6 +315,18 @@ class SPHINX_():        # pylint: disable=too-few-public-methods
     }
 
 
+def make_plural(count: int) -> str:
+    """Makes plural suffix string.
+
+    Args:
+        count (int): Count of items.
+
+    Returns:
+        str: 's' if count is not 1, else empty string.
+    """
+    return '' if count == 1 else 's'
+
+
 def exit_with_code(exit_code=0):
     """Print and exit with the specified exit code.
 
@@ -519,6 +531,8 @@ class POCheck():
         """
         if re.search(r"`[^`_]+`\s+_", content) or re.search(r"`[^`']*'\s*_", content):
             self.write_warning(f'[L{line_number}]: Link')
+        if re.search(r"</", content) or re.search(r":(doc|ref):`/", content):
+            self.write_warning(f'[L{line_number}]: Absolute Link')
         for item in IGNORE_DIRECTIVES:
             if re.search(r"\.\.\s+" + item + r"\s+::", content):
                 self.write_warning(f'[L{line_number}]: Directive "{item}"')
@@ -567,28 +581,58 @@ class POCheck():
                         break
             lastchar = char
 
-    def check(self, locale_dir, filetype='po'):
+    def check(self, locale_dir, filetype='po', fuzzy=False):
         """Check all translation *.po files in the specified directory and subdirectories.
         """
         if not (os.path.exists(locale_dir) and os.path.isdir(locale_dir)):
             return
         print(f"\nTesting restructured-text in *.po files.\nStarting root directory: {locale_dir}\n")
+        self.bad_files = []
         if os.path.isdir(locale_dir):
-            for dir_name, _subdir_list, file_list in os.walk(locale_dir):
-                for file_name in file_list:
+            for dir_name, _subdir_list, file_list in sorted(os.walk(locale_dir)):
+                if '.pytest_cache' in dir_name:
+                    continue
+                for file_name in sorted(file_list):
                     if re.match(r'.*\.' + filetype + '$', file_name, re.IGNORECASE):
                         self.file_count += 1
                         filename = os.path.join(dir_name, file_name)
                         self.filename_written = False
                         print(f"{(filename + ' ' * 80)[:79]}\r", end='', flush=True)
                         self.filename = filename
+                        if fuzzy:
+                            with open(filename, 'r', encoding='utf8') as f:
+                                content = f.readlines()
+                                # Don't consider header section
+                                while content and content[0].strip():
+                                    content.pop(0)
+                                if '#, fuzzy' in ''.join(content):
+                                    self.bad_files.append(f"Fuzzy Translation: {filename}")
+                            continue
                         content = {}
                         with open(filename, 'r', encoding='utf8') as f:
                             content = self.get_lines(f.readlines())
                         for key in sorted(content):
                             self.check_line(key, content[key])
             print(' ' * 79 + '\r', end='', flush=True)
-        print(f"Checked {self.line_count:,} lines in {self.file_count:,} files.  Found {self.warning_count:,} issues to check.")
+        if fuzzy:
+            self.warning_count = len(self.bad_files)
+            print(
+                f"Checked {self.file_count:,} file{make_plural(self.file_count)}."
+                # f"Found {self.warning_count:,} translation file{make_plural(self.warning_count)} to check."
+            )
+            if self.bad_files:
+                print("")
+                for item in self.bad_files:
+                    print(item)
+            print(f"\nFound {self.warning_count:,} translation file{make_plural(self.warning_count)} to check.")
+            if self.warning_count:
+                exit_with_code(1 if self.warning_count else 0)
+            return
+
+        print(
+            f"Checked {self.line_count:,} line{make_plural(self.line_count)} in {self.file_count:,} file{make_plural(self.file_count)}.  "
+            f"Found {self.warning_count:,} issue{make_plural(self.warning_count)} to check."
+        )
         if self.bad_files:
             print("\nCheck the following for errors:")
             for item in self.bad_files:
@@ -632,10 +676,11 @@ def parse_command_line():
         action='store',
         nargs='+',
         type=str,
-        choices=['rst', 'sphinx', 'po', 'flake8', 'pylint', 'isort', 'python'],
+        choices=['rst', 'sphinx', 'po', 'fuzzy', 'flake8', 'pylint', 'isort', 'python'],
         help="rst = lint check the rst files, "
              "sphinx = test build of the *.rst files "
              "po = rudimentary test of RST in *.po files "
+             "fuzzy = fuzzy translations in *.po files "
              "flake8 = test python files with flake8, "
              "pylint = test python files with pylint, "
              "isort = check python files import sorting, "
@@ -1428,6 +1473,15 @@ def main():
                     for lang in process_languages:
                         test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
                         checker.check(test_target)
+
+            elif target == 'fuzzy':
+                checker = POCheck()
+                if process_languages == [DEFAULT_LANGUAGE]:
+                    checker.check(SPHINX_.LOCALE_DIR, fuzzy=True)
+                else:
+                    for lang in process_languages:
+                        test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
+                        checker.check(test_target, fuzzy=True)
 
             elif target == 'python':
                 run_isort()

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"POT-Creation-Date: 2025-09-26 06:31-0600\n"
 "PO-Revision-Date: 2024-02-02 04:28+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -38,22 +38,20 @@ msgstr ""
 "d'abord consulter les ressources suivantes:"
 
 #: ../../troubleshooting/troubleshooting.rst:11
-#, fuzzy
 msgid ""
 "For general usage information see the :doc:`../usage/using` documentation "
 "and the `illustrated quick start guide <https://picard.musicbrainz.org/quick-"
 "start/>`_."
 msgstr ""
 "Pour des informations générales sur l'utilisation, consultez la "
-"documentation :doc:`/usage/using` et le `guide de démarrage rapide illustré "
-"<https://picard.musicbrainz.org/docs/quick-start/>`_."
+"documentation :doc:`../usage/using` et le `guide de démarrage rapide "
+"illustré <https://picard.musicbrainz.org/docs/quick-start/>`_."
 
 #: ../../troubleshooting/troubleshooting.rst:12
-#, fuzzy
 msgid ""
 "Read the :doc:`FAQ section <../faq/faq>` for common questions and problems."
 msgstr ""
-"Lisez la :doc:`section FAQ </faq/faq>` pour les questions et problèmes "
+"Lisez la :doc:`section FAQ <../faq/faq>` pour les questions et problèmes "
 "courants."
 
 #: ../../troubleshooting/troubleshooting.rst:13
@@ -264,12 +262,11 @@ msgstr ""
 "coller dans votre rapport."
 
 #: ../../troubleshooting/troubleshooting.rst:70
-#, fuzzy
 msgid ""
 "This method will only work with the installed version of Picard. It will not "
 "work with the portable or Windows Store versions."
 msgstr ""
-"Cette méthode ne fonctionne qu'avec la version installée de Picard.  Elle ne "
+"Cette méthode ne fonctionne qu'avec la version installée de Picard. Elle ne "
 "fonctionnera pas avec les versions portables ou Windows Store."
 
 #: ../../troubleshooting/troubleshooting.rst:74
@@ -334,17 +331,14 @@ msgstr ""
 "dans la fenêtre du terminal :"
 
 #: ../../troubleshooting/troubleshooting.rst:107
-#, fuzzy
 msgid ""
-"Specific situations: :doc:`../troubleshooting/does_not_start` / :doc:`../"
-"troubleshooting/no_coverart` / :doc:`../troubleshooting/missing_tags` / :doc:"
-"`../troubleshooting/not_saving` / :doc:`../troubleshooting/"
-"stopped_working` / :doc:`../troubleshooting/macos_startup_error`"
+"Specific situations: :doc:`does_not_start` / :doc:`no_coverart` / :doc:"
+"`missing_tags` / :doc:`not_saving` / :doc:`stopped_working` / :doc:"
+"`macos_startup_error`"
 msgstr ""
-"Situations spécifiques: :doc:`/troubleshooting/does_not_start` / :doc:`/"
-"troubleshooting/no_coverart` / :doc:`/troubleshooting/missing_tags` / :doc:`/"
-"troubleshooting/not_saving` / :doc:`/troubleshooting/stopped_working` / :doc:"
-"`/troubleshooting/macos_startup_error`"
+"Situations spécifiques: :doc:`does_not_start` / :doc:`no_coverart` / :doc:"
+"`missing_tags` / :doc:`not_saving` / :doc:`stopped_working` / :doc:"
+"`macos_startup_error`"
 
 #~ msgid ""
 #~ "Pasting this log into your forum post or bug ticket can help developers "

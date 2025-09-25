@@ -41,7 +41,6 @@ msgstr ""
 "propose quelques outils pour gérer cela."
 
 #: ../../tutorials/multiple_release_countries.rst:10
-#, fuzzy
 msgid ""
 "Let's take the release **Bleach**, by Nirvana (MusicBrainz release "
 "`adab3feb-1822-4d27-a997-db7d6c9688c0 <https://musicbrainz.org/release/"
@@ -137,7 +136,6 @@ msgid "What's missing?"
 msgstr "Qu'est-ce qui manque?"
 
 #: ../../tutorials/multiple_release_countries.rst:48
-#, fuzzy
 msgid ""
 "Countries are currently written to the tags as their ISO 3166-1 country "
 "code, with some special values added for historical countries and things "

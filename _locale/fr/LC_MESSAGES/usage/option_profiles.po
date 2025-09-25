@@ -37,7 +37,6 @@ msgid "How Option Profiles Work"
 msgstr "Comment fonctionnent les profils d'option"
 
 #: ../../usage/option_profiles.rst:11
-#, fuzzy
 msgid ""
 "A profile is defined by a set of options it manages. For example, one "
 "profile may include settings for file naming such as the target directory "
@@ -49,16 +48,16 @@ msgid ""
 "independently from the other user-defined profiles. The system's \"user "
 "settings\" profile is always enabled and includes all options."
 msgstr ""
-"Un profil est défini par un ensemble d'options qu'il gère.  Par exemple, un "
+"Un profil est défini par un ensemble d'options qu'il gère. Par exemple, un "
 "profil peut inclure des paramètres pour le nommage des fichiers, tels que le "
 "répertoire cible et le script de nommage des fichiers à utiliser, tandis "
 "qu'un autre profil peut inclure des paramètres différents pour les mêmes "
 "options ou des options entièrement différentes (ou certaines de ces "
-"options).  Les profils sont empilés et traités dans l'ordre spécifié par "
+"options). Les profils sont empilés et traités dans l'ordre spécifié par "
 "l'utilisateur, de haut en bas, le niveau le plus bas étant le profil "
-"\"paramètres utilisateur\" du système.  Chaque profil défini par "
+"\"paramètres utilisateur\" du système. Chaque profil défini par "
 "l'utilisateur peut être activé ou désactivé indépendamment des autres "
-"profils définis par l'utilisateur.  Le profil \"paramètres utilisateur\" du "
+"profils définis par l'utilisateur. Le profil \"paramètres utilisateur\" du "
 "système est toujours activé et comprend toutes les options."
 
 #: ../../usage/option_profiles.rst:13
@@ -105,14 +104,13 @@ msgstr ""
 "nouveau profil."
 
 #: ../../usage/option_profiles.rst:30
-#, fuzzy
 msgid ""
 "Since the profile \"TargetMyDir\" is enabled, the value for "
 "``move_files_to`` is retrieved from this profile. The \"user settings\" "
 "still has the old ``move_files_to`` value."
 msgstr ""
 "Puisque le profil \"TargetMyDir\" est activé, la valeur de ``move_files_to`` "
-"est récupérée à partir de ce profil.  Les \"paramètres utilisateur\" ont "
+"est récupérée à partir de ce profil. Les \"paramètres utilisateur\" ont "
 "toujours l'ancienne valeur de ``move_files_to``."
 
 #: ../../usage/option_profiles.rst:32
@@ -149,7 +147,6 @@ msgstr ""
 "false."
 
 #: ../../usage/option_profiles.rst:44
-#, fuzzy
 msgid ""
 "Now the user wants to save files to the \"TargetMyDir\" target directory "
 "again, with their usual options. To do this they simply disable the "
@@ -157,9 +154,9 @@ msgid ""
 "looks like:"
 msgstr ""
 "L'utilisateur souhaite maintenant enregistrer à nouveau des fichiers dans le "
-"répertoire cible \"TargetMyDir\", avec ses options habituelles.  Pour ce "
+"répertoire cible \"TargetMyDir\", avec ses options habituelles. Pour ce "
 "faire, il suffit de désactiver le profil \"ByeByeWin\" (qui peut être "
-"réactivé ultérieurement si nécessaire).  La pile ressemble à cela:"
+"réactivé ultérieurement si nécessaire). La pile ressemble à cela:"
 
 #: ../../usage/option_profiles.rst:52
 msgid ""
@@ -174,7 +171,6 @@ msgid "Managing Option Profiles"
 msgstr "Gestion des profils d'options"
 
 #: ../../usage/option_profiles.rst:64
-#, fuzzy
 msgid ""
 "All option profile management is done within the Option Profiles page "
 "available from the :menuselection:`\"Options --> Options...\"` item on the "
@@ -184,12 +180,11 @@ msgid ""
 msgstr ""
 "Toute la gestion des profils d'option s'effectue dans la page Profils "
 "d'option disponible à partir de l'élément :menuselection:`\"Options --> "
-"Options...\"` de la barre de menu.  À partir de cet écran, vous pourrez "
+"Options...\"` de la barre de menu. À partir de cet écran, vous pourrez "
 "ajouter, copier, modifier, supprimer, activer et désactiver des profils, "
 "ainsi que définir l'ordre de la pile de profils."
 
 #: ../../usage/option_profiles.rst:66
-#, fuzzy
 msgid ""
 "Initially, the list of profiles will be empty. To create a new profile click "
 "on the :guilabel:`New` button. This will create a profile with no options "
@@ -200,13 +195,13 @@ msgid ""
 "individually. The groups can be expanded to see the individual options "
 "belonging to that group."
 msgstr ""
-"Initialement, la liste des profils sera vide.  Pour créer un nouveau profil, "
-"cliquez sur le bouton :guilabel:`Nouveau`.  Cela créera un profil sans "
-"aucune option sélectionnée pour le profil à gérer.  Pour renommer le profil, "
+"Initialement, la liste des profils sera vide. Pour créer un nouveau profil, "
+"cliquez sur le bouton :guilabel:`Nouveau`. Cela créera un profil sans "
+"aucune option sélectionnée pour le profil à gérer. Pour renommer le profil, "
 "faites un clic droit sur le nom du profil et sélectionnez la commande :"
-"menuselection:`\"Renommer le profil\"`.  La liste des options que le profil "
-"doit gérer est sélectionnée dans la liste du volet de droite.  Les options "
-"peuvent être sélectionnées par groupe ou individuellement.  Les groupes "
+"menuselection:`\"Renommer le profil\"`. La liste des options que le profil "
+"doit gérer est sélectionnée dans la liste du volet de droite. Les options "
+"peuvent être sélectionnées par groupe ou individuellement. Les groupes "
 "peuvent être développés pour voir les options individuelles appartenant à ce "
 "groupe."
 
@@ -221,7 +216,6 @@ msgstr ""
 "s'affiche sous forme d'infobulle pour le paramètre."
 
 #: ../../usage/option_profiles.rst:76
-#, fuzzy
 msgid ""
 "The profile stack order can be rearranged either by selecting a profile and "
 "using the up and down arrow buttons below the list, or by dragging the "
@@ -230,7 +224,7 @@ msgid ""
 msgstr ""
 "L'ordre de la pile de profils peut être réorganisé soit en sélectionnant un "
 "profil et en utilisant les boutons fléchés haut et bas sous la liste, soit "
-"en faisant glisser le profil vers une nouvelle position dans la pile.  Les "
+"en faisant glisser le profil vers une nouvelle position dans la pile. Les "
 "profils sont activés lorsque la case située à côté du nom du profil est "
 "cochée."
 
@@ -265,7 +259,6 @@ msgstr ""
 "de menu de l'écran principal de Picard."
 
 #: ../../usage/option_profiles.rst:82
-#, fuzzy
 msgid ""
 "When you click the :guilabel:`Make It So!` button, in addition to saving "
 "your updated profile configuration all highlighted options will be saved to "
@@ -314,7 +307,6 @@ msgstr ""
 "l'option."
 
 #: ../../usage/option_profiles.rst:100
-#, fuzzy
 msgid ""
 "From the pages which contain options that can be included on a profile, you "
 "will also be able to see which profiles, if any, manage any of the options "
@@ -323,11 +315,10 @@ msgid ""
 msgstr ""
 "À partir des pages qui contiennent des options pouvant être incluses dans un "
 "profil, vous pourrez également voir quels profils, le cas échéant, gèrent "
-"l'une des options de la page.  Pour ce faire, cliquez sur le bouton :"
+"l'une des options de la page. Pour ce faire, cliquez sur le bouton :"
 "guilabel:`Profils attachés`."
 
 #: ../../usage/option_profiles.rst:105
-#, fuzzy
 msgid ""
 "This lists the attached profiles in the order in which they appear in the "
 "profile stack, and whether or not the profile is enabled. If the page does "
@@ -336,11 +327,10 @@ msgid ""
 msgstr ""
 "Ce bouton liste les profils attachés dans l'ordre dans lequel ils "
 "apparaissent dans la pile de profils, et indique si le profil est activé ou "
-"non.  Si la page ne contient aucune option pouvant être gérée par un profil, "
+"non. Si la page ne contient aucune option pouvant être gérée par un profil, "
 "le bouton :guilabel:`Profils attachés` sera désactivé."
 
 #: ../../usage/option_profiles.rst:109
-#, fuzzy
 msgid ""
 "It is important to understand that when you click the :guilabel:`Make It So!"
 "` button **all** of the option settings on **all** pages will be saved. If "
@@ -362,5 +352,5 @@ msgstr ""
 "en surbrillance et sera enregistrée dans le profil \"paramètres "
 "utilisateur\", qui correspond aux paramètres normaux de l'utilisateur, "
 "contient toutes les options, se trouve au bas de la pile de profils et est "
-"toujours activé.  Le profil \"paramètres utilisateur\" ne peut pas être "
+"toujours activé. Le profil \"paramètres utilisateur\" ne peut pas être "
 "modifié et n'apparaît pas dans la page de gestion des profils."

@@ -47,7 +47,6 @@ msgid "img-release"
 msgstr "img-release"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "This icon indicates that the information for the release has been "
 "successfully retrieved from the MusicBrainz database. Some, but not all, "
@@ -137,14 +136,13 @@ msgid "img-track-audio"
 msgstr "img-track-audio"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "This icon indicates that the track is an audio track and that there is no "
 "single file currently matched. This appears if there is no file matched, or "
 "if there are multiple files matched."
 msgstr ""
 "Cette icône indique que la piste est une piste audio et qu'il n'y a pas de "
-"fichier unique correspondant.  Elle apparaît si aucun fichier ne correspond "
+"fichier unique correspondant. Elle apparaît si aucun fichier ne correspond "
 "ou si plusieurs fichiers correspondent."
 
 #: ../../getting_started/status_icons.rst:73
@@ -156,14 +154,13 @@ msgid "img-track-video"
 msgstr "img-track-video"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "This icon indicates that the track is a video track and that there is no "
 "file currently matched. This appears if there is no file matched, or if "
 "there are multiple files matched."
 msgstr ""
 "Cette icône indique que la piste est une piste vidéo et qu'il n'y a pas de "
-"fichier correspondant.  Elle apparaît si aucun fichier ne correspond ou si "
+"fichier correspondant. Elle apparaît si aucun fichier ne correspond ou si "
 "plusieurs fichiers correspondent."
 
 #: ../../getting_started/status_icons.rst:82
@@ -175,14 +172,13 @@ msgid "img-track-data"
 msgstr "img-track-data"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "This icon indicates that the track is a data track and that there is no file "
 "currently matched. This appears if there is no file matched, or if there are "
 "multiple files matched."
 msgstr ""
 "Cette icône indique que la piste est une piste de données et qu'il n'y a pas "
-"de fichier correspondant.  Elle apparaît si aucun fichier ne correspond ou "
+"de fichier correspondant. Elle apparaît si aucun fichier ne correspond ou "
 "si plusieurs fichiers correspondent."
 
 #: ../../getting_started/status_icons.rst:111
@@ -218,7 +214,6 @@ msgid "img-match-100"
 msgstr "img-match-100"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "These icons indicates the quality of match between the information from the "
 "file and the information for the track as provided from the MusicBrainz "
@@ -251,7 +246,6 @@ msgid "img-error-no-access"
 msgstr "img-error-no-access"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "This icon indicates that Picard encountered a permission error while trying "
 "to load or save the file. This is typically due to the file being marked as "
@@ -259,7 +253,7 @@ msgid ""
 "the file in the specified directory."
 msgstr ""
 "Cette icône indique que Picard a rencontré une erreur de permission en "
-"essayant de charger ou d'enregistrer le fichier.  Ceci est généralement dû "
+"essayant de charger ou d'enregistrer le fichier. Ceci est généralement dû "
 "au fait que le fichier est marqué comme étant en lecture seule, ou que vous "
 "n'avez pas la permission suffisante pour lire le fichier ou enregistrer le "
 "fichier dans le répertoire spécifié."
@@ -273,7 +267,6 @@ msgid "img-error-not-found"
 msgstr "img-error-not-found"
 
 #: ../../getting_started/status_icons.rst:0
-#, fuzzy
 msgid ""
 "This icon indicates that Picard could not find the file with the given path "
 "while trying to load or save the track. This is typically due to the file "
@@ -281,7 +274,7 @@ msgid ""
 "due to a missing directory."
 msgstr ""
 "Cette icône indique que Picard n'a pas pu trouver le fichier avec le chemin "
-"donné en essayant de charger ou de sauvegarder la piste.  Cela est "
+"donné en essayant de charger ou de sauvegarder la piste. Cela est "
 "généralement dû au fait que le fichier a été déplacé ou supprimé depuis son "
 "chargement dans Picard, mais cela peut aussi être dû à un répertoire "
 "manquant."
@@ -295,14 +288,13 @@ msgid "img-dialog-error"
 msgstr "img-dialog-error"
 
 #: ../../getting_started/status_icons.rst:149
-#, fuzzy
 msgid ""
 "This icon indicates that Picard encountered an error while trying to load or "
 "save the track. This is typically due to a problem writing the tags into the "
 "file, but could also be due to a storage IO error on your system."
 msgstr ""
 "Cette icône indique que Picard a rencontré une erreur en essayant de charger "
-"ou d'enregistrer la piste.  Ceci est généralement dû à un problème "
+"ou d'enregistrer la piste. Ceci est généralement dû à un problème "
 "d'écriture des tags dans le fichier, mais peut aussi être dû à une erreur "
 "d'entrée/sortie de données sur votre système."
 
@@ -311,7 +303,6 @@ msgid ":index:`Status Bar <icons; status bar, status bar>`"
 msgstr ":index:`Barre d'état <icônes ; barre d'état, barre d'état>`"
 
 #: ../../getting_started/status_icons.rst:155
-#, fuzzy
 msgid ""
 "There is a status bar at the bottom of Picard's main screen, which displays "
 "some information about current processing status. This includes four numbers "
@@ -320,7 +311,7 @@ msgid ""
 "will also be displayed to the left of the status indicators."
 msgstr ""
 "Il y a une barre d'état en bas de l'écran principal de Picard, qui affiche "
-"quelques informations sur l'état actuel du traitement.  Elle comprend quatre "
+"quelques informations sur l'état actuel du traitement. Elle comprend quatre "
 "chiffres ainsi que le numéro du port que Picard surveille actuellement. De "
 "plus, si Picard est en train de traiter vos fichiers, une estimation de la "
 "durée de traitement sera également affichée à gauche des indicateurs de "

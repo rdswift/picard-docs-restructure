@@ -62,12 +62,11 @@ msgid "enable debug-level logging"
 msgstr "active la journalisation au niveau du débogage"
 
 #: ../../appendices/command_line.rst:32
-#, fuzzy
 msgid ""
 "execute one or more COMMANDs at start-up (see :doc:`../usage/exec_commands` "
 "for more information)"
 msgstr ""
-"exécuter une ou plusieurs COMMANDs au démarrage (voir :doc:`/usage/"
+"exécuter une ou plusieurs COMMANDs au démarrage (voir :doc:`../usage/"
 "exec_commands` pour plus d'informations)"
 
 #: ../../appendices/command_line.rst:36
