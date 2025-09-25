@@ -57,13 +57,13 @@ supported_languages = [
 
 # -- Base file name for PDF and EPUB files -----------------------------------
 
-base_filename = 'musicbrainzpicard'
+base_filename = 'MusicBrainzPicardUserGuide'
 
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
 my_notice = r'''\vspace*{\fill}
-MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a
+MusicBrainz Picard User Guide is licensed under CC0 1.0. To view a
 copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0
 \vspace{0.1\textheight}'''
 
