@@ -110,6 +110,7 @@ exclude_patterns = [
     'images',
     'testing',
     'README.md',
+    'RELEASES.md',
     'TODO.md',
     'draft_outline.md',
     '.pytest_cache',
