@@ -7,7 +7,7 @@
 
 
 import datetime
-import glob
+# import glob
 import os
 import re
 import sys
@@ -201,48 +201,48 @@ latex_domain_indices = True
 
 # -- Options for epub output ------------------------------------------
 
-epub_basename = base_filename
-epub_theme = 'epub'
+# epub_basename = base_filename
+# epub_theme = 'epub'
 
-# Metadata included in the epub file.
-epub_title = f'{project} User Guide ({major_minor})'
-epub_description = 'A User Guide for MusicBrainz Picard.'
-epub_author = 'Bob Swift (Editor)'
-epub_contributor = 'Members of the MusicBrainz Community'
-epub_publisher = 'MetaBrainz Foundation'
-epub_uid = 'MusicBrainzPicardUserGuide'
+# # Metadata included in the epub file.
+# epub_title = f'{project} User Guide ({major_minor})'
+# epub_description = 'A User Guide for MusicBrainz Picard.'
+# epub_author = 'Bob Swift (Editor)'
+# epub_contributor = 'Members of the MusicBrainz Community'
+# epub_publisher = 'MetaBrainz Foundation'
+# epub_uid = 'MusicBrainzPicardUserGuide'
 
-epub_tocdepth = 3
-epub_tocscope = 'includehidden'
+# epub_tocdepth = 3
+# epub_tocscope = 'includehidden'
 
-epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
-epub_guide = (('cover', 'epub-cover.xhtml', 'Cover Page'),)
+# epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
+# epub_guide = (('cover', 'epub-cover.xhtml', 'Cover Page'),)
 
-# epub_show_urls = 'inline'
-# epub_show_urls = 'footnote'
-epub_show_urls = 'no'
+# # epub_show_urls = 'inline'
+# # epub_show_urls = 'footnote'
+# epub_show_urls = 'no'
 
-epub_use_index = True
+# epub_use_index = True
 
-epub_post_files = [
-    ('genindex.xhtml', 'INDEX'),
-]
-
-
-def _exclude_files_helper():
-    excludes = [
-        '404.xhtml',
-        'index.xhtml',
-        'not_found.xhtml',
-        'pdf.xhtml',
-        'examples/examples.xhtml',
-    ]
-
-    for filepath in glob.glob('tutorials/v_*'):
-        if filepath.endswith('.rst'):
-            excludes.append(filepath[:-3] + 'xhtml')
-
-    return excludes
+# epub_post_files = [
+#     ('genindex.xhtml', 'INDEX'),
+# ]
 
 
-epub_exclude_files = _exclude_files_helper()
+# def _exclude_files_helper():
+#     excludes = [
+#         '404.xhtml',
+#         'index.xhtml',
+#         'not_found.xhtml',
+#         'pdf.xhtml',
+#         'examples/examples.xhtml',
+#     ]
+
+#     for filepath in glob.glob('tutorials/v_*'):
+#         if filepath.endswith('.rst'):
+#             excludes.append(filepath[:-3] + 'xhtml')
+
+#     return excludes
+
+
+# epub_exclude_files = _exclude_files_helper()
