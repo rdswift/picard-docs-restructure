@@ -18,7 +18,7 @@ Each plugin must provide some metadata as variables. Those variables should be p
    Since *Picard 2.7* the description can be formatted using
    [Markdown](https://daringfireball.net/projects/markdown/) syntax.
    If you use Markdown formatting make sure the minimum version in
-   `PLUGIN_API_VERSIONS` is set to 2.7.
+   'PLUGIN_API_VERSIONS' is set to 2.7.
    """
    PLUGIN_VERSION = '0.1'
    PLUGIN_API_VERSIONS = ['2.7', '2.8']

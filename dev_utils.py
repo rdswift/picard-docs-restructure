@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""\
-Python script used to provide development support functions.
+"""Python script used to provide development support functions.
 """
 # Copyright (C) 2020-2025 Bob Swift
 # Copyright (C) 2021 Philipp Wolfer
 
 # pylint: disable=too-many-lines
-# pylint: disable=wrong-import-order
 
 import argparse
 import glob
@@ -17,27 +15,68 @@ import shutil
 import subprocess
 import sys
 import time
-# import zipfile
 from subprocess import SubprocessError
 
 import restructuredtext_lint
+from babel import Locale, UnknownLocaleError
 
 import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder Utils'
-SCRIPT_VERS = '0.20'
+SCRIPT_VERS = '0.30'
 SCRIPT_COPYRIGHT = '2021-2025'
 SCRIPT_AUTHOR = 'Bob Swift'
 
 PACKAGE_NAME = 'picard-docs'
 PACKAGE_TITLE = 'Picard Docs'
 
-# OUTPUT_DIR = '_docs'
 BASE_FILE_NAME = conf.base_filename if hasattr(conf, 'base_filename') and conf.base_filename else 'musicbrainzpicard'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
 TAG_MAP_NAME = FILE_NAME_ROOT + '_Tag_Map'
 CURRENT_VERSION = conf.version
+
+############################################
+#   Translation file processing settings   #
+############################################
+
+FILE_TYPES = {'.pot', '.po'}
+LOCALE_DIRS = conf.locale_dirs if 'locale_dirs' in conf.__dict__ else ['_locale']
+TRANSLATION_KEY_GROUPS = {'msgid', 'msgstr', 'location'}
+HEADER_KEYS_TO_IGNORE = '|'.join([
+    "Project-Id-Version:",
+    "Report-Msgid-Bugs-To:",
+    "POT-Creation-Date:",
+    "PO-Revision-Date:",
+    "Last-Translator:",
+    "Language-Team:",
+    "Language:",
+    "MIME-Version:",
+    "Content-Type:",
+    "Content-Transfer-Encoding:",
+    "Plural-Forms:",
+    "Generated-By:",
+])
+COMMAND_TIMEOUT = 300
+
+# Regular expressions used
+
+RE_GIT_STAT_LINE = re.compile(r"\s*(\S+)\s+(.*)$")
+
+RE_IGNORE_COMMENT_LINE = re.compile(r'[+-]#')
+RE_IGNORE_LINE_STARTS = re.compile(r'^( |@|--- |diff|index)')
+RE_IGNORE_HEADER_LINES_1 = re.compile(r'[+-].*\\n"$')
+RE_IGNORE_HEADER_LINES_2 = re.compile(r'[+-]"(' + HEADER_KEYS_TO_IGNORE + r')', re.IGNORECASE)
+
+RE_CHANGED_TRANSLATION_LINE = re.compile(r'[+-](msgid|msgstr)\s?"')
+RE_CHANGED_STRINGS_LINE = re.compile(r'[+-]"')
+RE_CHANGED_LOCATION_LINE = re.compile(r'[+-]#: \.\./')
+RE_CHANGED_FUZZY_LINE = re.compile(r'[+-]#, fuzzy', re.IGNORECASE)
+
+# Optional output files
+
+STATUS_FILE = 'git_status.txt'
+DIFF_FILE = 'git_diff.txt'
 
 ######################
 #   Linter Options   #
@@ -49,9 +88,9 @@ FAIL_ON_WARNINGS = True
 PYTHON_FILES_TO_CHECK = [
     'setup.py',
     'conf.py',
+    'dev_utils.py',
     'tag_mapping.py',
-    '_extensions/*.py',
-    # 'gitstage.py',
+    # '_extensions/*.py',
 ]
 
 #################################################################
@@ -181,12 +220,13 @@ return for a fee.
 DESCRIPTION = f"{SCRIPT_NAME} (v{SCRIPT_VERS})"
 
 HELP = f"""\
-Usage: {os.path.basename(os.path.realpath(__file__))} [optional arguments] command [command args]
+Usage: {os.path.basename(os.path.realpath(__file__))} command [command args] [optional arguments]
 
 Commands:
    clean            Clean the specified target directory
    build            Build the specified target files
    test             Run the specified tests
+   stage            Stage the files for git
 
    info about       Information about the script
    info warranty    Warranty information about the script
@@ -197,50 +237,71 @@ Optional Arguments:
   -h, --help        Show this help message and exit
 """
 
-########################################
-#   Documentation Languages to Build   #
-########################################
 
-LANGUAGE_NAMES = {
-    'bg': 'Bulgarian',
-    'cs': 'Czech',
-    'da': 'Danish',
-    'de': 'German',
-    'el': 'Greek',
-    'en': 'English',
-    'es': 'Spanish',
-    'et': 'Estonian',
-    'fi': 'Finnish',
-    'fr': 'French',
-    'hr': 'Croatian',
-    'hu': 'Hungarian',
-    'it': 'Italian',
-    'ja': 'Japanese',
-    'lt': 'Lithuanian',
-    'lv': 'Latvian',
-    'nb': 'Norwegian (Bokmål)',
-    'nl': 'Dutch',
-    'no': 'Norwegian',
-    'pl': 'Polish',
-    'pt': 'Portuguese',
-    'ro': 'Romanian',
-    'ru': 'Russian',
-    'sk': 'Slovak',
-    'sl': 'Slovenian',
-    'sv': 'Swedish',
-    'tr': 'Turkish',
-    'zh': 'Chinese',
-}
+################################################################################
 
-LANGUAGE_LIST = {
-    'en': 'English',
-}
-if conf.supported_languages:
-    for code, title in conf.supported_languages:
-        LANGUAGE_LIST[code] = LANGUAGE_NAMES[code[:2]] if code[:2] in LANGUAGE_NAMES else title
+class SPHINX_():        # pylint: disable=too-few-public-methods
+    """Sphinx constants used when building the documentation.
+    """
+    OPTS = ''
+    BUILD = 'sphinx-build'
+    INTL = 'sphinx-intl'
+    BUILD_DIR = '_build'
+    SOURCE_DIR = '.'
+    LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs else '_locale'
+    GETTEXT_DIR = os.path.join(LOCALE_DIR, 'gettext')
+    BUILD_TIMEOUT = 300
+    BUILD_TARGETS = {
+        'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
+        'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
+    }
 
-DEFAULT_LANGUAGE = conf.default_language if conf.default_language else 'en'
-LANGUAGES = list(LANGUAGE_LIST.keys())
+
+################################################################################
+
+class Languages():
+    """Languages used for the documentation project.
+    """
+    # pylint: disable=too-few-public-methods
+
+    SPLIT_LANGUAGE = re.compile(r'^\s*([a-zA-Z]+)(_([a-zA-Z]*))*')
+    DEFAULT_LANGUAGE = conf.default_language if conf.default_language else 'en'
+
+    LANGUAGES = {DEFAULT_LANGUAGE}
+    for item in glob.glob(os.path.join(LOCALE_DIRS[0], '*')):
+        if not os.path.isdir(item):
+            continue
+
+        testdir = os.path.join(item, 'LC_MESSAGES')
+        if not os.path.exists(testdir) or not os.path.isdir(testdir):
+            continue
+
+        item = os.path.basename(item)
+        if item == 'gettext':
+            continue
+
+        re_match = SPLIT_LANGUAGE.match(item)
+        if not re_match:
+            continue
+
+        LANGUAGES.add(re_match.group(0))
+
+    @staticmethod
+    def name(language_code: str) -> str:
+        """Gets the name of the specified language.
+
+        Args:
+            language_code (str): Code of the language.
+
+        Returns:
+            str: Language name in English and native language.
+        """
+        parts = language_code.split('_')
+        try:
+            locale = Locale(parts[0], parts[1]) if len(parts) > 1 else Locale(parts[0])
+            return f"{locale.english_name} [{locale.display_name}]"
+        except UnknownLocaleError:
+            return f"Unknown Language '{language_code}'"
 
 
 ################################################
@@ -296,24 +357,151 @@ class ErrorLintRST():   # pylint: disable=too-few-public-methods
         self.message = err_message
 
 
-class SPHINX_():        # pylint: disable=too-few-public-methods
-    """Sphinx constants used when building the documentation.
-    """
-    OPTS = ''
-    BUILD = 'sphinx-build'
-    INTL = 'sphinx-intl'
-    BUILD_DIR = '_build'
-    SOURCE_DIR = '.'
-    LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs else '_locale'
-    GETTEXT_DIR = os.path.join(LOCALE_DIR, 'gettext')
-    BUILD_TIMEOUT = 300
-    BUILD_TARGETS = {
-        'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
-        # 'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
-        'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': ''},
-        'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
-    }
+################################################################################
 
+def parse_command_line():
+    """Parse the command line arguments.
+    """
+    arg_parser = argparse.ArgumentParser(description=DESCRIPTION)
+
+    subparsers = arg_parser.add_subparsers()
+
+    # Parse command `test`
+    parser01 = subparsers.add_parser(
+        'test',
+        help='Test the files'
+    )
+
+    parser01.add_argument(
+        'test_targets',
+        action='store',
+        nargs='+',
+        type=str,
+        choices=['rst', 'sphinx', 'po', 'fuzzy', 'flake8', 'pylint', 'isort', 'python'],
+        help="rst = lint check the rst files; "
+             "sphinx = test build of the *.rst files; "
+             "po = rudimentary test of RST in *.po files; "
+             "fuzzy = fuzzy translations in *.po files; "
+             "flake8 = test python files with flake8; "
+             "pylint = test python files with pylint; "
+             "isort = check python files import sorting; "
+             "python = all python tests (isort, flake8 and pylint)"
+    )
+
+    parser01.add_argument(
+        '-l', '--language',
+        action='store',
+        nargs='?',
+        default='en',
+        const='en',
+        metavar='LANGUAGE',
+        dest='language',
+        help="specify language for processing"
+    )
+
+    # Parse command `build`
+    parser02 = subparsers.add_parser(
+        'build',
+        help='Build the files'
+    )
+
+    parser02.add_argument(
+        'build_targets',
+        action='store',
+        nargs='+',
+        choices=['map', 'pot', 'po', 'html', 'pdf', 'all'],
+        help="map = build tag map files; "
+             "pot = build translation template files; "
+             "po = build translation files; "
+             "html = build html files; "
+             "pdf = build pdf file; "
+             "all = build all files"
+    )
+
+    parser02.add_argument(
+        '-l', '--language',
+        action='store',
+        nargs='?',
+        default='en',
+        const='en',
+        metavar='LANGUAGE',
+        dest='language',
+        help="specify language for processing"
+    )
+
+    # Parse command `clean`
+    parser03 = subparsers.add_parser(
+        'clean',
+        help='Reset the build directories'
+    )
+
+    parser03.add_argument(
+        'clean_targets',
+        action='store',
+        nargs='+',
+        choices=['mo', 'html', 'pdf', 'all'],
+        help="mo = remove all compiled MO files; "
+             "html = clean html build directory; "
+             "pdf = clean pdf build directory; "
+             "all = clean all build targets"
+    )
+
+    # Parse command `stage`
+    parser04 = subparsers.add_parser(
+        'stage',
+        help='Stage files for git'
+    )
+
+    parser04.add_argument(
+        '-g',
+        action='store_true',
+        dest='git_stage',
+        default=True,
+        help=argparse.SUPPRESS
+    )
+
+    parser04.add_argument(
+        '-r', '--rst',
+        action='store_true',
+        dest='stage_rst',
+        help="also stage rst files"
+    )
+
+    parser04.add_argument(
+        '-d', '--dry-run',
+        action='store_true',
+        dest='dryrun',
+        help="don't stage the files (report only)"
+    )
+
+    # Used for debugging
+    parser04.add_argument(
+        '-f', '--files-save',
+        action='store_true',
+        dest='save_files',
+        help="save the git output to files"
+    )
+
+    # Parse command `info`
+    parser99 = subparsers.add_parser(
+        'info',
+        help='Display project information'
+    )
+
+    parser99.add_argument(
+        'info_type',
+        action='store',
+        choices=['about', 'languages', 'warranty'],
+        help="about = info about the script; "
+             "languages = list of supported languages; "
+             "warranty = warranty of the script"
+    )
+
+    args = arg_parser.parse_args()
+    return args
+
+
+################################################################################
 
 def make_plural(count: int) -> str:
     """Makes plural suffix string.
@@ -327,6 +515,8 @@ def make_plural(count: int) -> str:
     return '' if count == 1 else 's'
 
 
+################################################################################
+
 def exit_with_code(exit_code=0):
     """Print and exit with the specified exit code.
 
@@ -336,6 +526,8 @@ def exit_with_code(exit_code=0):
     print(f'\nExit Code: {exit_code}\n')
     sys.exit(exit_code)
 
+
+################################################################################
 
 def python_files_to_check():
     """Provide expanded list of python files to check.
@@ -347,6 +539,8 @@ def python_files_to_check():
         for filename in glob.glob(filepath, recursive=True):
             yield filename
 
+
+################################################################################
 
 class LintRST():
     """Lint the restructured text (RST) files.
@@ -571,7 +765,6 @@ class POCheck():
                 backticks_open = not backticks_open
                 nextchar = content[ccount] if len(content) > ccount else ''
                 if backticks_open:
-                    # if lastchar and lastchar not in ' :"\'' and nextchar and nextchar != '`':
                     if lastchar and nextchar and nextchar != '`' and re.search(r"[a-zA-Z0-9]+", lastchar):
                         self.write_warning(f'[L{line_number},C{ccount}]: Backtick Open "{lastchar + char + nextchar}"')
                         break
@@ -584,6 +777,7 @@ class POCheck():
     def check(self, locale_dir, filetype='po', fuzzy=False):
         """Check all translation *.po files in the specified directory and subdirectories.
         """
+        # pylint: disable=too-many-branches
         if not (os.path.exists(locale_dir) and os.path.isdir(locale_dir)):
             return
         print(f"\nTesting restructured-text in *.po files.\nStarting root directory: {locale_dir}\n")
@@ -618,7 +812,6 @@ class POCheck():
             self.warning_count = len(self.bad_files)
             print(
                 f"Checked {self.file_count:,} file{make_plural(self.file_count)}."
-                # f"Found {self.warning_count:,} translation file{make_plural(self.warning_count)} to check."
             )
             if self.bad_files:
                 print("")
@@ -637,10 +830,11 @@ class POCheck():
             print("\nCheck the following for errors:")
             for item in self.bad_files:
                 print(item)
-        # print()
         if self.warning_count:
             exit_with_code(1 if self.warning_count else 0)
 
+
+################################################################################
 
 def show_help():
     """Print the help screen.
@@ -648,110 +842,18 @@ def show_help():
     print(f"\n{HELP}")
 
 
-def parse_command_line():
-    """Parse the command line arguments.
-    """
-    arg_parser = argparse.ArgumentParser(description=DESCRIPTION)
-
-    arg_parser.add_argument(
-        '-l', '--language',
-        action='store',
-        nargs='?',
-        default='en',
-        const='en',
-        metavar='LANGUAGE',
-        dest='language',
-        help="specify language for processing"
-    )
-
-    subparsers = arg_parser.add_subparsers()
-
-    parser01 = subparsers.add_parser(
-        'test',
-        help='Test the files'
-    )
-
-    parser01.add_argument(
-        'test_targets',
-        action='store',
-        nargs='+',
-        type=str,
-        choices=['rst', 'sphinx', 'po', 'fuzzy', 'flake8', 'pylint', 'isort', 'python'],
-        help="rst = lint check the rst files, "
-             "sphinx = test build of the *.rst files "
-             "po = rudimentary test of RST in *.po files "
-             "fuzzy = fuzzy translations in *.po files "
-             "flake8 = test python files with flake8, "
-             "pylint = test python files with pylint, "
-             "isort = check python files import sorting, "
-             "python = all python tests (isort, flake8 and pylint)"
-    )
-
-    parser02 = subparsers.add_parser(
-        'build',
-        help='Build the files'
-    )
-
-    parser02.add_argument(
-        'build_targets',
-        action='store',
-        nargs='+',
-        choices=['map', 'pot', 'po', 'html', 'pdf', 'epub', 'all'],
-        help="map = build tag map files, "
-             "pot = build translation template files, "
-             "po = build translation files, "
-             "html = build html files, "
-             "pdf = build pdf file, "
-             "epub = build epub file, "
-             "all = build all files"
-    )
-
-    parser03 = subparsers.add_parser(
-        'clean',
-        help='Reset the build directories'
-    )
-
-    parser03.add_argument(
-        'clean_targets',
-        action='store',
-        nargs='+',
-        choices=['mo', 'html', 'pdf', 'epub', 'all'],
-        help="mo = remove all compiled MO files, "
-             "html = clean html build directory, "
-             "pdf = clean pdf build directory, "
-             "epub = clean epub build directory, "
-             "all = clean all build targets"
-    )
-
-    parser04 = subparsers.add_parser(
-        'info',
-        help='Display project information'
-    )
-
-    parser04.add_argument(
-        'info_type',
-        action='store',
-        choices=['about', 'languages', 'warranty'],
-        help="about = info about the script, "
-             "languages = list of supported languages, "
-             "warranty = warranty of the script"
-    )
-
-    args = arg_parser.parse_args()
-    return args
-
+################################################################################
 
 def run_sphinx_test(language=''):
     """Perform a trial build using Sphinx with all warnings enabled.
     """
     print('\nSphinx test build.\n')
-    if not (language and language in LANGUAGES):
-        language = DEFAULT_LANGUAGE
-    if language == DEFAULT_LANGUAGE:
+    if not (language and language in Languages.LANGUAGES):
+        language = Languages.DEFAULT_LANGUAGE
+    if language == Languages.DEFAULT_LANGUAGE:
         language_option = ''
     else:
         language_option = '-D language=' + language
-        # update_po_files_for_language(language)
     junk_dir = '_junk'
     command = f"{SPHINX_.BUILD} -b dummy -W --keep-going {SPHINX_.SOURCE_DIR} {junk_dir} {language_option}".strip().replace('  ', ' ')
     exit_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
@@ -760,6 +862,8 @@ def run_sphinx_test(language=''):
         exit_with_code(exit_code)
     print()
 
+
+################################################################################
 
 def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
     """Check the RST files in the specified directory and subdirectories.
@@ -794,6 +898,8 @@ def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
         exit_with_code(exit_code)
 
 
+################################################################################
+
 def run_pylint():
     """Check the Python code using pylint.
     """
@@ -811,6 +917,8 @@ def run_pylint():
     if exit_code:
         exit_with_code(exit_code)
 
+
+################################################################################
 
 def run_flake8():
     """Check the Python code using flake8.
@@ -830,6 +938,8 @@ def run_flake8():
         exit_with_code(exit_code)
 
 
+################################################################################
+
 def run_isort():
     """Check the Python code using isort.
     """
@@ -844,6 +954,8 @@ def run_isort():
     if exit_code:
         exit_with_code(exit_code)
 
+
+################################################################################
 
 def get_major_minor(version):
     """Extract the major.minor portion of the supplied version string.
@@ -860,6 +972,8 @@ def get_major_minor(version):
         return f"{int('0' + parts[0])}.{int('0' + parts[1])}"
     return ''
 
+
+################################################################################
 
 def create_directory(dir_path, dir_name):
     """If the specified directory does not exist, it will be created.  Includes multiple
@@ -885,6 +999,8 @@ def create_directory(dir_path, dir_name):
             print(f"Error message: {ex}\n")
             exit_with_code(1)
 
+
+################################################################################
 
 def clean_directory(dir_path, dir_name, create_dir=True):
     """Removes all files and subdirectories for the specified directory.  If the specified
@@ -932,6 +1048,8 @@ def clean_directory(dir_path, dir_name, create_dir=True):
         create_directory(dir_path=dir_path, dir_name=dir_name)
 
 
+################################################################################
+
 def remove_dir(dir_path):
     """Remove the specified directory.  Includes multiple checks for success to accommodate race
     condition in Windows.
@@ -972,6 +1090,8 @@ def remove_dir(dir_path):
             exit_with_code(1)
 
 
+################################################################################
+
 def remove_file(file_path):
     """Removes the specified file.  Includes multiple checks for success to accommodate race
     condition in Windows.
@@ -1011,29 +1131,7 @@ def remove_file(file_path):
             exit_with_code(1)
 
 
-# def save_version_info():
-#     """Save version and language information to a __init__.py file in the docs directory
-#     so that it can be imported and used in the publish.py script.  This is used to create
-#     index.html files for use in the top and version directories, as well as the
-#     version_links.js file to provide the list of selectable versions in the options section
-#     of each web page.
-#     """
-#     create_directory(OUTPUT_DIR, 'Output')
-#     file_name = os.path.join(OUTPUT_DIR, '__init__.py')
-#     remove_file(file_name)
-#     print(f"Saving: {file_name}")
-#     with open(file_name, 'w', encoding='utf8') as ofile:
-#         ofile.write(
-#             "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n"
-#             '"""Version and Language information used for publishing the documentation.\n"""\n\n'
-#             "# This file is automatically generated.\n\n"
-#             f"VERSION = {repr(conf.version)}\n"
-#             f"DEFAULT_LANGUAGE = {repr(DEFAULT_LANGUAGE)}\n"
-#             f"LANGUAGES = {repr(LANGUAGES)}\n\n"
-#             f"FILE_NAME_ROOT = {repr(FILE_NAME_ROOT)}\n"
-#             f"TAG_MAP_NAME = {repr(TAG_MAP_NAME)}\n"
-#         )
-
+################################################################################
 
 def run_command(command):
     """Executes a command in a subprocess.
@@ -1051,6 +1149,8 @@ def run_command(command):
         exit_with_code(exit_code)
 
 
+################################################################################
+
 def do_build(target=None, language='', clean=False):
     """Perform the specified build operation.
 
@@ -1064,13 +1164,12 @@ def do_build(target=None, language='', clean=False):
         exit_with_code(1)
     build_map()
     print(f"\nBuilding target: {target}")
-    if not (language and language in LANGUAGES):
-        language = DEFAULT_LANGUAGE
-    if language == DEFAULT_LANGUAGE:
+    if not (language and language in Languages.LANGUAGES):
+        language = Languages.DEFAULT_LANGUAGE
+    if language == Languages.DEFAULT_LANGUAGE:
         language_option = ''
     else:
         language_option = '-D language=' + language
-        # update_po_files_for_language(language)
 
     if clean:
         clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[target]['dir'])
@@ -1079,7 +1178,6 @@ def do_build(target=None, language='', clean=False):
 
     command = (
         f"{SPHINX_.BUILD} -M {SPHINX_.BUILD_TARGETS[target]['cmd']} "
-        # f"{SPHINX_.SOURCE_DIR} {SPHINX_.BUILD_DIR} -c . "
         f"{SPHINX_.SOURCE_DIR} {SPHINX_.BUILD_DIR} "
         f"{SPHINX_.BUILD_TARGETS[target]['extra']} {language_option}"
     ).strip().replace('  ', ' ')
@@ -1089,61 +1187,8 @@ def do_build(target=None, language='', clean=False):
         # Additional PDF processing
         build_pdf(language=language)
 
-    # elif target == 'html':
-    #     # Additional HTML processing
-    #     build_html(language=language)
 
-    # elif target == 'epub':
-    #     # Additional EPUB processing
-    #     build_epub(language=language)
-
-
-# def build_html(language=''):
-#     """Build post processing specific to HTML files.
-
-#     Keyword Arguments:
-#         language {str} -- Language to use for the build (default: {''})
-
-#     Raises:
-#         Exception: Files not copied
-#     """
-#     output_dir = os.path.join(OUTPUT_DIR, language)
-#     html_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS['html']['dir'])
-#     clean_directory(output_dir, 'html')
-#     print(f'Copying HTML files to document directory: {output_dir}')
-#     try:
-#         remove_dir(output_dir)
-#         shutil.copytree(html_dir, output_dir)
-#         counter = 50
-#         # Multiple checks for success to accommodate race condition in Windows
-#         while counter and not os.path.exists(output_dir):
-#             counter -= 1
-#             time.sleep(.2)
-#         if not counter:
-#             raise CreateDirectoryError
-#     except (CreateDirectoryError, shutil.Error) as ex:
-#         print(f'Files not copied.  Error: {ex}')
-#         exit_with_code(1)
-
-#     zip_file = os.path.join(OUTPUT_DIR, f'{FILE_NAME_ROOT}_v{get_major_minor(CURRENT_VERSION)}_HTML_[{language}].zip')
-#     print(f'Removing old ZIP file: {zip_file}')
-#     remove_file(zip_file)
-#     print(f'Copying HTML to ZIP file: {zip_file}')
-#     current_dir = os.getcwd()
-
-#     try:
-#         with zipfile.ZipFile(zip_file, 'w') as myzip:
-#             os.chdir(output_dir)
-#             for dir_name, _subdir_list, file_list in os.walk('.'):
-#                 for fname in file_list:
-#                     f_name = os.path.join(dir_name, fname)
-#                     myzip.write(f_name)
-#     except (OSError, zipfile.BadZipFile, zipfile.LargeZipFile) as ex:
-#         print(f'Error creating ZIP file.  Error: {ex}')
-#         os.chdir(current_dir)
-#         exit_with_code(1)
-#     os.chdir(current_dir)
-
+################################################################################
 
 def build_pdf(language=''):
     """Build post processing specific to PDF files.
@@ -1161,45 +1206,11 @@ def build_pdf(language=''):
     run_command(make_index_command)
     print('\nBuilding PDF output - Second Pass')
     run_command(build_pdf_command)
-    print(f"\nCompleted building {LANGUAGE_NAMES[language]} language PDF output.")
+    print(f"\nCompleted building {Languages.name(language)} language PDF output.")
     os.chdir(save_dir)
 
-    # try:
-    #     pdf_file = os.path.join(SPHINX_.BUILD_DIR, 'latex', BASE_FILE_NAME + '.pdf')
-    #     target_file = os.path.join(OUTPUT_DIR, f'{FILE_NAME_ROOT}_v{get_major_minor(CURRENT_VERSION)}_[{language}].pdf')
-    #     # Multiple checks if file exists to accommodate race condition in Windows
-    #     counter = 50
-    #     while counter and not os.path.exists(pdf_file):
-    #         counter -= 1
-    #         time.sleep(.2)
-    #     if not counter:
-    #         raise FileNotFoundError
-    # except (FileNotFoundError, OSError) as ex:
-    #     print(f'Error building PDF file.  Error: {ex}')
-    #     exit_with_code(1)
-    # print(f'Copying output to: {target_file}\n')
-    # try:
-    #     shutil.copyfile(pdf_file, target_file)
-    # except (shutil.Error, OSError) as ex:
-    #     print(f'Error copying PDF file.  Error: {ex}')
-    #     exit_with_code(1)
 
-
-# def build_epub(language=''):
-#     """Build post processing specific to ePub files.
-
-#     Keyword Arguments:
-#         language {str} -- Language to use for the build (default: {''})
-#     """
-#     epub_file = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS['epub']['dir'], BASE_FILE_NAME + '.epub')
-#     target_file = os.path.join(OUTPUT_DIR, f'{FILE_NAME_ROOT}_v{get_major_minor(CURRENT_VERSION)}_[{language}].epub')
-#     print(f'Copying output to: {target_file}\n')
-#     try:
-#         shutil.copyfile(epub_file, target_file)
-#     except (shutil.Error, OSError) as ex:
-#         print(f'Error copying epub file.  Error: {ex}')
-#         exit_with_code(1)
-
+################################################################################
 
 def build_pot():
     """Build the current 'gettext' language translation files and updates the *.po files for
@@ -1212,17 +1223,15 @@ def build_pot():
         exit_with_code(exit_code)
 
 
+################################################################################
+
 def build_map():
     """Build the tag mapping files.
     """
-    # create_directory(OUTPUT_DIR, 'Output Documents')
-
-    # filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.html')
     filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.html')
     print(f'\nWriting HTML mapping file: {filename}')
     tag_mapping.write_html(filename)
 
-    # filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.xlsx')
     filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.xlsx')
     print(f'Writing mapping spreadsheet file: {filename}')
     tag_mapping.write_spreadsheet(filename)
@@ -1231,6 +1240,8 @@ def build_map():
     print(f'Writing RST mapping file: {filename}')
     tag_mapping.write_rst(filename)
 
+
+################################################################################
 
 def clean_mo():
     """Delete all compiled translation files (*.mo) from the gettext directory and subdirectories.
@@ -1252,6 +1263,8 @@ def clean_mo():
     print(f'Removed {count} files.')
 
 
+################################################################################
+
 def check_language(language, supported_only=False):
     """Checks that the specified language is a valid language code.
 
@@ -1264,29 +1277,22 @@ def check_language(language, supported_only=False):
     """
     if language and isinstance(language, str):
         if RE_TEST_LANGUAGE.match(language):
-            if (not supported_only) or language in LANGUAGE_LIST:
+            if (not supported_only) or language in Languages.LANGUAGES:
                 return True
     return False
 
 
-def get_languages():
-    """Helper function to get list of po languages from directories.
-    """
-    dirlist = []
-    for lang_dir in next(os.walk(SPHINX_.LOCALE_DIR))[1]:
-        testdir = os.path.join(SPHINX_.LOCALE_DIR, lang_dir, 'LC_MESSAGES')
-        if os.path.exists(testdir) and os.path.isdir(testdir):
-            dirlist.append(lang_dir)
-    return dirlist
-
+################################################################################
 
 def list_languages():
     """List the supported language options.
     """
-    for lang_id, lang_name in LANGUAGE_LIST.items():
-        print(f'   {lang_id} - {lang_name}')
+    for lang_id in sorted(Languages.LANGUAGES):
+        print(f'   {lang_id} - {Languages.name(lang_id)}')
     print("or 'all' to process all supported languages.\n")
 
+
+################################################################################
 
 def update_po(language, filegroup, filename):
     """Updates the specified po file.
@@ -1321,14 +1327,15 @@ def update_po(language, filegroup, filename):
         exit_with_code(exit_code)
 
 
+################################################################################
+
 def update_po_files_for_language(language):
     """Update the po files for the specified language.
 
     Args:
         language (str): Language code to update
     """
-    short_lang = language[:2]
-    lang_title = LANGUAGE_NAMES[short_lang] if short_lang in LANGUAGE_NAMES else 'Unknown Language'
+    lang_title = Languages.name(language)
     print(f"\n\nUpdating the {lang_title} ({language}) files.\n")
 
     # Check if `msgmerge` is available
@@ -1356,13 +1363,349 @@ def update_po_files_for_language(language):
             exit_with_code(exit_code)
 
 
+################################################################################
+
 def build_all_po_files():
     """Helper function to build all language po files.
     """
     print('\nUpdating PO files for other languages.')
-    for language in sorted(get_languages()):
+    for language in sorted(Languages.LANGUAGES):
+        if language == Languages.DEFAULT_LANGUAGE:
+            continue
         update_po_files_for_language(language)
 
+
+################################################################################
+
+def get_stdout_from_command(command: str) -> str:
+    """Run the specified command in a shell and return the stdout response as a string.
+
+    Args:
+        command (str): Command to run
+
+    Returns:
+        str: stdout response for the command output
+    """
+    print(f"Running command: {command}")
+    response = subprocess.run(command, shell=True, check=True, capture_output=True,
+                              encoding='utf8', timeout=COMMAND_TIMEOUT)
+    return response.stdout
+
+
+################################################################################
+
+def is_in_locale_dir(fullpath: str) -> bool:
+    """Checks if the specified filepath is in a locale directory.
+
+    Args:
+        fullpath (str): Full path and name of file to check
+
+    Returns:
+        bool: True if the file is in a locale directory otherwise false.
+    """
+    for locale_dir in LOCALE_DIRS:
+        if fullpath.startswith(locale_dir):
+            return True
+    return False
+
+
+################################################################################
+
+def stage_files_for_git(save_files: bool = False, stage_rst: bool = False, dryrun: bool = False) -> bool:
+    """Stage translation files, and optionally restructured text files, for git.
+
+    Args:
+        save_files (bool, optional): Save the git status and git diff output to files. Defaults to False.
+        stage_rst (bool, optional): Optionally stage changed restructured text files. Defaults to False.
+        dryrun (bool, optional): Dry run only - do not stage any files. Defaults to False.
+
+    Returns:
+        bool: True on success or False on error during processing.
+    """
+    print("\nStaging changed files for git.\n")
+    files_to_ignore = set()
+    files_to_stage = {}
+
+    try:
+        command = 'git status --porcelain'
+        git_stat = get_stdout_from_command(command)
+        if save_files:
+            with open(STATUS_FILE, 'w', encoding='utf-8') as f:
+                f.write(git_stat)
+        git_stat = git_stat.splitlines()
+
+        command = 'git diff --ignore-cr-at-eol'
+        git_diff = get_stdout_from_command(command)
+        if save_files:
+            with open(DIFF_FILE, 'w', encoding='utf-8') as f:
+                f.write(git_diff)
+        git_diff = git_diff.splitlines()
+
+    except subprocess.SubprocessError as ex:
+        print(f"\nError running:{command}\nException: {ex}")
+        return False
+
+    print("Getting the list of translation files.")
+    print(" - Parsing the git status output")
+    parse_git_status(git_stat, files_to_stage, files_to_ignore, stage_rst)
+
+    print(" - Parsing the git diff output.")
+    parse_git_diff(git_diff, files_to_stage, files_to_ignore)
+
+    if files_to_stage:
+        print("\nFiles to add to git staging:")
+        for filename, action in files_to_stage.items():
+            print(f' + "{filename}" [{action}]')
+            if not dryrun:
+                if subprocess.run(
+                        f'git add "{filename}"',
+                        shell=True,
+                        check=False,
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                        timeout=COMMAND_TIMEOUT
+                        ).returncode:
+                    print(f"\nThere was a problem adding {filename} to the commit.\n")
+                    return False
+            else:
+                print("\nNo files staged due to dry run option enabled.")
+    else:
+        print("\nNo files to stage for git.")
+    return True
+
+
+################################################################################
+
+def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set,
+                     stage_rst: bool = False) -> None:
+    """Parse the git status response to add new or deleted files.
+
+    Args:
+        git_stat (list): List of lines in the git status response
+        files_to_stage (dict): Dictionary of files to add to git staging
+        files_to_ignore (set): Set of files to not add to git staging
+        stage_rst: (bool): Whether or not RST files should be staged (default False)
+    """
+    stage_types = FILE_TYPES
+    if stage_rst:
+        stage_types.add('.rst')
+    for line in git_stat:
+        matches = RE_GIT_STAT_LINE.match(line)
+        if not matches:
+            continue
+        status = matches.group(1)
+        fullfilename = matches.group(2)
+        filename = os.path.split(fullfilename)[1]
+        ext = os.path.splitext(filename)[1]
+        if '_video_thumbnail' in fullfilename:
+            files_to_ignore.add(fullfilename)
+        elif status == "??" and fullfilename not in files_to_ignore and \
+                is_in_locale_dir(fullfilename) and fullfilename.endswith('/'):
+            files_to_stage[fullfilename] = 'Added'
+        elif ext not in stage_types:
+            files_to_ignore.add(fullfilename)
+        elif status == "D":
+            files_to_stage[fullfilename] = 'Deleted'
+        elif status == "??" and fullfilename not in files_to_ignore:
+            files_to_stage[fullfilename] = 'Added'
+        elif status == "M" and fullfilename not in files_to_ignore and \
+                stage_rst and ext == '.rst':
+            files_to_stage[fullfilename] = 'Modified'
+
+
+################################################################################
+
+def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set) -> None:
+    """Parse the git diff response.  Do not add translation files that only have changed
+    comment lines or minor changes to headers.
+
+    Args:
+        git_diff (list): List of lines in the git diff response.
+        files_to_stage (dict): Dictionary of files to add to git staging.
+        files_to_ignore (set): Set of files to not add to git staging.
+    """
+    # pylint: disable=too-many-branches
+    # pylint: disable=too-many-statements
+
+    fullfilename = ''
+    filename = ''
+    tx_strings = {}
+    for text in TRANSLATION_KEY_GROUPS:
+        tx_strings[f"+{text}"] = set()
+        tx_strings[f"-{text}"] = set()
+
+    line_count = len(git_diff)
+    line_num = 0
+    while line_num < line_count:
+        line: str = git_diff[line_num]
+        line_num += 1
+
+        # Ignore selected line starts
+        if not line or RE_IGNORE_LINE_STARTS.match(line):
+            continue
+
+        line = line.strip()
+
+        # Ignore blank lines
+        if not line:
+            continue
+
+        # Ignore changed comment lines
+        if RE_IGNORE_COMMENT_LINE.match(line):
+            continue
+
+        # Ignore changed header lines
+        if RE_IGNORE_HEADER_LINES_1.match(line) or RE_IGNORE_HEADER_LINES_2.match(line):
+            # Keep skipping lines until header line ends with '\n"'
+            while line_num < line_count and not RE_IGNORE_HEADER_LINES_1.match(line.strip()):
+                line = git_diff[line_num]
+                line_num += 1
+            continue
+
+        # Start a new file filename for processing
+        if line.startswith("+++ "):
+            if filename:
+                do_process(tx_strings, filename, fullfilename, files_to_stage, files_to_ignore)
+            fullfilename = line[6:].strip()
+            filename = os.path.split(fullfilename)[-1]
+
+            # Ignore non-translation files
+            if os.path.splitext(filename)[1] not in FILE_TYPES or not is_in_locale_dir(fullfilename):
+                fullfilename = filename = ''
+                continue
+
+            # Ignore files already processed
+            if fullfilename in files_to_stage or fullfilename in files_to_ignore:
+                fullfilename = filename = ''
+                continue
+
+        if not filename:
+            continue
+
+        # Check for changed translation 'msgid' or 'msgstr' strings.
+        match = RE_CHANGED_TRANSLATION_LINE.match(line)
+        if match:
+            action = line[0]
+            key = f"{action}{match.group(1)}"
+            text = line[len(match.group(0)):-1]
+
+            # Append to text from continuation lines.
+            while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
+                text += str(git_diff[line_num]).strip()[2:-1]
+                line_num += 1
+
+            tx_strings[key].add(text)
+
+            continue
+
+        # Check for changed translation strings not starting with 'msgid' or 'msgstr'.
+        # Note that changed sections of lines show removals before additions.
+        match = RE_CHANGED_STRINGS_LINE.match(line)
+        if match:
+            minus = plus = ''
+            action = line[0]
+            text = line[len(match.group(0)):-1]
+
+            # Append to text from continuation lines.
+            while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
+                text += str(git_diff[line_num]).strip()[2:-1]
+                line_num += 1
+
+            if action == '-':
+                minus = text
+                text = ''
+                action = '+'
+                while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
+                    text += str(git_diff[line_num]).strip()[2:-1]
+                    line_num += 1
+                plus = text
+
+            if plus != minus:
+                files_to_stage[fullfilename] = 'Modified'
+                reset_tx_strings(tx_strings)
+                filename = fullfilename = ''
+
+            minus = plus = ''
+
+            continue
+
+        # Check for changed location comment lines
+        if RE_CHANGED_LOCATION_LINE.match(line):
+            action = line[0]
+            text = line.rsplit(':', maxsplit=1)[-1].strip()
+
+            key = f"{action}location"
+            tx_strings[key].add(text)
+
+            continue
+
+        # Add changed fuzzy comment lines
+        if RE_CHANGED_FUZZY_LINE.match(line):
+            files_to_stage[fullfilename] = 'Modified'
+            reset_tx_strings(tx_strings)
+            filename = fullfilename = ''
+
+    # Handle any outstanding changes at the end of the git diff output
+    do_process(tx_strings, filename, fullfilename, files_to_stage, files_to_ignore)
+
+
+################################################################################
+
+def check_tx_strings_differences(tx_strings: dict) -> bool:
+    """Checks for mismatches between translation 'msgid' and 'msgstr'
+    values added and removed from a file.
+
+    Args:
+        tx_strings (dict): Dictionary of sets of translation strings.
+
+    Returns:
+        bool: Ture if there is a mismatch, otherwise False.
+    """
+    for key in TRANSLATION_KEY_GROUPS:
+        s_p: set = tx_strings[f"+{key}"]
+        s_m: set = tx_strings[f"-{key}"]
+        if s_p.difference(s_m) or s_m.difference(s_p):
+            return True
+    return False
+
+
+################################################################################
+
+def reset_tx_strings(tx_strings: dict) -> None:
+    """Reset the translation strings dictionary.
+
+    Args:
+        tx_strings (dict): Translations dictionary to reset.
+    """
+    for key in tx_strings.keys():
+        tx_strings[key] = set()
+
+
+################################################################################
+
+def do_process(tx_strings: dict, filename: str, fullfilename: str, files_to_stage: dict, files_to_ignore: set) -> None:
+    """Process the translation strings for the file and add the file to the
+    proper group (stage or ignore).
+
+    Args:
+        tx_strings (dict): Translation strings dictionary.
+        filename (str): Name of the file.
+        fullfilename (str): Full path and name of the file.
+        files_to_stage (dict): Dictionary of files to stage.
+        files_to_ignore (set): Set of files to ignore.
+    """
+    if filename and fullfilename not in files_to_stage.keys() and fullfilename not in files_to_ignore:
+
+        if check_tx_strings_differences(tx_strings):
+            files_to_stage[fullfilename] = 'Modified'
+        else:
+            files_to_ignore.add(fullfilename)
+
+    reset_tx_strings(tx_strings)
+    filename = fullfilename = ''
+
+
+################################################################################
 
 def main():
     """Main part of script to execute.
@@ -1372,9 +1715,17 @@ def main():
 
     args = parse_command_line()
 
+    if 'git_stage' in vars(args):
+        save_files = args.save_files if 'save_files' in vars(args) else False
+        exit_with_code(0 if stage_files_for_git(
+            save_files=save_files,
+            stage_rst=args.stage_rst,
+            dryrun=args.dryrun,
+        ) else 1)
+
     if 'language' in vars(args):
         if args.language == 'all':
-            process_languages = LANGUAGES
+            process_languages = sorted(Languages.LANGUAGES)
         elif check_language(args.language):
             process_languages = [args.language]
         else:
@@ -1384,7 +1735,7 @@ def main():
                 list_languages()
             exit_with_code(1)
     else:
-        process_languages = [DEFAULT_LANGUAGE]
+        process_languages = [Languages.DEFAULT_LANGUAGE]
 
     if 'info_type' in vars(args):
         if args.info_type == 'about':
@@ -1407,13 +1758,11 @@ def main():
     elif 'build_targets' in vars(args):
         for target in args.build_targets:
             if target in SPHINX_.BUILD_TARGETS:
-                # save_version_info()
                 for lang in process_languages:
                     do_build(target=target, language=lang, clean=True)
 
             elif target == 'map':
                 build_map()
-                # build_all_po_files()
 
             elif target == 'po':
                 build_all_po_files()
@@ -1421,11 +1770,8 @@ def main():
             elif target == 'pot':
                 build_pot()
                 build_all_po_files()
-                # checker = POCheck()
-                # checker.check(SPHINX_.LOCALE_DIR)
 
             elif target == 'all':
-                # save_version_info()
                 build_map()
                 build_pot()
                 clean_mo()
@@ -1468,7 +1814,7 @@ def main():
 
             elif target == 'po':
                 checker = POCheck()
-                if process_languages == [DEFAULT_LANGUAGE]:
+                if process_languages == [Languages.DEFAULT_LANGUAGE]:
                     checker.check(SPHINX_.LOCALE_DIR)
                 else:
                     for lang in process_languages:
@@ -1477,7 +1823,7 @@ def main():
 
             elif target == 'fuzzy':
                 checker = POCheck()
-                if process_languages == [DEFAULT_LANGUAGE]:
+                if process_languages == [Languages.DEFAULT_LANGUAGE]:
                     checker.check(SPHINX_.LOCALE_DIR, fuzzy=True)
                 else:
                     for lang in process_languages:

@@ -7,7 +7,6 @@
 
 
 import datetime
-# import glob
 import os
 import re
 import sys
@@ -16,19 +15,12 @@ from recommonmark.parser import CommonMarkParser
 
 # -- Path setup --------------------------------------------------------------
 
-# this_file_dir = os.path.dirname(os.path.abspath(__file__))
-# root_path = os.path.abspath(os.path.join(this_file_dir, '..'))
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 # sys.path.insert(0, os.path.abspath(os.path.join(root_path, '_extensions')))
 sys.path.insert(0, os.path.abspath(os.path.join('_extensions')))
 
-# import sphinx_rtd_theme
-# import picard_theme
-
-# static_path = os.path.abspath(os.path.join(root_path, '_static'))
 static_path = '_static'
 
 this_year = datetime.datetime.now().year
@@ -42,23 +34,15 @@ project = 'MusicBrainz Picard'
 version = 'v2.13.3'
 
 author = 'Bob Swift'
-# copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
 copyright = f'{this_year}, MetaBrainz Foundation.'     # pylint: disable=redefined-builtin
 
 # -- Language information ----------------------------------------------------
 
 default_language = 'en'
-supported_languages = [
-    ('en', 'English'),
-    ('fr', 'Français'),
-    # ('de', 'Deutsch'),
-    # ('es', 'Español'),
-]
 
 # -- Base file name for PDF and EPUB files -----------------------------------
 
 base_filename = 'MusicBrainzPicardUserGuide'
-
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
@@ -87,7 +71,6 @@ extensions = [
 
 source_parsers = {'.md': CommonMarkParser}
 
-# source_suffix = ['.rst', '.md']
 source_suffix = {'.rst': 'restructuredtext', '.md': 'restructuredtext'}
 
 # Add any paths that contain templates here, relative to this directory.
@@ -111,6 +94,7 @@ exclude_patterns = [
     'testing',
     'README.md',
     'RELEASES.md',
+    'DEV_UTILS.md',
     'TODO.md',
     'draft_outline.md',
     '.pytest_cache',
@@ -122,7 +106,6 @@ exclude_patterns = [
 language = default_language
 locale_dirs = ['_locale']
 gettext_compact = False
-# gettext_compact = True
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -142,14 +125,11 @@ html_static_path = [static_path]
 
 html_css_files = ['css/extra.css']
 
-# html_js_files = ['/version_links.js']
-
 # Major.minor portion of the version number used for naming the download files
 major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
 
 html_context = {
     'default_language': default_language,
-    'supported_languages': supported_languages,
     'major_minor': major_minor,
     'release': version,
 }
@@ -167,8 +147,8 @@ latex_engine = 'lualatex'
 
 latex_documents = [
     ('pdf', f'{base_filename}.tex', project, '', 'manual', False),
-    # ('pdf', '{0}.tex'.format(base_filename), project, 'Edited by Bob Swift', 'manual', False),
-    # ('pdf', '{0}.tex'.format(base_filename), project, '', 'howto', False),
+    # ('pdf', f'{base_filename}.tex', project, 'Edited by Bob Swift', 'manual', False),
+    # ('pdf', f'{base_filename}.tex', project, '', 'howto', False),
 ]
 
 # latex_toplevel_sectioning = 'part'
@@ -182,7 +162,6 @@ latex_show_urls = 'no'
 latex_elements = {
     'papersize': 'letterpaper',
     'pointsize': '11pt',
-    # 'preamble': '\\hyphenation{Music-Brainz}',
     'preamble': r'''\hyphenation{Music-Brainz}
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}
@@ -193,57 +172,6 @@ latex_elements = {
 \newcommand\sphinxbackoftitlepage{''' + my_notice + r'''}
 ''',
     'extraclassoptions': 'openany',
-    # 'maketitle': r'\newcommand\sphinxbackoftitlepage{<Extra material>}\sphinxmaketitle',
-    # 'maketitle': r'\newcommand\sphinxbackoftitlepage{<Extra material>}\sphinxmaketitle',
 }
 
 latex_domain_indices = True
-
-
-# -- Options for epub output ------------------------------------------
-
-# epub_basename = base_filename
-# epub_theme = 'epub'
-
-# # Metadata included in the epub file.
-# epub_title = f'{project} User Guide ({major_minor})'
-# epub_description = 'A User Guide for MusicBrainz Picard.'
-# epub_author = 'Bob Swift (Editor)'
-# epub_contributor = 'Members of the MusicBrainz Community'
-# epub_publisher = 'MetaBrainz Foundation'
-# epub_uid = 'MusicBrainzPicardUserGuide'
-
-# epub_tocdepth = 3
-# epub_tocscope = 'includehidden'
-
-# epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
-# epub_guide = (('cover', 'epub-cover.xhtml', 'Cover Page'),)
-
-# # epub_show_urls = 'inline'
-# # epub_show_urls = 'footnote'
-# epub_show_urls = 'no'
-
-# epub_use_index = True
-
-# epub_post_files = [
-#     ('genindex.xhtml', 'INDEX'),
-# ]
-
-
-# def _exclude_files_helper():
-#     excludes = [
-#         '404.xhtml',
-#         'index.xhtml',
-#         'not_found.xhtml',
-#         'pdf.xhtml',
-#         'examples/examples.xhtml',
-#     ]
-
-#     for filepath in glob.glob('tutorials/v_*'):
-#         if filepath.endswith('.rst'):
-#             excludes.append(filepath[:-3] + 'xhtml')
-
-#     return excludes
-
-
-# epub_exclude_files = _exclude_files_helper()
