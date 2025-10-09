@@ -46,9 +46,13 @@
 
       If the "Translate artist names" option above is also checked, it will override this option if a suitable alias is found.
 
-**Use standardized instrument and vocal credits**
+**Use standardized instrument credits**
 
-   Check to only use standard names for instruments and vocals in performer relationships. Uncheck to use the instruments and vocals as credited in the relationship.
+   Check to only use standard names for instruments in performer relationships. Uncheck to use the instruments as credited in the relationship.
+
+**Use standardized vocal credits**
+
+   Check to only use standard names for vocals in performer relationships. Uncheck to use the vocals as credited in the relationship.
 
 **Convert Unicode punctuation characters to ASCII**
 
