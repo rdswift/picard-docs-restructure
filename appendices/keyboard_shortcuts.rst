@@ -23,7 +23,7 @@ File
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Add folder", :kbd:`Ctrl+E`, :kbd:`⌘+E`
@@ -36,7 +36,7 @@ Edit
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Cut selected files", :kbd:`Ctrl+X`, :kbd:`⌘+X`
@@ -48,18 +48,19 @@ View
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Toggle file browser", :kbd:`Ctrl+B`, :kbd:`⌘+B`
    "Toggle metadata view", :kbd:`Ctrl+Shift+M`, :kbd:`⌘+⇧+M`
+   "Toggle filter view", :kbd:`Ctrl+Shift+F`, :kbd:`⌘+⇧+F`
 
 Options
 +++++++
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Open file naming script editor", :kbd:`Ctrl+Shift+S`, :kbd:`⌘+⇧+S`
@@ -70,7 +71,7 @@ Tools
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Refresh", :kbd:`Ctrl+R`, :kbd:`⌘+R`
@@ -89,7 +90,7 @@ Help
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Help", :kbd:`F1`, :kbd:`⌘+?`
@@ -101,7 +102,7 @@ Metadata view
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Add new tag", :kbd:`Alt+Shift+A`, :kbd:`⌥+⇧+A`
@@ -116,7 +117,7 @@ Other
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Focus search", :kbd:`Ctrl+F`, :kbd:`⌘+F`
@@ -127,7 +128,7 @@ Script editor
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Show auto completion", :kbd:`Ctrl+Space`, :kbd:`⌃+Space`
@@ -139,7 +140,7 @@ File naming script editor
 
 .. csv-table::
    :width: 100%
-   :widths: 50 25 25
+   :widths: 40 30 30
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Show auto completion", :kbd:`Ctrl+Space`, :kbd:`⌃+Space`
