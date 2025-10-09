@@ -18,7 +18,8 @@
       :doc:`options_location` /
       :doc:`options_cover_art_providers` /
       :doc:`options_cover_art_archive` /
-      :doc:`options_local_files`
+      :doc:`options_local_files` /
+      :doc:`options_cover_art_processing`
 
 .. toctree::
    :hidden:
@@ -27,3 +28,4 @@
    options_cover_art_providers
    options_cover_art_archive
    options_local_files
+   options_cover_art_processing
