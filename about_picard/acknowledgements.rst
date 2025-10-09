@@ -27,6 +27,7 @@ Contributors include (in alphabetic surname order):
 - Laurent Monin
 - Akash Nagaraj
 - Frederik "Freso" S. Olesen
+- Shubham Patel
 - Guntbert Reiter
 - Theodore Fabian Rudy
 - Suryansh Shakya
