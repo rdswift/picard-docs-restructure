@@ -1,5 +1,69 @@
 # Setup and Processing
 
+## Repository Setup
+
+### Branch Structure
+
+The repository is generally based on three main types of branches:
+
+#### Master Branch
+
+This is the main branch (called `master`) for the repository.
+
+- This branch is the one connected to Weblate for translations to other locales.
+- The `master` branch is automatically published as the `latest` version on ReadTheDocs whenever changes are merged to the branch.
+- This is typically the target branch for pull requests proposing changes to the current version of the documentation, including upcoming point release versions of the software.
+
+#### Stable Versions
+
+These are branches containing the stable documentation for released versions of the software. They are named for the major version of the release in the form `{major version}.x` such as `2.x` or `3.x`.
+
+- These branches will be automatically published as the branch name version (e.g. `2.x`) on ReadTheDocs whenever changes are merged to the branch.
+- The highest numbered branch will automatically be published as the `stable` version on ReadTheDocs.
+- The `master` branch will typically be merged into the highest numbered stable version branch when translations are updated or when the updated point version of the software documented in the `master` branch is released. It is unusual for pull requests to target a stable branch unless some functionality of a higher major version of the software has been backported to an earlier major release (e.g. a new configuration option in the version `3.x` release is backported to the `2.x` version).
+
+#### Next Version
+
+This branch is called `next_version`, and is intended to collect documentation changes related to new or changed functionality for an upcoming major version of the software that hasn't yet been publically released.
+
+- This branch will not be automatically published on ReadTheDocs.
+- The branch will typically be merged into the `master` branch when the software is publicly released.
+- When the software is publicly released as a production (non-beta) version, a corresponding stable version branch should be created as `{major version}.x` from the updated `master` branch. The `next_version` branch should then only be used for documentation changes associated with the next major release version of the software.
+
+### Directory Structure
+
+The directory structure for the repository is generally as follows:
+
+#### Root Directory
+
+This directory contains the configuration files for the documentation project as well as miscellaneous repository documentation and utilities, including:
+
+- `.readthedocs.yaml`: ReadTheDocs project build configuration.
+- `conf.py`: Sphinx configuration.
+- `DEV_UTILS.md`: Brief description of the developer utilities script.
+- `dev_utils.py`: Developer utilities script.
+- `genindex.rst`: Placeholder file for the generated documentation index.
+- `index.rst`: Master index for building the HTML documentation.
+- `pdf_build.sh`: BASH script used by `.readthedocs.yaml` to build the PDF documentation file.
+- `pdf.rst`: Master index for building the PDF documentation.
+- `requirements_dev.txt`: Requirements for developers.
+- `requirements.txt`: Requirements for building the documentation for ReadTheDocs.
+- `tag_mapping.py`: Module to maintain tag mapping information and to automatically generate the tag mapping pages, HTML table and Excel spreadsheet.
+
+#### Project Directories
+
+The directories containing additional files used by the project are identified as such by beginning with an underscore. These include:
+
+- `_build`: This directory is not included in the repository but is created whenever a build is triggered.
+- `_extensions`: This directory contains extensions used by the Sphinx program.
+- `_locale`: This directory contains all language translation POT and PO files.
+- `_static`: This directory contains static files to be included, such as additional css definitions and favicon image.
+- `_templates`: This directory contains custom templates used to override the default templates used by ReadTheDocs.
+
+#### Documentation Directories
+
+The remaining directories not beginning with an underscore contain the documentation restructured text (RST) source files. Each directory is intended to help separate and organize the documentation content.
+
 ## ReadTheDocs Setup
 
 ### Main Project
@@ -78,7 +142,7 @@ Preparing a new version of the documentation is typically performed in one of tw
 
 ### New Version (Method 1)
 
-This method captures the changes for the new version in a separate branch that will not be automatically added to the project on ReadTheDocs. For example in a branch such as `new_version_3.x`. Once the new version of the program is generally released as a `beta` or `pre-release` version for testing, the "new version" branch is merged into the `master` branch. This will allow updated translation (POT and PO) files to be generated for processing on Weblate, and will make the changes available on ReadTheDocs in the `latest` revision. At this point, the "new version" branch can be deleted from the repository.
+This method captures the changes for the new version in a separate branch that will not be automatically added to the project on ReadTheDocs. For example in a branch such as `new_version_3.x`, although the `next_version` branch has been created specifically for this purpose. Once the new version of the program is generally released as a `beta` or `pre-release` version for testing, the "new version" (`next_version`) branch is merged into the `master` branch. This will allow updated translation (POT and PO) files to be generated for processing on Weblate, and will make the changes available on ReadTheDocs in the `latest` revision. At this point the "new version" branch can be deleted from the repository, although the default `next_version` branch should not be deleted.
 
 ### New Version (Method 2)
 

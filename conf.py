@@ -94,6 +94,7 @@ exclude_patterns = [
     'testing',
     'README.md',
     'RELEASES.md',
+    'SETUP_AND_PROCESSING.md',
     'DEV_UTILS.md',
     'TODO.md',
     'draft_outline.md',
