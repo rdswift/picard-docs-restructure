@@ -16,11 +16,11 @@ This is the main branch (called `master`) for the repository.
 
 #### Stable Versions
 
-These are branches containing the stable documentation for released versions of the software. They are named for the major version of the release in the form `{major version}.x` such as `2.x` or `3.x`.
+These are branches containing the stable documentation for released versions of the software. They are named for the major version of the release in the form `{major}.{minor}` such as `2.13` or `3.0`.
 
-- These branches will be automatically published as the branch name version (e.g. `2.x`) on ReadTheDocs whenever changes are merged to the branch.
+- These branches will be automatically published as the branch name version (e.g. `2.13`) on ReadTheDocs whenever changes are merged to the branch.
 - The highest numbered branch will automatically be published as the `stable` version on ReadTheDocs.
-- The `master` branch will typically be merged into the highest numbered stable version branch when translations are updated or when the updated point version of the software documented in the `master` branch is released. It is unusual for pull requests to target a stable branch unless some functionality of a higher major version of the software has been backported to an earlier major release (e.g. a new configuration option in the version `3.x` release is backported to the `2.x` version).
+- The `master` branch will typically be merged into the highest numbered stable version branch when translations are updated or when the updated point version of the software documented in the `master` branch is released. It is unusual for pull requests to target a stable branch unless some functionality of a higher major version of the software has been backported to an earlier major release (e.g. a new configuration option in the version `3.0` release is backported to the `2.13` version).
 
 #### Next Version
 
@@ -28,7 +28,7 @@ This branch is called `next_version`, and is intended to collect documentation c
 
 - This branch will not be automatically published on ReadTheDocs.
 - The branch will typically be merged into the `master` branch when the software is publicly released.
-- When the software is publicly released as a production (non-beta) version, a corresponding stable version branch should be created as `{major version}.x` from the updated `master` branch. The `next_version` branch should then only be used for documentation changes associated with the next major release version of the software.
+- When the software is publicly released as a production (non-beta) version, a corresponding stable version branch should be created as `{major}.{minor}` from the updated `master` branch. The `next_version` branch should then only be used for documentation changes associated with the next major release version of the software.
 
 ### Directory Structure
 
@@ -88,11 +88,11 @@ In addition, an automation rule is added with the following settings:
 
 - **Description**: Add new stable versions
 - **Match**: Custom match
-- **Custom match**: ^v?([1-9]\\d*)\\.
+- **Custom match**: ^([1-9]\\d*\\.\\d+)$
 - **Version type**: Branch
 - **Action**: Activate version
 
-This will automatically activate any new version branches beginning with a non-zero number followed by a period (plus any additional characters).  Typically this would be major versions such as `3.x`.
+This will automatically activate any new version branches beginning with a non-zero number followed by a period and additional digits (plus any additional characters).  Typically this would be major.minor versions such as `2.13` or `3.0`.
 
 ### Translations to Other Languages
 
@@ -116,11 +116,11 @@ In addition, an automation rule is added with the following settings:
 
 - **Description**: Add new stable versions
 - **Match**: Custom match
-- **Custom match**: ^v?([1-9]\\d*)\\.
+- **Custom match**: ^([1-9]\\d*\\.\\d+)$
 - **Version type**: Branch
 - **Action**: Activate version
 
-This will automatically activate any new version branches beginning with a non-zero number followed by a period (plus any additional characters).  Typically this would be major versions such as `3.x`.
+This will automatically activate any new version branches beginning with a non-zero number followed by a period and additional digits (plus any additional characters).  Typically this would be major.minor versions such as `2.13` or `3.0`.
 
 Once the translation project has been created, it is then added to the main project as a translation by selecting the appropriate translation project from the dropdown list.
 
@@ -130,7 +130,7 @@ When a change is pushed or merged in the repository, ReadTheDocs will automatica
 
 - If the branch is `master`, the `latest` revision will be updated.
 
-- If the branch is a numbered revision branch (e.g. `2.x`) identified in the ReadTheDocs settings, the numbered revision will be updated. If the branch is a numbered revision branch which is **not** identified in the ReadTheDocs settings, the numbered revision will be added to the project (both main project and translation projects).
+- If the branch is a numbered revision branch (e.g. `2.13`) identified in the ReadTheDocs settings, the numbered revision will be updated. If the branch is a numbered revision branch which is **not** identified in the ReadTheDocs settings, the numbered revision will be added to the project (both main project and translation projects).
 
 - If the branch is a numbered revision branch and is the highest numbered revision branch, the `stable` revision will be updated regardless of whether or not the numbered revision branch is indentified in the ReadTheDocs settings.
 
@@ -142,7 +142,7 @@ Preparing a new version of the documentation is typically performed in one of tw
 
 ### New Version (Method 1)
 
-This method captures the changes for the new version in a separate branch that will not be automatically added to the project on ReadTheDocs. For example in a branch such as `new_version_3.x`, although the `next_version` branch has been created specifically for this purpose. Once the new version of the program is generally released as a `beta` or `pre-release` version for testing, the "new version" (`next_version`) branch is merged into the `master` branch. This will allow updated translation (POT and PO) files to be generated for processing on Weblate, and will make the changes available on ReadTheDocs in the `latest` revision. At this point the "new version" branch can be deleted from the repository, although the default `next_version` branch should not be deleted.
+This method captures the changes for the new version in a separate branch that will not be automatically added to the project on ReadTheDocs. For example in a branch such as `new_version_3`, although the `next_version` branch has been created specifically for this purpose. Once the new version of the program is generally released as a `beta` or `pre-release` version for testing, the "new version" (`next_version`) branch is merged into the `master` branch. This will allow updated translation (POT and PO) files to be generated for processing on Weblate, and will make the changes available on ReadTheDocs in the `latest` revision. At this point the "new version" branch can be deleted from the repository, although the default `next_version` branch should not be deleted.
 
 ### New Version (Method 2)
 

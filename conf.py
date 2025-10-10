@@ -62,7 +62,7 @@ master_doc = 'index'
 # ones.
 extensions = [
     # "recommonmark",
-    # "notfound.extension",
+    "notfound.extension",
     "taggerscript",
     "sphinxcontrib.youtube",
     # "sphinx_rtd_theme",
@@ -176,3 +176,12 @@ latex_elements = {
 }
 
 latex_domain_indices = True
+
+
+# -- Options for custom 404 page --------------------------------------
+
+# sphinx-notfound-page
+# https://github.com/readthedocs/sphinx-notfound-page
+
+notfound_template = 'custom_404.html'
+notfound_title = 'Page Not Found'
