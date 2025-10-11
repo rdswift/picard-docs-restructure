@@ -1453,7 +1453,7 @@ def stage_files_for_git(save_files: bool = False, stage_rst: bool = False, dryru
 
     print("Getting the list of translation files.")
     print(" - Parsing the git status output")
-    parse_git_status(git_stat, files_to_stage, files_to_ignore, stage_rst)
+    parse_git_status(git_stat, files_to_stage, files_to_ignore, stage_pot, stage_rst)
 
     print(" - Parsing the git diff output.")
     parse_git_diff(git_diff, files_to_stage, files_to_ignore)
