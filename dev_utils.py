@@ -82,7 +82,6 @@ DIFF_FILE = 'git_diff.txt'
 #   Linter Options   #
 ######################
 
-IGNORE_INFO_MESSAGES = False
 FAIL_ON_WARNINGS = True
 
 PYTHON_FILES_TO_CHECK = [
@@ -397,6 +396,13 @@ def parse_command_line():
         metavar='LANGUAGE',
         dest='language',
         help="specify language for processing"
+    )
+
+    parser01.add_argument(
+        '-q', '--quiet',
+        action='store_true',
+        dest='test_quiet',
+        help="suppress information messages"
     )
 
     # Parse command `build`
@@ -1412,7 +1418,7 @@ def is_in_locale_dir(fullpath: str) -> bool:
 ################################################################################
 
 def stage_files_for_git(save_files: bool = False, stage_rst: bool = False, dryrun: bool = False) -> bool:
-    """Stage translation files, and optionally restructured text files, for git.
+    """Stage translation files, and optionally translation template and restructured text files, for git.
 
     Args:
         save_files (bool, optional): Save the git status and git diff output to files. Defaults to False.
@@ -1467,8 +1473,8 @@ def stage_files_for_git(save_files: bool = False, stage_rst: bool = False, dryru
                         ).returncode:
                     print(f"\nThere was a problem adding {filename} to the commit.\n")
                     return False
-            else:
-                print("\nNo files staged due to dry run option enabled.")
+        if dryrun:
+            print("\nNo files staged due to dry run option enabled.")
     else:
         print("\nNo files to stage for git.")
     return True
@@ -1804,9 +1810,10 @@ def main():
                 exit_with_code(1)
 
     elif 'test_targets' in vars(args):
+        quiet = args.test_quiet if 'test_quiet' in vars(args) else False
         for target in args.test_targets:
             if target == 'rst':
-                run_lint(SPHINX_.SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
+                run_lint(SPHINX_.SOURCE_DIR, ignore_info=quiet, fail_on_warnings=FAIL_ON_WARNINGS)
 
             elif target == 'sphinx':
                 for lang in process_languages:

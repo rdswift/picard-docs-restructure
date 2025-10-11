@@ -4,6 +4,7 @@ A set of utilities to aid developers is available as `dev_utils.py` in the root 
 
 Some of the functions allow you to specify a specific language to which the processing should be applied. This is enabled by including `-l {language}` or `--language {language}` on the command line following the processing command, such as `python dev_utils.py test po --language fr` to check just the French language `*.po` files. If no language is specified, the language processed defaults to English (en). Use the language `-all` to repeat the processing for all supported languages.
 
+In addition, the repository contains a pre-commit configuration file (`.pre-commit-config.yaml`) that will perform some basic checks on the files. This can be configured to run automatically when commiting changes to the git repository. See the [pre-commit documentation](https://pre-commit.com) for more information regarding the installation and use of the pre-commit hooks.
 
 ## Checking Files (`test`)
 
@@ -11,7 +12,7 @@ Files are checked for consistency and integrity by using the `test` command. The
 
 ### Documentation and Translation Files
 
-- `rst`: Lint checks the restructured text (*.rst) files.
+- `rst`: Lint checks the restructured text (*.rst) files. The optional argument `-q`/`--quiet` is used to suppress INFO level messages from the output.
 - `sphinx`: Performs a test build of the restructured text files using Sphinx.
 - `po`: Performs a rudimentary check of the restructured text contained in the *.po translation files.
 - `fuzzy`: Provides a list of all *.po translation files that contain a fuzzy translation that will need to be reviewed.

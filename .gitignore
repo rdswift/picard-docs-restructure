@@ -4,8 +4,7 @@ _build/
 _docs/
 _images/
 _ignored/
+_locale/gettext/.doctrees
 __pycache__/
 **/.pytest_cache/**
 *.mo
-_locale/gettext/**
-*.xlsx
