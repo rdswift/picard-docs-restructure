@@ -75,7 +75,7 @@ The main project is set up on ReadTheDocs with the following settings:
 - **Connected Repository**: No connected repository
 - **Language**: English
 - **Default version**: Stable
-- **URL versioning scheme**: Multiple versions with translations
+- **URL versioning scheme**: Multiple versions with translations (/\<language>/\<version>/\<filename>)
 - **Default branch**: master
 - **Path for .readthedocs.yaml**: \<blank>
 - **Programming Language**: Only Words
@@ -83,6 +83,15 @@ The main project is set up on ReadTheDocs with the following settings:
 - **Description**: A full-featured, cross-platform music file tagging system
 - **Tags**: \<blank>
 - **Build pull requests for this project**: \<unchecked>
+
+Under the Addons section make sure that "Enable addons" is checked, and switch to the "File tree diff" tab. Ensure that "Enabled" is checked, and add the following file names (as a minimum) to the "Filetreediff ignored files" list:
+
+    DEV_UTILS.md
+    dev_utils.py
+    LICENSE
+    pylintrc
+    README.md
+    SETUP_AND_PROCESSING.md
 
 In addition, an automation rule is added with the following settings:
 
@@ -92,7 +101,7 @@ In addition, an automation rule is added with the following settings:
 - **Version type**: Branch
 - **Action**: Activate version
 
-This will automatically activate any new version branches beginning with a non-zero number followed by a period and additional digits (plus any additional characters).  Typically this would be major.minor versions such as `2.13` or `3.0`.
+This will automatically activate any new version branches beginning with a non-zero number followed by a period and one or more additional digits.  Typically this would be major.minor versions such as `2.13` or `3.0`.
 
 ### Translations to Other Languages
 
@@ -103,7 +112,7 @@ Translations to other languages are added as new projects on ReadTheDocs with th
 - **Connected Repository**: No connected repository
 - **Language**: {language}
 - **Default version**: Stable
-- **URL versioning scheme**: Multiple versions with translations
+- **URL versioning scheme**: Multiple versions with translations (/\<language>/\<version>/\<filename>)
 - **Default branch**: master
 - **Path for .readthedocs.yaml**: \<blank>
 - **Programming Language**: Only Words
@@ -111,6 +120,15 @@ Translations to other languages are added as new projects on ReadTheDocs with th
 - **Description**: A full-featured, cross-platform music file tagging system
 - **Tags**: \<blank>
 - **Build pull requests for this project**: \<unchecked>
+
+Under the Addons section make sure that "Enable addons" is checked, and switch to the "File tree diff" tab. Ensure that "Enabled" is checked, and add the following file names (as a minimum) to the "Filetreediff ignored files" list:
+
+    DEV_UTILS.md
+    dev_utils.py
+    LICENSE
+    pylintrc
+    README.md
+    SETUP_AND_PROCESSING.md
 
 In addition, an automation rule is added with the following settings:
 
@@ -120,7 +138,7 @@ In addition, an automation rule is added with the following settings:
 - **Version type**: Branch
 - **Action**: Activate version
 
-This will automatically activate any new version branches beginning with a non-zero number followed by a period and additional digits (plus any additional characters).  Typically this would be major.minor versions such as `2.13` or `3.0`.
+This will automatically activate any new version branches beginning with a non-zero number followed by a period and one or more additional digits.  Typically this would be major.minor versions such as `2.13` or `3.0`.
 
 Once the translation project has been created, it is then added to the main project as a translation by selecting the appropriate translation project from the dropdown list.
 
