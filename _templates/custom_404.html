@@ -72,7 +72,7 @@
          }
          has_version = true;
          var temp = arr[1];
-         target_version = temp;
+         target_version = 'v' + temp;
          if (test_version == target_version) { version_changed = false; }
          if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
