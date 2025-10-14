@@ -54,7 +54,8 @@ msgstr "Droits d'auteur"
 msgid ""
 "Licensed under <a href=\"https://creativecommons.org/publicdomain/zero/1.0\" "
 "target=\"_blank\">CC0 1.0."
-msgstr ""
+msgstr "Sous licence <a href=\"https://creativecommons.org/publicdomain/zero/1.0\" "
+"target=\"_blank\">CC0 1.0."
 
 #: ../../_templates/footer.html:35
 msgid "Build"
