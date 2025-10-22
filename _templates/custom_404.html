@@ -24,7 +24,6 @@
       var has_version = false;
       var language_changed = true;
       var version_changed = true;
-      var well_formed = true;
 
       var debug = false;
 
@@ -41,6 +40,8 @@
             if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
+         if (debug) { window.alert("Passed regular expression check."); }
+         if (debug) { window.alert("Language set to:" + test_value); }
          target_language = test_value;
          has_language = true;
          language_changed = false;
@@ -123,12 +124,10 @@
             if (src_path_parts[counter] == 'scripting.html') {
                target_path += '/extending';
                if (debug) { window.alert("Patching target url for updated location of scripting.html file."); }
-               well_formed = false;
             }
             else if (src_path_parts[counter] == 'technical') {
                target_path += '/appendices';
                counter += 1;
-               well_formed = false;
             }
 
             // Combine remaining portions of the submitted path
@@ -139,16 +138,8 @@
 
             // Build the redirection target url
             target_url = src_protocol + '//' + src_host + '/' + target_language + '/' + target_version;
-            if ((language_changed) || (version_changed)) { well_formed = false; }
-            if ((well_formed) || (target_url + target_path == window.location)) {
-               if (debug) {
-                  if (well_formed) {
-                     window.alert("well_formed is true.");
-                  }
-                  if (target_url + target_path == window.location) {
-                     window.alert("Target path same as the source path.");
-                  }
-               }
+            if (target_url + target_path == window.location) {
+               if (debug) { window.alert("Target path same as the source path."); }
                target_url += '/' + not_found;
             }
             else {
