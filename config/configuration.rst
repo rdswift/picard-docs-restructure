@@ -103,23 +103,3 @@ Changes made to a profile's options settings, enabled status, or position in the
       :doc:`options_interface` /
       :doc:`options_scripting` /
       :doc:`options_advanced`
-
-.. only:: not latex
-
-   .. toctree::
-      :hidden:
-
-      options_general
-      options_profiles
-      options_metadata
-      options_tags
-      options_cover
-      options_filerenaming
-      options_filerenaming_editor
-      options_filerenaming_compat
-      options_fingerprinting
-      options_cdlookup
-      options_plugins
-      options_interface
-      options_scripting
-      options_advanced
