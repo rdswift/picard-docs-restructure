@@ -43,6 +43,12 @@
 
    If you enable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track. Leaving this option disabled is useful when re-processing files that have been previously tagged with incorrect information.
 
+**Check for documentation updates during start-up**
+
+   This option determines whether or not Picard will automatically check for :index:`available versions and languages on ReadTheDocs <pair: configuration; documentation checking>` during startup in order to provide the best match when displaying a help page. If this is disabled, the latest version of the documentation will be displayed in English in your web browser.
+
+   If the option is disabled, a popup message will be displayed during startup asking if you want to enable the documentation checking. The message also includes an option to disable the popup from displaying in the future. The popup can also be enabled or disabled through a setting in the :doc:`options_interface` section.
+
 **Check for plugin updates during start-up**
 
    This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a popup message will be displayed.
