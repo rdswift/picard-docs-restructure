@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-14 11:00-0600\n"
+"POT-Creation-Date: 2025-09-29 14:34-0600\n"
 "PO-Revision-Date: 2021-08-24 12:51+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translate.uploadedlobster.com/projects/picard-"
@@ -91,8 +91,9 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_general.rst:34
+#, fuzzy
 msgid "**Automatically cluster all new files**"
-msgstr ""
+msgstr "**Alle neuen Dateien automatisch analysieren**"
 
 #: ../../config/options_general.rst:36
 msgid ""
@@ -123,8 +124,9 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_general.rst:46
+#, fuzzy
 msgid "**Check for plugin updates during start-up**"
-msgstr ""
+msgstr "**Beim Start nach Updates suchen**"
 
 #: ../../config/options_general.rst:48
 msgid ""
@@ -135,8 +137,9 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_general.rst:50
+#, fuzzy
 msgid "**Check for program updates during start-up**"
-msgstr ""
+msgstr "**Beim Start nach Updates suchen**"
 
 #: ../../config/options_general.rst:52
 msgid ""

@@ -68,8 +68,9 @@ msgid "Lookup CD..."
 msgstr ""
 
 #: ../../config/options_interface_toolbar.rst:22
+#, fuzzy
 msgid "Lookup in Browser"
-msgstr ""
+msgstr "Im Browser nachschlagen"
 
 #: ../../config/options_interface_toolbar.rst:23
 msgid "Open in Player"
