@@ -49,6 +49,7 @@
       usage/other
       usage/option_profiles
       usage/command_processing
+      usage/sessions
       extending/extending
       faq/faq
 
