@@ -60,6 +60,10 @@ Sometimes plugin authors choose not to include one or more of their plugins in t
 
 When installing a plugin from a URL, you must enter the URL to the repository of the plugin, and optionally the version of the plugin to install. The version can be a specific version number (tag), a branch such as "main" or "development" (if available), or a particular commit to the repository. If no verion is specified, you can select it from the confirmation dialog displayed.
 
+.. warning::
+
+   Be careful when installing plugins from unknown sources, as plugins may pose security risks. Only install plugins from sources you trust.
+
 Installing from a local repository
 ''''''''''''''''''''''''''''''''''
 
