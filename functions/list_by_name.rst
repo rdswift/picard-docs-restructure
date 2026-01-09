@@ -2,7 +2,7 @@
 
 :orphan:
 
-Appendix E: Scripting Functions Listed Alphabetically
+Appendix I: Scripting Functions Listed Alphabetically
 =====================================================
 
 .. only:: not epub

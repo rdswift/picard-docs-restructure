@@ -109,6 +109,10 @@
       :titlesonly:
 
       appendices/plugins_api
+      appendices/plugins_manifest
+      appendices/plugins_translations
+      appendices/plugins_migration
+      appendices/plugins_registry
       appendices/tag_mapping
       appendices/command_line
       appendices/keyboard_shortcuts
