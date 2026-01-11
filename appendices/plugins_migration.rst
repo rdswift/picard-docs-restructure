@@ -66,21 +66,6 @@ Supported Registration Patterns
 * Instantiated object methods (``register_processor(MyClass().method)``)
 
 
-Success Rate
-++++++++++++++
-
-Based on testing all 73 plugins from picard-plugins v2 repository:
-
-* **34.2%** Perfect (zero manual work) - 25 plugins
-* **60.3%** Good (minor import review) - 44 plugins
-* **5.5%** Minimal (manual work needed) - 4 edge cases
-* **0%** Failed
-
-**Overall: 94.5% success rate** (69/73 automatic or near-automatic)
-
-The 4 plugins requiring manual work use non-standard patterns (custom registration, function-scoped registrations, complex constructors).
-
-
 Example Output
 +++++++++++++++
 
@@ -270,7 +255,7 @@ Update the repository to make the changes to the updated plugin available to Pic
 Step 8: Test the Plugin
 ++++++++++++++++++++++++
 
-Install the plugin from the local repository and test that it functions as expected in Picard v3.
+Install the plugin from the local repository and test to ensure that it functions as expected in Picard v3.
 
 .. code-block:: bash
 
@@ -442,7 +427,7 @@ The ``PluginApi`` is passed explicitly to functions and classes:
       # Picard wraps this as partial(process_track, api)
       api.register_track_metadata_processor(process_track)
 
-**For Classes:** API is passed to `__init__` and stored as `self.api`
+**For Classes:** API is passed to ``__init__`` and stored as ``self.api``
 
 .. code-block:: python
 

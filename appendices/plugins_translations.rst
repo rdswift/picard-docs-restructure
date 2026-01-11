@@ -398,7 +398,7 @@ An extraction tool can scan code for ``api.tr()`` and ``api.trn()`` calls and ge
 
 **Extraction behavior:**
 
-* If ``api.tr("key", "Text")`` → extracts `"key": "Text"`
+* If ``api.tr("key", "Text")`` → extracts ``"key": "Text"``
 * If ``api.tr("key")`` → generates ``"key": "?key?"`` (placeholder indicating missing text)
 * If ``api.trn("key", "singular", "plural")`` → extracts as plural object with ``one`` and ``other``
 * If ``api.trn("key")`` → generates placeholder plural object
@@ -609,7 +609,7 @@ For plugins using Qt Designer ``.ui`` files, translations work automatically:
 * ✅ **Unified system** - All translations in one place (JSON/TOML)
 * ✅ **Extraction tool compatible** - Can extract from ``.ui`` files
 * ✅ **Fallback** - Source text used if translation missing
-* ✅ **No manual override** - `.ui` files work transparently
+* ✅ **No manual override** - ``.ui`` files work transparently
 
 **Extraction tool behavior:**
 
