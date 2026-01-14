@@ -63,6 +63,24 @@ The editor screen has the following sections:
    * Save all changes, also available via the :guilabel:`Make It So!` button.
    * Exit without saving changes, also available via the :guilabel:`Cancel` button.
 
+
+**Documentation Sidebar**
+
+   .. image:: images/options-filenaming-editor-2.png
+      :width: 100 %
+
+   .. Force a blank line in html output
+   .. only:: html
+
+      |
+
+   When the documentation is displayed it shows the scripting function and available tags in separate tabs. Each tab is shown separately in the image above. There is a search function to assist in finding the desired function or tag.
+
+   Each function displays a brief description of its usage, including the syntax and arguments.
+
+   Each tag displays a brief description of its contents, along with additional information such as whether it is impacted by any option settings. If the tag is provided by a plugin, the name of the plugin is displayed.
+
+
 **Script Metadata**
 
    .. image:: images/options-filenaming-editor-metadata.png
