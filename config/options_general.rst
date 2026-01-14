@@ -49,9 +49,9 @@
 
    If the option is disabled, a popup message will be displayed during startup asking if you want to enable the documentation checking. The message also includes an option to disable the popup from displaying in the future. The popup can also be enabled or disabled through a setting in the :doc:`options_interface` section.
 
-**Check for plugin updates during start-up**
+.. **Check for plugin updates during start-up**
 
-   This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a popup message will be displayed.
+..    This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a popup message will be displayed.
 
 **Check for program updates during start-up**
 
