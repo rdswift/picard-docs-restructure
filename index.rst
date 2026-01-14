@@ -50,6 +50,7 @@
       usage/option_profiles
       usage/command_processing
       usage/sessions
+      usage/custom_columns
       extending/extending
       faq/faq
 

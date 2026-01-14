@@ -24,6 +24,8 @@ MusicBrainz Picard
    usage/other
    usage/option_profiles
    usage/command_processing
+   usage/sessions
+   usage/custom_columns
    extending/extending
    troubleshooting/pdf_troubleshooting
    faq/faq
