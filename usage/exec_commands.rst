@@ -39,7 +39,7 @@ Load commands from a file. The file path can be either an absolute or relative p
 
 For example, you may have a file named ``commands.txt`` containing the standard commands that you want to use when processing each directory, such as:
 
-.. code::
+.. code-block:: none
 
    # Try clustering and lookup the clusters first
    CLUSTER
@@ -71,7 +71,7 @@ For example, you may have a file named ``commands.txt`` containing the standard 
 
 You could then process a directory by starting Picard with the command:
 
-.. code::
+.. code-block:: bash
 
    picard -e LOAD path/to/directory/of/unprocessed/files -e FROM_FILE commands.txt
 

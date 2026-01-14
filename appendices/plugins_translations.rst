@@ -259,7 +259,7 @@ For strings that need pluralization, use ``api.trn()`` (translate with number):
 .. code-block:: python
 
    # Signature
-   api.trn(key: str, singular: str = None, plural: str = None, n: int = 0, **kwargs) -> str
+   # api.trn(key: str, singular: str = None, plural: str = None, n: int = 0, **kwargs) -> str
 
    # Usage
    count = 5
@@ -443,7 +443,7 @@ This allows:
 
 No ``de_DE.json`` needed - German text is in the code. Other locales in JSON:
 
-.. code-block:: json
+.. code-block:: none
 
    // en_US.json
    {

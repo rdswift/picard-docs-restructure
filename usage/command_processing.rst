@@ -7,7 +7,7 @@ As of version 2.9, Picard will try to only run a single instance of the program 
 
 For example if there is an instance of Picard running and a second instance is started with the command line:
 
-.. code::
+.. code-block:: bash
 
    picard -e load mbid://release/dbd0ce67-cae6-33eb-8f5a-1143a30c2353
 
@@ -15,7 +15,7 @@ the load command will be passed to the running instance to load the specified re
 
 This allows the user to set up dynamic batch processing of commands to automate the tagging process, especially when used with the ``FROM_FILE`` command to load a standard processing command sequence such as:
 
-.. code::
+.. code-block:: none
 
    CLUSTER
    LOOKUP_CLUSTERED
@@ -25,7 +25,7 @@ This allows the user to set up dynamic batch processing of commands to automate 
 
 or:
 
-.. code::
+.. code-block:: none
 
    LOOKUP_CD path/to/ripper.log
    SAVE_MATCHED
@@ -36,7 +36,7 @@ or:
 
 or even something like:
 
-.. code::
+.. code-block:: none
 
    # Load a directory of files to process
    LOAD path/to/directory/of/unprocessed/files

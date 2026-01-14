@@ -59,7 +59,7 @@ Windows Systems
 
 First open a command window by clicking the search icon on the Windows Taskbar and enter "cmd". Then start Picard by entering the following in the command window:
 
-.. code::
+.. code-block:: bash
 
    "C:\Program Files\MusicBrainz Picard\picard.exe" --debug
 
@@ -81,7 +81,7 @@ First open a terminal window by doing one of the following:
 
 Assuming Picard was put into the system wide Applications folder when installed, it can then be started by entering the following in the terminal window:
 
-.. code::
+.. code-block:: bash
 
    "/Applications/MusicBrainz Picard.app/Contents/MacOS/picard-run" --debug
 
@@ -93,7 +93,7 @@ Linux Systems
 
 First open a Terminal window in your desktop environment, either from the Applications menu or by pressing :kbd:`Ctrl+Alt+T` on most systems. Then start Picard by entering the following in the terminal window:
 
-.. code::
+.. code-block:: bash
 
    picard --debug
 

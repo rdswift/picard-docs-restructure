@@ -19,7 +19,7 @@ For this example, the user would like to define a set of options with alternate 
 
 The user creates a new profile (named "TargetMyDir"), adds the option ``move_files_to`` to it, and enables this profile. The stack is now:
 
-.. code-block::
+.. code-block:: none
 
    [x] TargetMyDir    move_files_to
    [x] user settings  move_files_to  [plus all other settings]
@@ -33,7 +33,7 @@ Now the user wants to work on another set of music files, wanting to disable ``w
 
 They create a new profile (named "ByeByeWin"), add options ``move_files_to`` and ``windows_compatibility``, and enable it. Now the stack looks like:
 
-.. code-block::
+.. code-block:: none
 
    [x] ByeByeWin      move_files_to  windows_compatibility
    [x] TargetMyDir    move_files_to
@@ -43,7 +43,7 @@ They change the values of ``move_files_to`` (to "not_for_windows") and ``windows
 
 Now the user wants to save files to the "TargetMyDir" target directory again, with their usual options. To do this they simply disable the "ByeByeWin" profile (which can later be re-enabled if needed). The stack looks like:
 
-.. code-block::
+.. code-block:: none
 
    [ ] ByeByeWin      move_files_to  windows_compatibility
    [x] TargetMyDir    move_files_to
@@ -51,7 +51,7 @@ Now the user wants to save files to the "TargetMyDir" target directory again, wi
 
 Finally, to return to their usual output directory the user only has to disable the "TargetMyDir" profile so the stack is:
 
-.. code-block::
+.. code-block:: none
 
    [ ] ByeByeWin      move_files_to  windows_compatibility
    [ ] TargetMyDir    move_files_to

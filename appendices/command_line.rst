@@ -5,7 +5,7 @@ Appendix G: :index:`Command Line Options <pair: command line; options>`
 
 Picard can be started from the command line with the following arguments:
 
-.. code::
+.. code-block:: bash
 
    run_picard.py [-h] [-a AUDIT] [-c CONFIG_FILE] [-d] [-e COMMAND [COMMAND ...]] [-M] [-N] [-P] [--no-crash-dialog] [-s] [-v] [-V] [FILE_OR_URL ...]
 
