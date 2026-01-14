@@ -41,7 +41,6 @@
       Details:
       :doc:`options_network` /
       :doc:`options_matching` /
-      :doc:`options_plugin_execution_order` /
       :doc:`options_sessions` /
       :doc:`options_maintenance`
 
@@ -50,6 +49,5 @@
 
    options_network
    options_matching
-   options_plugin_execution_order
    options_sessions
    options_maintenance

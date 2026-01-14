@@ -113,7 +113,7 @@ If you right-click on a plugin in the list, a context menu will be displayed.
 
 |
 
-From this menu, you can toggle the enabled status of the plugin, uninstall, reinstall or change the installed version (reference), view detailed information, or open the plugin repository in your browser. The detailed information includes additional items such as the license, the link to the homepage for the plugin if available, and the directory that the plugin resides on your file system.
+From this menu, you can toggle the enabled status of the plugin, uninstall, reinstall or change the installed version (reference), view detailed information, open the plugin repository in your browser, or :doc:`manually set the order in which the plugins are executed <options_plugin_execution_order>`. The detailed information includes additional items such as the license, the link to the homepage for the plugin if available, and the directory that the plugin resides on your file system.
 
 .. image:: images/options-plugins-information.png
    :align: center
@@ -121,3 +121,14 @@ From this menu, you can toggle the enabled status of the plugin, uninstall, rein
 .. note::
 
    Some plugins have their own option page which will typically appear under the "Plugins" section of the Options.
+
+.. only:: html and not epub
+
+   .. seealso::
+
+      Please see the :doc:`options_plugin_execution_order` section for more information about manually setting the order in which plugins are executed.
+
+.. toctree::
+   :hidden:
+
+   options_plugin_execution_order
