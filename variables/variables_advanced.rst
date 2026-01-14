@@ -85,6 +85,10 @@ Track Relationship Variables
 
 If you enable tagging with :doc:`Use track relationships <../config/options_metadata>`, you get these extra variables:
 
+**_broadcast_date**
+
+   The date the recording was broadcast.
+
 **_lyricistsort**
 
    The sort names of the lyricists for the work. (*since Picard 2.9*)
