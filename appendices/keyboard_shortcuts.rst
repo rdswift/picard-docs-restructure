@@ -112,6 +112,19 @@ Metadata view
    "Paste to selected tag value", :kbd:`Ctrl+V`, :kbd:`⌘+V`
    "Show more details", :kbd:`Ctrl+Shift+I`, :kbd:`⌘+⇧+I`
 
+Player
+++++++
+
+.. csv-table::
+   :width: 100%
+   :widths: 40 30 30
+   :header: "**Action**", "**Windows / Linux**", "**macOS**"
+
+   "Play selected files", :kbd:`Ctrl+Shift+P`, :kbd:`⌘+⇧+P`
+   "Toggle pause", :kbd:`Ctrl+P`, :kbd:`⌘+P`
+   "Increase volume", :kbd:`Ctrl+Shift++`, :kbd:`⌘+⇧++`
+   "Decrease volume", :kbd:`Ctrl+Shift+-`, :kbd:`⌘+⇧+-`
+
 Other
 +++++
 
