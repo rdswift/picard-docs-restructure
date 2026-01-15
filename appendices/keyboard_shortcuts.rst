@@ -64,7 +64,6 @@ Options
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Open file naming script editor", :kbd:`Ctrl+Shift+S`, :kbd:`⌘+⇧+S`
-   "Open profile editor", :kbd:`Ctrl+Shift+P`, :kbd:`⌘+⇧+P`
 
 Tools
 +++++
