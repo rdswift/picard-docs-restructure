@@ -82,8 +82,8 @@ Changes made to a profile's options settings, enabled status, or position in the
       options_fingerprinting
       options_cdlookup
       options_plugins
-      options_interface
       options_scripting
+      options_interface
       options_advanced
 
 
@@ -100,6 +100,6 @@ Changes made to a profile's options settings, enabled status, or position in the
       :doc:`options_fingerprinting` /
       :doc:`options_cdlookup` /
       :doc:`options_plugins` /
-      :doc:`options_interface` /
       :doc:`options_scripting` /
+      :doc:`options_interface` /
       :doc:`options_advanced`

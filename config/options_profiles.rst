@@ -3,10 +3,10 @@
 :index:`Profile Options <configuration; profiles, profiles; option>`
 ====================================================================
 
-.. image:: images/options-profiles.png
-   :width: 100 %
-
 As of version 2.7, Picard supports multiple profiles that can quickly switch between option settings. This page allows for the management of those user-defined option profiles.
+
+.. image:: images/options-profiles.png
+   :align: center
 
 Initially, the list of profiles will be empty. To create a new profile click on the :guilabel:`New` button. This will create a profile with no options selected for the profile to manage. To rename the profile, right-click on the profile name and select the :menuselection:`"Rename profile"` command.
 

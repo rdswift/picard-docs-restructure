@@ -4,7 +4,7 @@
 =========================================
 
 .. image:: images/options-metadata-ratings.png
-   :width: 100 %
+   :align: center
 
 **Enable track ratings**
 

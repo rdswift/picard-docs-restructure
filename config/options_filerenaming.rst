@@ -5,10 +5,10 @@
 :index:`File Naming Options <pair: configuration; file naming>`
 ===============================================================
 
-.. image:: images/options-filenaming.png
-   :width: 100 %
-
 These options determine how Picard handles files when they are saved with updated metadata.
+
+.. image:: images/options-filenaming.png
+   :align: center
 
 **Move files when saving**
 
@@ -71,13 +71,6 @@ These options determine how Picard handles files when they are saved with update
 
    Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
 
-.. only:: latex
-
-   .. toctree::
-
-      options_filerenaming_editor
-      options_filerenaming_compat
-
 .. only:: html and not epub
 
    .. seealso::
@@ -85,8 +78,8 @@ These options determine how Picard handles files when they are saved with update
       :doc:`options_filerenaming_editor` /
       :doc:`options_filerenaming_compat`
 
-   .. toctree::
-      :hidden:
+.. toctree::
+   :hidden:
 
-      options_filerenaming_editor
-      options_filerenaming_compat
+   options_filerenaming_editor
+   options_filerenaming_compat

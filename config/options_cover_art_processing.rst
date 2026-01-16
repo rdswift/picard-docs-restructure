@@ -3,10 +3,10 @@
 :index:`Cover Art Processing <pair: configuration; cover art>`
 ==============================================================
 
-.. image:: images/options-cover-processing.png
-   :width: 100 %
-
 Picard can filter and process the images downloaded from the providers. Image processing can differentiate between images embedded into tags and images saved as a separate file. More filters and processors can be added by `plugins <https://picard.musicbrainz.org/plugins/>`_.
+
+.. image:: images/options-cover-processing.png
+   :align: center
 
 **Discard images if below the given size**
 

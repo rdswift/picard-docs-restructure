@@ -4,7 +4,7 @@
 ===================================================
 
 .. image:: images/options-tags-compatibility-id3.png
-   :width: 100 %
+   :align: center
 
 **ID3v2 version**
 

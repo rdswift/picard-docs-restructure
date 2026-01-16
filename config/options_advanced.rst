@@ -3,8 +3,10 @@
 :index:`Advanced Options <configuration; advanced options>`
 ===========================================================
 
+This provides access to some of the advanced settings for Picard.
+
 .. image:: images/options-advanced.png
-   :width: 100 %
+   :align: center
 
 **Ignore file paths matching the following regular expression**
 

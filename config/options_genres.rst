@@ -4,21 +4,21 @@
 =======================================
 
 .. image:: images/options-metadata-genres.png
-   :width: 100 %
+   :align: center
 
 **Use genres from MusicBrainz**
 
    Use genres provided by MusicBrainz and save them to the genre tag.
 
-**Fall back on album's artists genres if no genres are found for the release or release group**
-
-   If there is no genre set for the release or release group on MusicBrainz, use the genre of the album artist instead.
-
 **Only use my genres**
 
    When enabled, Picard will only write genres you personally have submitted to MusicBrainz. You'll need to set your username and password to use this feature.
 
-**Use folksonomy tags as genres**
+**Fall back to album's artists genres**
+
+   If there is no genre set for the release or release group on MusicBrainz, use the genre of the album artist instead.
+
+**Use folksonomy tags as genre**
 
    Check to use all folksonomy tags to set the genre. Otherwise only the tags considered by MusicBrainz to be proper genres will be used.
 

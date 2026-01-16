@@ -30,66 +30,7 @@
 
 9. **Status Bar**: The bar at the bottom of the screen shows information about the current operation of Picard, including such items as number of files, albums, and pending downloads. |nl|
 
-Picard is available for different operating systems. And while Picard's functionality is overall the same the specific look of the user interface can be slightly different based on the operating system. Throughout the documentation screenshots taken on different operating systems are used. Below you find a selection of screenshots of Picard's main screen on different systems:
-
-
-.. |win10light| image:: images/mainscreen-windows10-light.png
-   :width: 100 %
-
-| |win10light|
-| Picard on Windows 10 (with light user interface)
-
-.. |win10dark| image:: images/mainscreen-windows10-dark.png
-   :width: 100 %
-
-| |win10dark|
-| Picard on Windows 10 (with dark user interface)
-
-.. |maclight| image:: images/mainscreen-macos-light.png
-   :width: 100 %
-
-| |maclight|
-| Picard on macOS
-
-.. |macdark| image:: images/mainscreen-macos-dark.png
-   :width: 100 %
-
-| |macdark|
-| Picard on macOS (dark mode)
-
-.. |linuxlight| image:: images/mainscreen-linux-plasma-light.png
-   :width: 100 %
-
-| |linuxlight|
-| Picard on Linux with the KDE Plasma desktop environment (light theme)
-
-.. |linuxdark| image:: images/mainscreen-linux-plasma-dark.png
-   :width: 100 %
-
-| |linuxdark|
-| Picard on Linux with the KDE Plasma desktop environment (dark theme)
-
-.. |linuxgnome| image:: images/mainscreen-linux-gnome.png
-   :width: 100 %
-
-| |linuxgnome|
-| Picard on Linux with the GNOME desktop environment
-
-.. |win7| image:: images/mainscreen-windows7.png
-   :width: 100 %
-
-| |win7|
-| Picard on Windows 7
-
-.. |haiku| image:: images/mainscreen-haiku.png
-   :width: 100 %
-
-| |haiku|
-| Picard on Haiku
-
-.. raw:: latex
-
-   \clearpage
+Picard is available for different operating systems. And while Picard's functionality is overall the same the specific look of the user interface can be slightly different based on the operating system.
 
 .. _main_screen_filter:
 

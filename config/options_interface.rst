@@ -4,9 +4,9 @@
 =====================================================================
 
 .. image:: images/options-interface.png
-   :width: 100 %
+   :align: center
 
-**Show text labels under icon**
+**Show text labels under icons**
 
    If this option is disabled, the text labels under the icons in the toolbar will not be displayed, causing the toolbar to appear a little smaller.
 
@@ -25,11 +25,6 @@
    * Default - The default color scheme based on the operating system display settings.
    * Light - A light display theme.
    * Dark - A dark display theme.
-
-   On Linux and similar operating systems, the available choices are:
-
-   * Default - The default color scheme based on the operating system display settings.
-   * System - The Qt5 theme configured in the desktop environment.
 
    .. note::
 
@@ -71,6 +66,10 @@
 
    When this is enabled, Picard will automatically scroll the file browser display to keep relevant content visible.
 
+**Enable audio player "now playing" notifications**
+
+   When enabled, Picard will send "now playing" notifications from the internal audio player.
+
 **Begin browsing in the following directory**
 
    By default, Picard remembers the last directory used to load files. If you enable this option and provide a directory, Picard will always start in the directory provided.
@@ -82,6 +81,7 @@
       Details:
       :doc:`options_interface_colors` /
       :doc:`options_interface_top_tags` /
+      :doc:`options_interface_coverart_box` /
       :doc:`options_interface_quick_menu` /
       :doc:`options_interface_toolbar`
 
@@ -90,5 +90,6 @@
 
    options_interface_colors
    options_interface_top_tags
+   options_interface_coverart_box
    options_interface_quick_menu
    options_interface_toolbar

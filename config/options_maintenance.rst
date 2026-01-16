@@ -3,8 +3,10 @@
 :index:`Maintenance <configuration; maintenance>`
 =================================================
 
+This allows you to perform some maintenance activities regarding Picard's configuration file.
+
 .. image:: images/options-maintenance.png
-   :width: 100 %
+   :align: center
 
 **Configuration File**
 

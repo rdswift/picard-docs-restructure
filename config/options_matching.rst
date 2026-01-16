@@ -3,10 +3,10 @@
 :index:`Matching <configuration; matching preferences>`
 =======================================================
 
-.. image:: images/options-matching.png
-   :width: 100 %
-
 It is recommended for most users to leave these settings at their default values. For advanced users, these allow you to tune the way Picard matches your files and clusters to MusicBrainz releases and tracks.
+
+.. image:: images/options-matching.png
+   :align: center
 
 **Minimal similarity for file lookups**
 

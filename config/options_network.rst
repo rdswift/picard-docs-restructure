@@ -3,8 +3,10 @@
 :index:`Network <configuration; network>`
 =========================================
 
+These settings allow you to configure the network settings used by Picard.
+
 .. image:: images/options-network.png
-   :width: 100 %
+   :align: center
 
 **Web Proxy**
 

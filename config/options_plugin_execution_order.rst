@@ -15,7 +15,7 @@ Most of the time this grouping of execution priorities is sufficient, however th
 The execution order editor can be opened from the context menu displayed by right-clicking on any of the installed plugins.
 
 .. image:: images/options-plugin-execution-order.png
-   :width: 100 %
+   :align: center
 
 |
 

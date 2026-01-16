@@ -3,10 +3,10 @@
 :index:`Sessions <configuration; sessions, sessions; configuration>`
 =============================================================================
 
-.. image:: images/options-sessions.png
-   :width: 100 %
-
 As of Picard v3 you can save and restore your current workspace state as a session file. Sessions preserve file placement (unclustered, clusters, albums, specific tracks, and standalone recordings), your manual metadata edits, and selected configuration options so you can resume work later.
+
+.. image:: images/options-sessions.png
+   :align: center
 
 The following settings determine how the session files are managed:
 

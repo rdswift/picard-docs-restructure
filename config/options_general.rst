@@ -4,7 +4,7 @@
 =========================================================
 
 .. image:: images/options-general.png
-   :width: 100 %
+   :align: center
 
 **Server address**
 
@@ -13,7 +13,7 @@
    In addition to the standard MusicBrainz servers provided in the drop down list, you can manually enter an alternate address, such as "localhost" if you are running a local copy of the server. When an alternate server host name is entered, a warning will be displayed and you will be asked to confirm that you want to submit all data to this alternate server.
 
    .. image:: images/options-alternate-server-confirmation.png
-      :width: 100 %
+      :align: center
 
 **Port**
 

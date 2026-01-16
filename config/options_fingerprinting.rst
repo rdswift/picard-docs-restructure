@@ -3,12 +3,12 @@
 :index:`Fingerprinting Options <configuration; fingerprinting>`
 ===============================================================
 
-.. image:: images/options-fingerprinting.png
-   :width: 100 %
-
 If you select a file or cluster in the left-hand side of the Picard screen and select :menuselection:`"Tools --> Scan"`, Picard will invoke a program to scan the files and produce a fingerprint for each that can then be used to look up the file on MusicBrainz.
 
 MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/AcoustID>`_ (an Open Source `acoustic fingerprinting <https://musicbrainz.org/doc/Fingerprinting>`_ system created by `Lukáš Lalinský <https://oxygene.sk/>`_) but has previously supported TRM and MusicID PUID.
+
+.. image:: images/options-fingerprinting.png
+   :align: center
 
 **Audio Fingerprinting**
 

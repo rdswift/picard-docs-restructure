@@ -3,10 +3,10 @@
 :index:`Scripting Options <configuration; scripting, scripts; tagging>`
 =======================================================================
 
-.. image:: images/options-scripting.png
-   :width: 100 %
-
 This section allows for the management of user-defined tagging scripts.
+
+.. image:: images/options-scripting.png
+   :align: center
 
 The "Enable Tagger Script(s)" checkbox at the top of the page allows you to completely disable all tagging scripts. This can be useful when tracking down a problem with Picard's configuration.
 
