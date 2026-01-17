@@ -51,6 +51,7 @@ As of version 2.9, Picard supports the use of log files produced by popular CD f
 - `dBpoweramp <https://dbpoweramp.com/>`_ for macOS and Windows
 - `Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows
 - `fre:ac <https://www.freac.org>`_ for Linux, macOS, Windows and others
+- `redumper <https://github.com/superg/redumper>`_ raw SCSI TOC file for Linux, macOS, Windows
 - `Whipper <https://github.com/whipper-team/whipper>`_ for Linux
 - `X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS
 
