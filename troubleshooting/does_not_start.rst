@@ -15,7 +15,7 @@ If you find that Picard won't start there are a few common possible reasons, and
 
    - *Windows*: :file:`C:\\Users\\\\{user}\\AppData\\Local\\MusicBrainz\\Picard\\plugins`
    - *macOS*: :file:`~/Library/Preferences/MusicBrainz/Picard/plugins`
-   - *Linux*: :file:`~/.config/MusicBrainz/Picard/plugins`
+   - *Linux*: :file:`~/.local/share/MusicBrainz/Picard/plugins`
 
    Once you have located the plugin files, they should be removed from the ``plugins`` directory and moved to a temporary directory. Then try to start Picard. If the program starts, you should try restoring the plugin files from your temporary directory one at a time, and check if Picard will start. This will help identify the plugin that was causing the problem.
 
