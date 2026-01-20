@@ -1,6 +1,6 @@
 .. MusicBrainz Picard Documentation Project
 
-Appendix G: :index:`Command Line Options <pair: command line; options>`
+Appendix B: :index:`Command Line Options <pair: command line; options>`
 =======================================================================
 
 Picard can be started from the command line with the following arguments:

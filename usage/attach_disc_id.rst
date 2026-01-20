@@ -9,12 +9,6 @@ Disc IDs are very useful for identifying CDs and allowing MusicBrainz to know th
 
    Please do not add DiscIDs from CDs that are burned at home.
 
-.. only:: html and not epub
-
-   .. note::
-
-      There is also a :doc:`Video Tutorial <../tutorials/v_attach_disc_id>` available which demonstrates how to attach a disc id to a release in MusicBrainz.
-
 The steps to follow to submit a disc id are:
 
 Step 1

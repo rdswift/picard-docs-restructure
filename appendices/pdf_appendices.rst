@@ -6,11 +6,6 @@ Appendices
 .. toctree::
    :hidden:
 
-   plugins_api
-   plugins_manifest
-   plugins_translations
-   plugins_migration
-   plugins_registry
    tag_mapping
    command_line
    keyboard_shortcuts

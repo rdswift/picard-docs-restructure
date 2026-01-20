@@ -89,18 +89,6 @@
       tutorials/naming_script
       tutorials/acoustid
       tutorials/multiple_release_countries
-      tutorials/write_plugin
-
-
-   .. toctree::
-      :caption: Video Tutorials
-      :hidden:
-      :maxdepth: 0
-      :titlesonly:
-
-      tutorials/v_introduction
-      tutorials/v_attach_disc_id
-      tutorials/v_submit_acoustid
 
 
    .. toctree::
@@ -109,11 +97,6 @@
       :maxdepth: 0
       :titlesonly:
 
-      appendices/plugins_api
-      appendices/plugins_manifest
-      appendices/plugins_translations
-      appendices/plugins_migration
-      appendices/plugins_registry
       appendices/tag_mapping
       appendices/command_line
       appendices/keyboard_shortcuts

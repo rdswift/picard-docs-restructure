@@ -9,12 +9,6 @@ Acoustic fingerprints are very useful for identifying tracks and recordings, all
 
    When using Picard to submit acoustic fingerprints, it is recommended to enable the Fingerprint column in the table view in the right-hand pane. This is done by right-clicking the column header and checking the box beside "Fingerprint status". This will display an icon indicating whether the AcoustID was calculated and whether it ready for submission (red = unsubmitted, grey = already submitted).
 
-.. only:: html and not epub
-
-   .. note::
-
-      There is also a :doc:`Video Tutorial <../tutorials/v_submit_acoustid>` available which demonstrates how to submit AcoustIDs.
-
 There are two methods for submitting acoustic fingerprints, depending on the workflow that you are using to identify the releases that you are tagging. Note that both methods require that you first match your audio files to release and track information from the MusicBrainz database. See the :doc:`retrieve` and :doc:`match` sections for more information about retrieving release information and matching audio files to releases.
 
 The steps to follow to submit acoustic fingerprints for each of the two workflows are:

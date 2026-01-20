@@ -23,4 +23,6 @@ There are a few different :index:`types of plugins <plugins; types>`, including:
 
 Note that plugins are not limited to one of those areas. A single plugin could implement all of the above, but most existing plugins focus on one.
 
-The :doc:`Plugins API <../appendices/plugins_api>` provides information regarding the different plugin hooks available, along with some examples of their use. There is also a list of the `available plugins <https://picard.musicbrainz.org/plugins/>`_ that have been submitted to the MusicBrainz Picard repository shown on the Picard website.
+.. seealso::
+
+   For more information regarding the plugin system, please see the `Picard Plugin V3 Documentation <https://github.com/metabrainz/picard/blob/master/docs/PLUGINSV3/README.md>`_ items in the Picard repository on GitHub. There is also a list of the `available plugins <https://picard.musicbrainz.org/plugins/>`_ that have been submitted to the MusicBrainz Picard repository shown on the Picard website.
