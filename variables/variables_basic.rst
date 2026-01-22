@@ -25,7 +25,7 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
 **_albumartists_countries**
 
-   A multi-value variable containing the country codes for all of the credited album artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA".
+   A multi-value variable containing the country codes for all of the credited album artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA". (*since Picard 3.0*)
 
 **_albumartists_sort**
 
@@ -33,7 +33,7 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
 **_artists_countries**
 
-   A multi-value variable containing the country codes for all of the credited track artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA".
+   A multi-value variable containing the country codes for all of the credited track artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA". (*since Picard 3.0*)
 
 **_artists_sort**
 
