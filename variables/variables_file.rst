@@ -37,6 +37,10 @@ These variables are populated from information found in the audio files themselv
 
     The name of the file without extension. (*since Picard 1.1*)
 
+**_filepath**
+
+    Full path and name of the file. (*since Picard 3.0*)
+
 **_file_created_timestamp**
 
     The file creation timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by the file system. (*since Picard 2.9*)
