@@ -47,6 +47,14 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
    Set to 1 if the disc the track is on has a "`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_", otherwise empty. (*since Picard 1.4*)
 
+**_folksonomy_tags**
+
+    Unfiltered list of all non-genre folksonomy tags loaded from MusicBrainz. Requires the :doc:`Use genres from MusicBrainz <../config/options_genres>` option to be enabled. (*since Picard 3.0*)
+
+**_genres**
+
+   Unfiltered list of all genres loaded from MusicBrainz. Requires the :doc:`Use genres from MusicBrainz <../config/options_genres>` option to be enabled.  (*since Picard 3.0*)
+
 **_multiartist**
 
    Set to 1 if not all of the tracks on the album have the same primary artist, otherwise empty. (*since Picard 1.3*)
