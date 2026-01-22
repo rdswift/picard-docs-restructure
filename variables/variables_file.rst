@@ -59,4 +59,4 @@ These variables are populated from information found in the audio files themselv
 
 **_filesize**
 
-   Size of the file in bytes.
+   Size of the file in bytes. (*since Picard 3.0*)

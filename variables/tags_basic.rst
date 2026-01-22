@@ -229,7 +229,7 @@ These tags are not able to be populated by stock Picard, however they may be use
 
 **syncedlyrics**
 
-    The synchronized lyrics for the track.
+    The synchronized lyrics for the track. (*since Picard 3.0*)
 
 **musicip_fingerprint**
 
