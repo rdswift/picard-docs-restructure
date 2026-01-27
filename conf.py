@@ -30,8 +30,8 @@ copyright_year = str(this_year) if this_year == 2020 else f'2020-{this_year}'
 
 project = 'MusicBrainz Picard'
 
-# The full version, including alpha/beta/rc tags (must start with a 'v' and not contain any spaces)
-version = 'v2.13.3'
+# The version as `v{major}.{minor}`
+version = 'v3.0'
 
 author = 'Bob Swift'
 copyright = f'{this_year}, MetaBrainz Foundation.'     # pylint: disable=redefined-builtin
