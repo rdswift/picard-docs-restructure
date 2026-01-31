@@ -51,7 +51,7 @@ These options determine how Picard handles files when they are saved with update
 
 **Overwrite existing files**
 
-   When selected, if a file is found at the destination, the operation for that specific additional file is skipped, and the original file is left untouched. This ensures that no data is unintentionally overwritten.
+   Unless selected, if a file is found at the destination, the operation for that specific additional file is skipped, and the original file is left untouched. This ensures that no data is unintentionally overwritten.
 
 **Rename files when saving**
 
