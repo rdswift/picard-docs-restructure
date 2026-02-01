@@ -29,3 +29,7 @@ Picard can filter and process the images downloaded from the providers. Image pr
 **Convert images to the given format**
 
    Images can be converted to the given format. The available formats are JPEG, PNG, WebP, and TIFF.
+
+**Processed image quality**
+
+   When images are processed and saved to JPEG or WebP format, you can set the processing quality. The quality factor must be in the range 0 to 100. Specify 0 to obtain small compressed files, 100 for large uncompressed files.
