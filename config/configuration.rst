@@ -65,9 +65,17 @@ The option settings are found under the :menuselection:`"Options --> Options..."
    .. image:: images/options-general-with-tree.png
       :width: 100 %
 
-In addition to the basic "user settings", this is also where option setting changes are made to individual option profiles. This is covered in greater detail in the :doc:`../usage/option_profiles` section.
 
-Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted. Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used during processing.
+:index:`Option Profiles <see: profiles; configuration>`
+--------------------------------------------------------
+
+The option settings can also be manipulated with option profiles. A detailed explanation can be found in the :doc:`../usage/option_profiles` section, but they basically function as follows:
+
+With option profiles, you can save a number of settings to a profile, which you can enable or disable to quickly change the settings for a particular usage scenario. For example, if you want to process your classical music differently to other music.
+
+Options that are controlled by an enabled profile will be shown as highlighted. Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used during processing.
+
+Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option settings displayed on the other configuration pages.
 
 .. only:: latex
 
